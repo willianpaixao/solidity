@@ -118,27 +118,6 @@ The nightly version can be installed using these commands:
     sudo apt-get update
     sudo apt-get install solc
 
-We are also releasing a `snap package <https://snapcraft.io/>`_, which is
-installable in all the `supported Linux distros <https://snapcraft.io/docs/core/install>`_. To
-install the latest stable version of solc:
-
-.. code-block:: bash
-
-    sudo snap install solc
-
-If you want to help testing the latest development version of Solidity
-with the most recent changes, please use the following:
-
-.. code-block:: bash
-
-    sudo snap install solc --edge
-
-.. note::
-
-    The ``solc`` snap uses strict confinement. This is the most secure mode for snap packages
-    but it comes with limitations, like accessing only the files in your ``/home`` and ``/media`` directories.
-    For more information, go to `Demystifying Snap Confinement <https://snapcraft.io/blog/demystifying-snap-confinement>`_.
-
 Arch Linux also has packages, albeit limited to the latest development version:
 
 .. code-block:: bash
