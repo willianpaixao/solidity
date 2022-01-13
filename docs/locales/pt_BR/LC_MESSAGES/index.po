@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: solidity-test\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-13 16:47+0100\n"
-"PO-Revision-Date: 2022-01-13 16:24\n"
+"PO-Revision-Date: 2022-01-13 16:28\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../index.rst:57 3574ff6edab344dbb0e2b7ef4e728c0f
 msgid "**3. Install the Solidity Compiler**"
-msgstr ""
+msgstr "**3. Instalação do Compilador Solidity**"
 
 #: ../../index.rst:59 86d5f3e0013f4ac9bec30b5d98241e0f
 msgid "There are various ways to install the Solidity compiler, simply choose your preferred option and follow the steps outlined on the :ref:`installation page <installing-solidity>`."
@@ -124,7 +124,7 @@ msgstr ""
 
 #: ../../index.rst:77 791235f9d7f846c5a538da7ec1390ef4
 msgid "**4. Learn More**"
-msgstr ""
+msgstr "**4. Saiba Mais**"
 
 #: ../../index.rst:79 f858baab940249e88ce924e7a578740b
 msgid "If you want to learn more about building decentralized applications on Ethereum, the `Ethereum Developer Resources <https://ethereum.org/en/developers/>`_ can help you with further general documentation around Ethereum, and a wide selection of tutorials, tools and development frameworks."
@@ -181,7 +181,7 @@ msgstr ""
 
 #: ../../index.rst:113 085ab25fd2ec44d4ad71be93a48ccf6c
 msgid "Contents"
-msgstr ""
+msgstr "Conteúdo"
 
 #: ../../index.rst:115 b380bad9b6c540fdb2bffa1412ff578c
 msgid ":ref:`Keyword Index <genindex>`, :ref:`Search Page <search>`"
