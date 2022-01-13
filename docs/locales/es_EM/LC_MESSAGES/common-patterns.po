@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: solidity-test\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Modern)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: es-EM\n"
+"X-Crowdin-File: common-patterns.po\n"
+"X-Crowdin-File-ID: 55\n"
+"Language: es_EM\n"
+
+#: ../../common-patterns.rst:3 852464492f49404f9f640d6b71d59f39
+msgid "Common Patterns"
+msgstr ""
+
+#: ../../common-patterns.rst:11 85cb01ad59564c4ab74f60ba63011310
+msgid "Withdrawal from Contracts"
+msgstr ""
+
+#: ../../common-patterns.rst:13 bca006caaa5c4806a0440423af39f42c
+msgid "The recommended method of sending funds after an effect is using the withdrawal pattern. Although the most intuitive method of sending Ether, as a result of an effect, is a direct ``transfer`` call, this is not recommended as it introduces a potential security risk. You may read more about this on the :ref:`security_considerations` page."
+msgstr ""
+
+#: ../../common-patterns.rst:20 3927a6d35fc24a9d99ac042d8da5d22a
+msgid "The following is an example of the withdrawal pattern in practice in a contract where the goal is to send the most money to the contract in order to become the \"richest\", inspired by `King of the Ether <https://www.kingoftheether.com/>`_."
+msgstr ""
+
+#: ../../common-patterns.rst:25 e1765305bc4b47c4b4d0bc403e8e20d8
+msgid "In the following contract, if you are no longer the richest, you receive the funds of the person who is now the richest."
+msgstr ""
+
+#: ../../common-patterns.rst:64 a68d88bc24cf40aeb2bf431d5b88bb95
+msgid "This is as opposed to the more intuitive sending pattern:"
+msgstr ""
+
+#: ../../common-patterns.rst:93 415f14c4ec8541d6876c7db5f4c26b4b
+msgid "Notice that, in this example, an attacker could trap the contract into an unusable state by causing ``richest`` to be the address of a contract that has a receive or fallback function which fails (e.g. by using ``revert()`` or by just consuming more than the 2300 gas stipend transferred to them). That way, whenever ``transfer`` is called to deliver funds to the \"poisoned\" contract, it will fail and thus also ``becomeRichest`` will fail, with the contract being stuck forever."
+msgstr ""
+
+#: ../../common-patterns.rst:102 9a033b4f389c46c6825ebd9329335e8b
+msgid "In contrast, if you use the \"withdraw\" pattern from the first example, the attacker can only cause his or her own withdraw to fail and not the rest of the contract's workings."
+msgstr ""
+
+#: ../../common-patterns.rst:110 992e03fbe1a747d49b8702865c967863
+msgid "Restricting Access"
+msgstr ""
+
+#: ../../common-patterns.rst:112 4f70d719ace84af78982843b281dbf1b
+msgid "Restricting access is a common pattern for contracts. Note that you can never restrict any human or computer from reading the content of your transactions or your contract's state. You can make it a bit harder by using encryption, but if your contract is supposed to read the data, so will everyone else."
+msgstr ""
+
+#: ../../common-patterns.rst:119 57ab4cb913fb4fc0a1d46dbe895a9645
+msgid "You can restrict read access to your contract's state by **other contracts**. That is actually the default unless you declare your state variables ``public``."
+msgstr ""
+
+#: ../../common-patterns.rst:123 f2dae2208f564aac8e75bcdcab02804d
+msgid "Furthermore, you can restrict who can make modifications to your contract's state or call your contract's functions and this is what this section is about."
+msgstr ""
+
+#: ../../common-patterns.rst:129 47b3936bfcdb46c4aa8ea8e9cc307873
+msgid "The use of **function modifiers** makes these restrictions highly readable."
+msgstr ""
+
+#: ../../common-patterns.rst:232 ed6de03a7fd046ceaf935132025cf03c
+msgid "A more specialised way in which access to function calls can be restricted will be discussed in the next example."
+msgstr ""
+
+#: ../../common-patterns.rst:240 3edea7c9f2a34a1e9051374cb68d5864
+msgid "State Machine"
+msgstr ""
+
+#: ../../common-patterns.rst:242 d5e29e8b6fc545a9bb0d9c8feb4df5f8
+msgid "Contracts often act as a state machine, which means that they have certain **stages** in which they behave differently or in which different functions can be called. A function call often ends a stage and transitions the contract into the next stage (especially if the contract models **interaction**). It is also common that some stages are automatically reached at a certain point in **time**."
+msgstr ""
+
+#: ../../common-patterns.rst:251 156883dc3bbb4b3d804f1231189f62cd
+msgid "An example for this is a blind auction contract which starts in the stage \"accepting blinded bids\", then transitions to \"revealing bids\" which is ended by \"determine auction outcome\"."
+msgstr ""
+
+#: ../../common-patterns.rst:258 feddb153ab0541f8ba593a38bd459d93
+msgid "Function modifiers can be used in this situation to model the states and guard against incorrect usage of the contract."
+msgstr ""
+
+#: ../../common-patterns.rst:263 fdfc7fb9cf404d3f9b4c46c009d12ea5
+msgid "Example"
+msgstr ""
+
+#: ../../common-patterns.rst:265 9bfc67e68f5f437ca82fc773821a3bc7
+msgid "In the following example, the modifier ``atStage`` ensures that the function can only be called at a certain stage."
+msgstr ""
+
+#: ../../common-patterns.rst:269 493a409ffa104085bfdb7dc6fdb60028
+msgid "Automatic timed transitions are handled by the modifier ``timedTransitions``, which should be used for all functions."
+msgstr ""
+
+#: ../../common-patterns.rst:274 ff8960c195d34e77bf060c824869ab28
+msgid "**Modifier Order Matters**. If atStage is combined with timedTransitions, make sure that you mention it after the latter, so that the new stage is taken into account."
+msgstr ""
+
+#: ../../common-patterns.rst:280 e39ded4ddb044a818652951a46369791
+msgid "Finally, the modifier ``transitionNext`` can be used to automatically go to the next stage when the function finishes."
+msgstr ""
+
+#: ../../common-patterns.rst:285 7ca128be172149ee905f592d8131045e
+msgid "**Modifier May be Skipped**. This only applies to Solidity before version 0.4.0: Since modifiers are applied by simply replacing code and not by using a function call, the code in the transitionNext modifier can be skipped if the function itself uses return. If you want to do that, make sure to call nextStage manually from those functions. Starting with version 0.4.0, modifier code will run even if the function explicitly returns."
+msgstr ""
+

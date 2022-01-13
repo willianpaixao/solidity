@@ -1,0 +1,589 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: solidity-test\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Modern)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: es-EM\n"
+"X-Crowdin-File: cheatsheet.po\n"
+"X-Crowdin-File-ID: 15\n"
+"Language: es_EM\n"
+
+#: ../../cheatsheet.rst:3 1bb26ddb70f34670bd464dd51effd8f0
+msgid "Cheatsheet"
+msgstr ""
+
+#: ../../cheatsheet.rst:10 8b9f1a6c83da45ef9cd8e7c6dfde0238
+msgid "Order of Precedence of Operators"
+msgstr ""
+
+#: ../../cheatsheet.rst:12 dc4c12285f3a49329f9613d5c166af3a
+msgid "The following is the order of precedence for operators, listed in order of evaluation."
+msgstr ""
+
+#: ../../cheatsheet.rst:15 65759838fcaf40f1a3898d02cafc6172
+msgid "Precedence"
+msgstr ""
+
+#: ../../cheatsheet.rst:15 886429d570f84d4fa244786a1f4eed0e
+msgid "Description"
+msgstr ""
+
+#: ../../cheatsheet.rst:15 7770979a56fa4efd81c8e532927b6af0
+msgid "Operator"
+msgstr ""
+
+#: ../../cheatsheet.rst:17 3127be6519264a27ab327bc62607984a
+msgid "*1*"
+msgstr ""
+
+#: ../../cheatsheet.rst:17 f76b2416aeb54b32bde18314dc7135d9
+msgid "Postfix increment and decrement"
+msgstr ""
+
+#: ../../cheatsheet.rst:17 ../../cheatsheet.rst:29
+#: 6c9507b03e3d4c25b1f02465ab89b606 db83414777b0429793ea9092866b1c3c
+msgid "``++``, ``--``"
+msgstr ""
+
+#: ../../cheatsheet.rst:19 d696cff51d884091ad132725a7aeec9c
+msgid "New expression"
+msgstr ""
+
+#: ../../cheatsheet.rst:19 420a71044b724da4a160e24d2d4b1e2d
+msgid "``new <typename>``"
+msgstr ""
+
+#: ../../cheatsheet.rst:21 2453725b5f5d439a8f4a2e2b8ac43d19
+msgid "Array subscripting"
+msgstr ""
+
+#: ../../cheatsheet.rst:21 6c292ad113ad48639f752b8618e04459
+msgid "``<array>[<index>]``"
+msgstr ""
+
+#: ../../cheatsheet.rst:23 d2300dd6449a42669016ae81bb6a81b3
+msgid "Member access"
+msgstr ""
+
+#: ../../cheatsheet.rst:23 02c96795b32f4044839eab1b3be34da4
+msgid "``<object>.<member>``"
+msgstr ""
+
+#: ../../cheatsheet.rst:25 2553980ef0b24200bed636046e48d2eb
+msgid "Function-like call"
+msgstr ""
+
+#: ../../cheatsheet.rst:25 435a027993e0493786d5c78505c994bb
+msgid "``<func>(<args...>)``"
+msgstr ""
+
+#: ../../cheatsheet.rst:27 da075804646b4d91b2258619ed6ff534
+msgid "Parentheses"
+msgstr ""
+
+#: ../../cheatsheet.rst:27 2621c12e86dc4a0d967eb654e418b18c
+msgid "``(<statement>)``"
+msgstr ""
+
+#: ../../cheatsheet.rst:29 fdff9ca1612f475a92dbe4b10bd65219
+msgid "*2*"
+msgstr ""
+
+#: ../../cheatsheet.rst:29 6a0d639b622d47cf9d497b6c080eedf1
+msgid "Prefix increment and decrement"
+msgstr ""
+
+#: ../../cheatsheet.rst:31 c24f1bd400b04ff7b99de4dfac4e1f2b
+msgid "Unary minus"
+msgstr ""
+
+#: ../../cheatsheet.rst:31 5f1f1c237d834ba2bea2711df23658d5
+msgid "``-``"
+msgstr ""
+
+#: ../../cheatsheet.rst:33 f929ba93ee504b018d5bd14972a5f08f
+msgid "Unary operations"
+msgstr ""
+
+#: ../../cheatsheet.rst:33 ca2fbc0c728b4ffcaffbce72fe7f0047
+msgid "``delete``"
+msgstr ""
+
+#: ../../cheatsheet.rst:35 0408cb7706b8406d80bba62af65e5b95
+msgid "Logical NOT"
+msgstr ""
+
+#: ../../cheatsheet.rst:35 ced5fd0cfb084b96bb519a4a0ef5950a
+msgid "``!``"
+msgstr ""
+
+#: ../../cheatsheet.rst:37 b062746243c04377bd59f9698f0433cb
+msgid "Bitwise NOT"
+msgstr ""
+
+#: ../../cheatsheet.rst:37 78e20d3cd32a435093629bbee2771b7c
+msgid "``~``"
+msgstr ""
+
+#: ../../cheatsheet.rst:39 d12cdb8aedb846ab821f163511b844b3
+msgid "*3*"
+msgstr ""
+
+#: ../../cheatsheet.rst:39 1dad07c7e7f946468d97554d4c8fb6c5
+msgid "Exponentiation"
+msgstr ""
+
+#: ../../cheatsheet.rst:39 3cab92b9098c49faac149ed430bf3da0
+msgid "``**``"
+msgstr ""
+
+#: ../../cheatsheet.rst:41 c30f21964b624dad9dafa2e3979e4d4d
+msgid "*4*"
+msgstr ""
+
+#: ../../cheatsheet.rst:41 d88338e3cf2b4b51a8f1ff0764faa886
+msgid "Multiplication, division and modulo"
+msgstr ""
+
+#: ../../cheatsheet.rst:41 c65aad39103c4cca9195e7aabcdd8ed9
+msgid "``*``, ``/``, ``%``"
+msgstr ""
+
+#: ../../cheatsheet.rst:43 44d8d880cf784c08a69651260bc9c456
+msgid "*5*"
+msgstr ""
+
+#: ../../cheatsheet.rst:43 cd6b5cbdb7de4e5f8faceb959681ba2d
+msgid "Addition and subtraction"
+msgstr ""
+
+#: ../../cheatsheet.rst:43 befa5806e34d4e3b91a09627b1d39950
+msgid "``+``, ``-``"
+msgstr ""
+
+#: ../../cheatsheet.rst:45 41a870b839bc4367ac18208e39d0d751
+msgid "*6*"
+msgstr ""
+
+#: ../../cheatsheet.rst:45 c00647c9abd4426bb14cfe24f32471c5
+msgid "Bitwise shift operators"
+msgstr ""
+
+#: ../../cheatsheet.rst:45 0100abba5ef94a66a6f6fe7da59f1467
+msgid "``<<``, ``>>``"
+msgstr ""
+
+#: ../../cheatsheet.rst:47 f4f53956f98049cbbc7ce73296e3f0fc
+msgid "*7*"
+msgstr ""
+
+#: ../../cheatsheet.rst:47 48cad4966eeb4a65b11fb5a396eff4a3
+msgid "Bitwise AND"
+msgstr ""
+
+#: ../../cheatsheet.rst:47 0f6028a85ec64be1a15c6ca2c0a5fbe5
+msgid "``&``"
+msgstr ""
+
+#: ../../cheatsheet.rst:49 7c0fa064f1544858b7d63ecc516777bd
+msgid "*8*"
+msgstr ""
+
+#: ../../cheatsheet.rst:49 a5fd0d7e8afd4fafbc30407fedc5f2b1
+msgid "Bitwise XOR"
+msgstr ""
+
+#: ../../cheatsheet.rst:49 577265a921cb4cc8b4bf7dc771754f18
+msgid "``^``"
+msgstr ""
+
+#: ../../cheatsheet.rst:51 6c49ddc1f46b4e41ab545fbc0d23f35c
+msgid "*9*"
+msgstr ""
+
+#: ../../cheatsheet.rst:51 522a56199435480fb3b4bae4063716dd
+msgid "Bitwise OR"
+msgstr ""
+
+#: ../../cheatsheet.rst:51 a0dbf870cb744a889865e60cbda850ad
+msgid "``|``"
+msgstr ""
+
+#: ../../cheatsheet.rst:53 95bc3c9c868c4882b3d8331d55540d85
+msgid "*10*"
+msgstr ""
+
+#: ../../cheatsheet.rst:53 639e2e9f239d49198749398046439d37
+msgid "Inequality operators"
+msgstr ""
+
+#: ../../cheatsheet.rst:53 3906f37c9b76457b994177392e6273a1
+msgid "``<``, ``>``, ``<=``, ``>=``"
+msgstr ""
+
+#: ../../cheatsheet.rst:55 d7b1a62db2564f488d7563c5b1270355
+msgid "*11*"
+msgstr ""
+
+#: ../../cheatsheet.rst:55 44f8c90b023f427ab801c46263535394
+msgid "Equality operators"
+msgstr ""
+
+#: ../../cheatsheet.rst:55 751d3d8bc1a5433990c2515a15d9049b
+msgid "``==``, ``!=``"
+msgstr ""
+
+#: ../../cheatsheet.rst:57 faf14dbe1b7040e4beffff8951f39eed
+msgid "*12*"
+msgstr ""
+
+#: ../../cheatsheet.rst:57 96e48c68574c48d19a2b48b33e1d344b
+msgid "Logical AND"
+msgstr ""
+
+#: ../../cheatsheet.rst:57 4fca1f3633ca4a7b907de80bca874b8f
+msgid "``&&``"
+msgstr ""
+
+#: ../../cheatsheet.rst:59 2b75bbf75378406b9164cc79fbabb08c
+msgid "*13*"
+msgstr ""
+
+#: ../../cheatsheet.rst:59 22800ce32afe4f18a94483548cb70797
+msgid "Logical OR"
+msgstr ""
+
+#: ../../cheatsheet.rst:59 4fb253742d234c5aaf5609949f92e904
+msgid "``||``"
+msgstr ""
+
+#: ../../cheatsheet.rst:61 6bcc943e94bb4b7b80123a5e837a0e3d
+msgid "*14*"
+msgstr ""
+
+#: ../../cheatsheet.rst:61 5fbcf009f4144079a627f187e2c5a85a
+msgid "Ternary operator"
+msgstr ""
+
+#: ../../cheatsheet.rst:61 f58199831da04d4bb2f0c9527dfb424c
+msgid "``<conditional> ? <if-true> : <if-false>``"
+msgstr ""
+
+#: ../../cheatsheet.rst:63 0e858270b93a4b49900707f731ecafc9
+msgid "Assignment operators"
+msgstr ""
+
+#: ../../cheatsheet.rst:63 29c33323384748c89e54163d667df9eb
+msgid "``=``, ``|=``, ``^=``, ``&=``, ``<<=``, ``>>=``, ``+=``, ``-=``, ``*=``, ``/=``, ``%=``"
+msgstr ""
+
+#: ../../cheatsheet.rst:67 e34a152c0c264877b4cfa70bfdcd0541
+msgid "*15*"
+msgstr ""
+
+#: ../../cheatsheet.rst:67 e424000a85d84ba3a41c782225d5599f
+msgid "Comma operator"
+msgstr ""
+
+#: ../../cheatsheet.rst:67 01dd568f0a274e30a94824db0a2272af
+msgid "``,``"
+msgstr ""
+
+#: ../../cheatsheet.rst:73 8d7f14068a5c49aaba9233e7183e53e8
+msgid "Global Variables"
+msgstr ""
+
+#: ../../cheatsheet.rst:75 64ccdadb87c64d83a9c3995346e62a7d
+msgid "``abi.decode(bytes memory encodedData, (...)) returns (...)``: :ref:`ABI <ABI>`-decodes the provided data. The types are given in parentheses as second argument. Example: ``(uint a, uint[2] memory b, bytes memory c) = abi.decode(data, (uint, uint[2], bytes))``"
+msgstr ""
+
+#: ../../cheatsheet.rst:78 a33a907f0c1f461eb932bc04d4cfbaf4
+msgid "``abi.encode(...) returns (bytes memory)``: :ref:`ABI <ABI>`-encodes the given arguments"
+msgstr ""
+
+#: ../../cheatsheet.rst:79 521fac542c304bd2af5afad4715e0325
+msgid "``abi.encodePacked(...) returns (bytes memory)``: Performs :ref:`packed encoding <abi_packed_mode>` of the given arguments. Note that this encoding can be ambiguous!"
+msgstr ""
+
+#: ../../cheatsheet.rst:81 f525af7e85ff41fb97853e2a1ad263df
+msgid "``abi.encodeWithSelector(bytes4 selector, ...) returns (bytes memory)``: :ref:`ABI <ABI>`-encodes the given arguments starting from the second and prepends the given four-byte selector"
+msgstr ""
+
+#: ../../cheatsheet.rst:83 8df861dda0ed45409de809cc3a35e612
+msgid "``abi.encodeCall(function functionPointer, (...)) returns (bytes memory)``: ABI-encodes a call to ``functionPointer`` with the arguments found in the tuple. Performs a full type-check, ensuring the types match the function signature. Result equals ``abi.encodeWithSelector(functionPointer.selector, (...))``"
+msgstr ""
+
+#: ../../cheatsheet.rst:85 c6755b2b700748ec8a226176b122f7c4
+msgid "``abi.encodeWithSignature(string memory signature, ...) returns (bytes memory)``: Equivalent to ``abi.encodeWithSelector(bytes4(keccak256(bytes(signature)), ...)``"
+msgstr ""
+
+#: ../../cheatsheet.rst:87 aee53df8123949e4857da17d675589b0
+msgid "``bytes.concat(...) returns (bytes memory)``: :ref:`Concatenates variable number of arguments to one byte array<bytes-concat>`"
+msgstr ""
+
+#: ../../cheatsheet.rst:89 b9ffce066b2c4f4f85aebeb6871c4f54
+msgid "``block.basefee`` (``uint``): current block's base fee (`EIP-3198 <https://eips.ethereum.org/EIPS/eip-3198>`_ and `EIP-1559 <https://eips.ethereum.org/EIPS/eip-1559>`_)"
+msgstr ""
+
+#: ../../cheatsheet.rst:90 d47ef2a815c349219c3e9cd5f111d4ce
+msgid "``block.chainid`` (``uint``): current chain id"
+msgstr ""
+
+#: ../../cheatsheet.rst:91 670642b2fb6642499fe40bb0d2f76e6c
+msgid "``block.coinbase`` (``address payable``): current block miner's address"
+msgstr ""
+
+#: ../../cheatsheet.rst:92 4878eab1b2884d2eb741a92cfc00d7e0
+msgid "``block.difficulty`` (``uint``): current block difficulty"
+msgstr ""
+
+#: ../../cheatsheet.rst:93 8427ffbbad4d4f79a52ddaca58663be4
+msgid "``block.gaslimit`` (``uint``): current block gaslimit"
+msgstr ""
+
+#: ../../cheatsheet.rst:94 e15c2495e0f24bcf9986bdb5670a32a1
+msgid "``block.number`` (``uint``): current block number"
+msgstr ""
+
+#: ../../cheatsheet.rst:95 8d77d08cada745beab1fa800426f973f
+msgid "``block.timestamp`` (``uint``): current block timestamp"
+msgstr ""
+
+#: ../../cheatsheet.rst:96 1a2d2dfe10894049abda7d5f1e3b3e31
+msgid "``gasleft() returns (uint256)``: remaining gas"
+msgstr ""
+
+#: ../../cheatsheet.rst:97 56ea32b9888847958562ce46ff55dd12
+msgid "``msg.data`` (``bytes``): complete calldata"
+msgstr ""
+
+#: ../../cheatsheet.rst:98 b453e6da430d4ea6bb956b04064810b5
+msgid "``msg.sender`` (``address``): sender of the message (current call)"
+msgstr ""
+
+#: ../../cheatsheet.rst:99 e3f846f5378a45d49623e0acd4ddf5c6
+msgid "``msg.value`` (``uint``): number of wei sent with the message"
+msgstr ""
+
+#: ../../cheatsheet.rst:100 d209ec1cd44342d583f10f922999359b
+msgid "``tx.gasprice`` (``uint``): gas price of the transaction"
+msgstr ""
+
+#: ../../cheatsheet.rst:101 c9863fd134284b019e83eb1b4f97c434
+msgid "``tx.origin`` (``address``): sender of the transaction (full call chain)"
+msgstr ""
+
+#: ../../cheatsheet.rst:102 042772d150db4fa49e5c989460a7aa54
+msgid "``assert(bool condition)``: abort execution and revert state changes if condition is ``false`` (use for internal error)"
+msgstr ""
+
+#: ../../cheatsheet.rst:103 82acf5e5278a41b99b2a1081887db9c5
+msgid "``require(bool condition)``: abort execution and revert state changes if condition is ``false`` (use for malformed input or error in external component)"
+msgstr ""
+
+#: ../../cheatsheet.rst:105 337d1318b16d4e0cbcdced7ea78372f0
+msgid "``require(bool condition, string memory message)``: abort execution and revert state changes if condition is ``false`` (use for malformed input or error in external component). Also provide error message."
+msgstr ""
+
+#: ../../cheatsheet.rst:107 da5c72a5f4c04144bbd14bde3b1a8d02
+msgid "``revert()``: abort execution and revert state changes"
+msgstr ""
+
+#: ../../cheatsheet.rst:108 a664413ec28d4cd1aa958614a2dd7853
+msgid "``revert(string memory message)``: abort execution and revert state changes providing an explanatory string"
+msgstr ""
+
+#: ../../cheatsheet.rst:109 6cd0fa3e9cda4c70bbf2ada38890fa4c
+msgid "``blockhash(uint blockNumber) returns (bytes32)``: hash of the given block - only works for 256 most recent blocks"
+msgstr ""
+
+#: ../../cheatsheet.rst:110 e010c891787c4affa136bd1cbef875c7
+msgid "``keccak256(bytes memory) returns (bytes32)``: compute the Keccak-256 hash of the input"
+msgstr ""
+
+#: ../../cheatsheet.rst:111 ac7b027d3e7a479ea3d111d78843b98d
+msgid "``sha256(bytes memory) returns (bytes32)``: compute the SHA-256 hash of the input"
+msgstr ""
+
+#: ../../cheatsheet.rst:112 a00ff8904e0540779f9c8cfcc3660548
+msgid "``ripemd160(bytes memory) returns (bytes20)``: compute the RIPEMD-160 hash of the input"
+msgstr ""
+
+#: ../../cheatsheet.rst:113 05ddf06a80e54bc5979cab27ac0c523e
+msgid "``ecrecover(bytes32 hash, uint8 v, bytes32 r, bytes32 s) returns (address)``: recover address associated with the public key from elliptic curve signature, return zero on error"
+msgstr ""
+
+#: ../../cheatsheet.rst:115 21dbee36a5a9484c94104c24a6d963e4
+msgid "``addmod(uint x, uint y, uint k) returns (uint)``: compute ``(x + y) % k`` where the addition is performed with arbitrary precision and does not wrap around at ``2**256``. Assert that ``k != 0`` starting from version 0.5.0."
+msgstr ""
+
+#: ../../cheatsheet.rst:117 7da2332a685440c4b02daf8b27f65951
+msgid "``mulmod(uint x, uint y, uint k) returns (uint)``: compute ``(x * y) % k`` where the multiplication is performed with arbitrary precision and does not wrap around at ``2**256``. Assert that ``k != 0`` starting from version 0.5.0."
+msgstr ""
+
+#: ../../cheatsheet.rst:119 8ea7db4b8e294b35853f53b259cf6998
+msgid "``this`` (current contract's type): the current contract, explicitly convertible to ``address`` or ``address payable``"
+msgstr ""
+
+#: ../../cheatsheet.rst:120 40c8a082671b4a9a921ccb9101c1fe4f
+msgid "``super``: the contract one level higher in the inheritance hierarchy"
+msgstr ""
+
+#: ../../cheatsheet.rst:121 3ba082945e3c4ea7bce04a13ff085165
+msgid "``selfdestruct(address payable recipient)``: destroy the current contract, sending its funds to the given address"
+msgstr ""
+
+#: ../../cheatsheet.rst:122 cb5c31dabcde4fb28dd04067fedc2491
+msgid "``<address>.balance`` (``uint256``): balance of the :ref:`address` in Wei"
+msgstr ""
+
+#: ../../cheatsheet.rst:123 bea794d96236407ba5db5e3b0e143d1b
+msgid "``<address>.code`` (``bytes memory``): code at the :ref:`address` (can be empty)"
+msgstr ""
+
+#: ../../cheatsheet.rst:124 5fa30bac21f84c87aaaf9bdff5e45c50
+msgid "``<address>.codehash`` (``bytes32``): the codehash of the :ref:`address`"
+msgstr ""
+
+#: ../../cheatsheet.rst:125 1a96f05dec164284b904199f1933c5a9
+msgid "``<address payable>.send(uint256 amount) returns (bool)``: send given amount of Wei to :ref:`address`, returns ``false`` on failure"
+msgstr ""
+
+#: ../../cheatsheet.rst:127 53ff401971ae4b9ab9bc2e877bceb9b3
+msgid "``<address payable>.transfer(uint256 amount)``: send given amount of Wei to :ref:`address`, throws on failure"
+msgstr ""
+
+#: ../../cheatsheet.rst:128 c67a3a881c264e0398c351dac8e2260b
+msgid "``type(C).name`` (``string``): the name of the contract"
+msgstr ""
+
+#: ../../cheatsheet.rst:129 db582fc2de5248a39596967427a00791
+msgid "``type(C).creationCode`` (``bytes memory``): creation bytecode of the given contract, see :ref:`Type Information<meta-type>`."
+msgstr ""
+
+#: ../../cheatsheet.rst:130 b32246602490414fa409d93f9ec7dfd0
+msgid "``type(C).runtimeCode`` (``bytes memory``): runtime bytecode of the given contract, see :ref:`Type Information<meta-type>`."
+msgstr ""
+
+#: ../../cheatsheet.rst:131 5032e66c8299408883fa50bba8c7e97b
+msgid "``type(I).interfaceId`` (``bytes4``): value containing the EIP-165 interface identifier of the given interface, see :ref:`Type Information<meta-type>`."
+msgstr ""
+
+#: ../../cheatsheet.rst:132 2269709f38f542788a35e2bc1e867317
+msgid "``type(T).min`` (``T``): the minimum value representable by the integer type ``T``, see :ref:`Type Information<meta-type>`."
+msgstr ""
+
+#: ../../cheatsheet.rst:133 1edd5de853054ce186fae33f899e307c
+msgid "``type(T).max`` (``T``): the maximum value representable by the integer type ``T``, see :ref:`Type Information<meta-type>`."
+msgstr ""
+
+#: ../../cheatsheet.rst:136 def5b3ca5c4442ab822eb523e15c223a
+msgid "When contracts are evaluated off-chain rather than in context of a transaction included in a block, you should not assume that ``block.*`` and ``tx.*`` refer to values from any specific block or transaction. These values are provided by the EVM implementation that executes the contract and can be arbitrary."
+msgstr ""
+
+#: ../../cheatsheet.rst:142 445b53bc84214384a4cd57ce862f8547
+msgid "Do not rely on ``block.timestamp`` or ``blockhash`` as a source of randomness, unless you know what you are doing."
+msgstr ""
+
+#: ../../cheatsheet.rst:145 0595316980c54962adacac9d66d8d10b
+msgid "Both the timestamp and the block hash can be influenced by miners to some degree. Bad actors in the mining community can for example run a casino payout function on a chosen hash and just retry a different hash if they did not receive any money."
+msgstr ""
+
+#: ../../cheatsheet.rst:149 dfbc68ca1082437691c5eb30cc80ab78
+msgid "The current block timestamp must be strictly larger than the timestamp of the last block, but the only guarantee is that it will be somewhere between the timestamps of two consecutive blocks in the canonical chain."
+msgstr ""
+
+#: ../../cheatsheet.rst:154 778038c12a7741768f624b0170ccf6d3
+msgid "The block hashes are not available for all blocks for scalability reasons. You can only access the hashes of the most recent 256 blocks, all other values will be zero."
+msgstr ""
+
+#: ../../cheatsheet.rst:159 ff2bc72a0d6c454fbdcecad099051231
+msgid "In version 0.5.0, the following aliases were removed: ``suicide`` as alias for ``selfdestruct``, ``msg.gas`` as alias for ``gasleft``, ``block.blockhash`` as alias for ``blockhash`` and ``sha3`` as alias for ``keccak256``."
+msgstr ""
+
+#: ../../cheatsheet.rst:163 7e1d0f31ade54437a6f28b3ae266a51b
+msgid "In version 0.7.0, the alias ``now`` (for ``block.timestamp``) was removed."
+msgstr ""
+
+#: ../../cheatsheet.rst:168 ad83f56537cb495183ed511c8d7c16fc
+msgid "Function Visibility Specifiers"
+msgstr ""
+
+#: ../../cheatsheet.rst:177 036aea43dfb741e1a8c823a750c85263
+msgid "``public``: visible externally and internally (creates a :ref:`getter function<getter-functions>` for storage/state variables)"
+msgstr ""
+
+#: ../../cheatsheet.rst:178 b91f428184d843a19d811ff4f2759b5b
+msgid "``private``: only visible in the current contract"
+msgstr ""
+
+#: ../../cheatsheet.rst:179 e2abc4b762d8423086d7b11074d966af
+msgid "``external``: only visible externally (only for functions) - i.e. can only be message-called (via ``this.func``)"
+msgstr ""
+
+#: ../../cheatsheet.rst:180 32857aa36bad47bd9da694a0ef6c8010
+msgid "``internal``: only visible internally"
+msgstr ""
+
+#: ../../cheatsheet.rst:186 441e31cc14a14960a4cc6ecd43d9d81b
+msgid "Modifiers"
+msgstr ""
+
+#: ../../cheatsheet.rst:188 b02ad9c49a0a4a28881c9164f136e347
+msgid "``pure`` for functions: Disallows modification or access of state."
+msgstr ""
+
+#: ../../cheatsheet.rst:189 be6def4f5fb14b86969cbb347d53004e
+msgid "``view`` for functions: Disallows modification of state."
+msgstr ""
+
+#: ../../cheatsheet.rst:190 13cb9a5d0a1e4a1bbcb0885769f869d5
+msgid "``payable`` for functions: Allows them to receive Ether together with a call."
+msgstr ""
+
+#: ../../cheatsheet.rst:191 ce15e0698c94461bb2ebc464365b410b
+msgid "``constant`` for state variables: Disallows assignment (except initialisation), does not occupy storage slot."
+msgstr ""
+
+#: ../../cheatsheet.rst:192 5648a3027a494e3a888d473f19138536
+msgid "``immutable`` for state variables: Allows exactly one assignment at construction time and is constant afterwards. Is stored in code."
+msgstr ""
+
+#: ../../cheatsheet.rst:193 3171be17ba574d0a8d59fa7cd9bf648e
+msgid "``anonymous`` for events: Does not store event signature as topic."
+msgstr ""
+
+#: ../../cheatsheet.rst:194 a085b18e2cdd46a58cde1d48a1191954
+msgid "``indexed`` for event parameters: Stores the parameter as topic."
+msgstr ""
+
+#: ../../cheatsheet.rst:195 6e282d3f785046f296b52d58584d49af
+msgid "``virtual`` for functions and modifiers: Allows the function's or modifier's behaviour to be changed in derived contracts."
+msgstr ""
+
+#: ../../cheatsheet.rst:197 b2c0845c2471402aba7e190e04706f5a
+msgid "``override``: States that this function, modifier or public state variable changes the behaviour of a function or modifier in a base contract."
+msgstr ""
+
+#: ../../cheatsheet.rst:201 e35983b714304b519bfcc2482948deac
+msgid "Reserved Keywords"
+msgstr ""
+
+#: ../../cheatsheet.rst:203 e0310947ac854ab191203d5e7d5138b3
+msgid "These keywords are reserved in Solidity. They might become part of the syntax in the future:"
+msgstr ""
+
+#: ../../cheatsheet.rst:205 e8ba2a4b28534a2ea0ee4a4231e5d2b6
+msgid "``after``, ``alias``, ``apply``, ``auto``, ``byte``, ``case``, ``copyof``, ``default``, ``define``, ``final``, ``implements``, ``in``, ``inline``, ``let``, ``macro``, ``match``, ``mutable``, ``null``, ``of``, ``partial``, ``promise``, ``reference``, ``relocatable``, ``sealed``, ``sizeof``, ``static``, ``supports``, ``switch``, ``typedef``, ``typeof``, ``var``."
+msgstr ""
+

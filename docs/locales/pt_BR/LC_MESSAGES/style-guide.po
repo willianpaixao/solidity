@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016-2021, Ethereum
-# This file is distributed under the same license as the Solidity package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Solidity 0.8.12\n"
+"Project-Id-Version: solidity-test\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-13 16:47+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: style-guide.po\n"
+"X-Crowdin-File-ID: 43\n"
+"Language: pt_BR\n"
 
 #: ../../style-guide.rst:5 a68087cc09414edba7c06a8100d3bf6b
 msgid "Style Guide"
@@ -26,48 +27,27 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../style-guide.rst:11 19d5a6bab4a846658eb836bbf4d3953a
-msgid ""
-"This guide is intended to provide coding conventions for writing solidity"
-" code. This guide should be thought of as an evolving document that will "
-"change over time as useful conventions are found and old conventions are "
-"rendered obsolete."
+msgid "This guide is intended to provide coding conventions for writing solidity code. This guide should be thought of as an evolving document that will change over time as useful conventions are found and old conventions are rendered obsolete."
 msgstr ""
 
 #: ../../style-guide.rst:15 dc9c748b9d46411da928e1064fd575ea
-msgid ""
-"Many projects will implement their own style guides.  In the event of "
-"conflicts, project specific style guides take precedence."
+msgid "Many projects will implement their own style guides.  In the event of conflicts, project specific style guides take precedence."
 msgstr ""
 
 #: ../../style-guide.rst:18 264952e2d2c54088bb440881bf094caf
-msgid ""
-"The structure and many of the recommendations within this style guide "
-"were taken from python's `pep8 style guide "
-"<https://www.python.org/dev/peps/pep-0008/>`_."
+msgid "The structure and many of the recommendations within this style guide were taken from python's `pep8 style guide <https://www.python.org/dev/peps/pep-0008/>`_."
 msgstr ""
 
 #: ../../style-guide.rst:22 ef1d9ffa56a441eda760a5c2dd049eff
-msgid ""
-"The goal of this guide is *not* to be the right way or the best way to "
-"write solidity code.  The goal of this guide is *consistency*.  A quote "
-"from python's `pep8 <https://www.python.org/dev/peps/pep-0008/#a-foolish-"
-"consistency-is-the-hobgoblin-of-little-minds>`_ captures this concept "
-"well."
+msgid "The goal of this guide is *not* to be the right way or the best way to write solidity code.  The goal of this guide is *consistency*.  A quote from python's `pep8 <https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds>`_ captures this concept well."
 msgstr ""
 
 #: ../../style-guide.rst:29 8dcd7f4f1ab340549cc042e9247d1085
-msgid ""
-"A style guide is about consistency. Consistency with this style guide is "
-"important. Consistency within a project is more important. Consistency "
-"within one module or function is most important."
+msgid "A style guide is about consistency. Consistency with this style guide is important. Consistency within a project is more important. Consistency within one module or function is most important."
 msgstr ""
 
 #: ../../style-guide.rst:31 a14c449b9a844c5b86b7cac377b5b405
-msgid ""
-"But most importantly: **know when to be inconsistent** -- sometimes the "
-"style guide just doesn't apply. When in doubt, use your best judgement. "
-"Look at other examples and decide what looks best. And don't hesitate to "
-"ask!"
+msgid "But most importantly: **know when to be inconsistent** -- sometimes the style guide just doesn't apply. When in doubt, use your best judgement. Look at other examples and decide what looks best. And don't hesitate to ask!"
 msgstr ""
 
 #: ../../style-guide.rst:36 6a392382fc904ed799707a44e94150a4
@@ -167,9 +147,7 @@ msgid "Within a contract surround function declarations with a single blank line
 msgstr ""
 
 #: ../../style-guide.rst:97 e5ecb2b225c649959396eafd73ef6508
-msgid ""
-"Blank lines may be omitted between groups of related one-liners (such as "
-"stub functions for an abstract contract)"
+msgid "Blank lines may be omitted between groups of related one-liners (such as stub functions for an abstract contract)"
 msgstr ""
 
 #: ../../style-guide.rst:147 d5b94d9ade4b46a4961fb5072fbb0571
@@ -177,10 +155,7 @@ msgid "Maximum Line Length"
 msgstr ""
 
 #: ../../style-guide.rst:149 89ef4da8d10b4d9bb1380f9678ae4fce
-msgid ""
-"Keeping lines under the `PEP 8 recommendation "
-"<https://www.python.org/dev/peps/pep-0008/#maximum-line-length>`_ to a "
-"maximum of 79 (or 99) characters helps readers easily parse the code."
+msgid "Keeping lines under the `PEP 8 recommendation <https://www.python.org/dev/peps/pep-0008/#maximum-line-length>`_ to a maximum of 79 (or 99) characters helps readers easily parse the code."
 msgstr ""
 
 #: ../../style-guide.rst:152 bebfc46daa164c27b802dc0d32b661d2
@@ -200,9 +175,7 @@ msgid "Each argument should fall on its own line."
 msgstr ""
 
 #: ../../style-guide.rst:157 d7f6ab8bb3244c45bb43789d59f418af
-msgid ""
-"The terminating element, :code:`);`, should be placed on the final line "
-"by itself."
+msgid "The terminating element, :code:`);`, should be placed on the final line by itself."
 msgstr ""
 
 #: ../../style-guide.rst:159 176b2903d4124abcba6b2bb0474b5cfa
@@ -238,9 +211,7 @@ msgid "Order of Functions"
 msgstr ""
 
 #: ../../style-guide.rst:310 8426b9882f7b4b579372f9e56e844895
-msgid ""
-"Ordering helps readers identify which functions they can call and to find"
-" the constructor and fallback definitions easier."
+msgid "Ordering helps readers identify which functions they can call and to find the constructor and fallback definitions easier."
 msgstr ""
 
 #: ../../style-guide.rst:312 ddf33b58dc8b485b8bcc9f9c166f8a19
@@ -288,9 +259,7 @@ msgid "Avoid extraneous whitespace in the following  situations:"
 msgstr ""
 
 #: ../../style-guide.rst:399 2fe1431b19ef4adabbf0c3c8dc480d76
-msgid ""
-"Immediately inside parenthesis, brackets or braces, with the exception of"
-" single line function declarations."
+msgid "Immediately inside parenthesis, brackets or braces, with the exception of single line function declarations."
 msgstr ""
 
 #: ../../style-guide.rst:413 e78f8c4ea11848c8b3333936d44beb53
@@ -302,9 +271,7 @@ msgid "Immediately before a comma, semicolon:"
 msgstr ""
 
 #: ../../style-guide.rst:433 7abee59d4838466289b0b5474da1e2cb
-msgid ""
-"More than one space around an assignment or other operator to align with "
-"another:"
+msgid "More than one space around an assignment or other operator to align with another:"
 msgstr ""
 
 #: ../../style-guide.rst:451 a869fd66931f45ca902b296212bf60c1
@@ -316,9 +283,7 @@ msgid "Control Structures"
 msgstr ""
 
 #: ../../style-guide.rst:481 1f61d626e6fd4965813ce8109184fcf4
-msgid ""
-"The braces denoting the body of a contract, library, functions and "
-"structs should:"
+msgid "The braces denoting the body of a contract, library, functions and structs should:"
 msgstr ""
 
 #: ../../style-guide.rst:484 7752de300da3488da177546c2d00f45b
@@ -326,9 +291,7 @@ msgid "open on the same line as the declaration"
 msgstr ""
 
 #: ../../style-guide.rst:485 6d8822da3d124965a6295df9f3ca486f
-msgid ""
-"close on their own line at the same indentation level as the beginning of"
-" the declaration."
+msgid "close on their own line at the same indentation level as the beginning of the declaration."
 msgstr ""
 
 #: ../../style-guide.rst:487 ../../style-guide.rst:615
@@ -337,31 +300,19 @@ msgid "The opening brace should be preceded by a single space."
 msgstr ""
 
 #: ../../style-guide.rst:518 441f315629d24a4c98030fdceb094dde
-msgid ""
-"The same recommendations apply to the control structures ``if``, "
-"``else``, ``while``, and ``for``."
+msgid "The same recommendations apply to the control structures ``if``, ``else``, ``while``, and ``for``."
 msgstr ""
 
 #: ../../style-guide.rst:521 a01f83f23d7c486189495ea1860be6f6
-msgid ""
-"Additionally there should be a single space between the control "
-"structures ``if``, ``while``, and ``for`` and the parenthetic block "
-"representing the conditional, as well as a single space between the "
-"conditional parenthetic block and the opening brace."
+msgid "Additionally there should be a single space between the control structures ``if``, ``while``, and ``for`` and the parenthetic block representing the conditional, as well as a single space between the conditional parenthetic block and the opening brace."
 msgstr ""
 
 #: ../../style-guide.rst:553 df1388a5fd0f4cb6ba9cbdd67c1d3ccd
-msgid ""
-"For control structures whose body contains a single statement, omitting "
-"the braces is ok *if* the statement is contained on a single line."
+msgid "For control structures whose body contains a single statement, omitting the braces is ok *if* the statement is contained on a single line."
 msgstr ""
 
 #: ../../style-guide.rst:573 7b5e2488513d4517b43f51994111d761
-msgid ""
-"For ``if`` blocks which have an ``else`` or ``else if`` clause, the "
-"``else`` should be placed on the same line as the ``if``'s closing brace."
-" This is an exception compared to the rules of other block-like "
-"structures."
+msgid "For ``if`` blocks which have an ``else`` or ``else if`` clause, the ``else`` should be placed on the same line as the ``if``'s closing brace. This is an exception compared to the rules of other block-like structures."
 msgstr ""
 
 #: ../../style-guide.rst:607 6685f8753421429591cd7f3410d4962b
@@ -369,16 +320,11 @@ msgid "Function Declaration"
 msgstr ""
 
 #: ../../style-guide.rst:609 c263c2df3b3c408480dc7767c0f5e301
-msgid ""
-"For short function declarations, it is recommended for the opening brace "
-"of the function body to be kept on the same line as the function "
-"declaration."
+msgid "For short function declarations, it is recommended for the opening brace of the function body to be kept on the same line as the function declaration."
 msgstr ""
 
 #: ../../style-guide.rst:612 ef96aed4712e4be0ad863e8a0efd21d3
-msgid ""
-"The closing brace should be at the same indentation level as the function"
-" declaration."
+msgid "The closing brace should be at the same indentation level as the function declaration."
 msgstr ""
 
 #: ../../style-guide.rst:649 ce8cd79a49b8428e8cb7024b0bbbb9aa
@@ -406,38 +352,23 @@ msgid "Custom modifiers"
 msgstr ""
 
 #: ../../style-guide.rst:681 ab120a7b9abd407aa6ef9d97f4b3041b
-msgid ""
-"For long function declarations, it is recommended to drop each argument "
-"onto it's own line at the same indentation level as the function body.  "
-"The closing parenthesis and opening bracket should be placed on their own"
-" line as well at the same indentation level as the function declaration."
+msgid "For long function declarations, it is recommended to drop each argument onto it's own line at the same indentation level as the function body.  The closing parenthesis and opening bracket should be placed on their own line as well at the same indentation level as the function declaration."
 msgstr ""
 
 #: ../../style-guide.rst:731 feb8aea526d74cc09400eacd1b9a707f
-msgid ""
-"If a long function declaration has modifiers, then each modifier should "
-"be dropped to its own line."
+msgid "If a long function declaration has modifiers, then each modifier should be dropped to its own line."
 msgstr ""
 
 #: ../../style-guide.rst:786 3df166552ba14b4aaf5186abe069f9eb
-msgid ""
-"Multiline output parameters and return statements should follow the same "
-"style recommended for wrapping long lines found in the :ref:`Maximum Line"
-" Length <maximum_line_length>` section."
+msgid "Multiline output parameters and return statements should follow the same style recommended for wrapping long lines found in the :ref:`Maximum Line Length <maximum_line_length>` section."
 msgstr ""
 
 #: ../../style-guide.rst:834 85deb9684f3d4c75916b880daba16524
-msgid ""
-"For constructor functions on inherited contracts whose bases require "
-"arguments, it is recommended to drop the base constructors onto new lines"
-" in the same manner as modifiers if the function declaration is long or "
-"hard to read."
+msgid "For constructor functions on inherited contracts whose bases require arguments, it is recommended to drop the base constructors onto new lines in the same manner as modifiers if the function declaration is long or hard to read."
 msgstr ""
 
 #: ../../style-guide.rst:921 7081afdd834e4501ac08c6f1da3c3e91
-msgid ""
-"When declaring short functions with a single statement, it is permissible"
-" to do it on a single line."
+msgid "When declaring short functions with a single statement, it is permissible to do it on a single line."
 msgstr ""
 
 #: ../../style-guide.rst:923 a7cf3bf953b14e3aba2d271df5a4d41b
@@ -445,10 +376,7 @@ msgid "Permissible:"
 msgstr ""
 
 #: ../../style-guide.rst:929 8158081e0683456894071be8730dd868
-msgid ""
-"These guidelines for function declarations are intended to improve "
-"readability. Authors should use their best judgement as this guide does "
-"not try to cover all possible permutations for function declarations."
+msgid "These guidelines for function declarations are intended to improve readability. Authors should use their best judgement as this guide does not try to cover all possible permutations for function declarations."
 msgstr ""
 
 #: ../../style-guide.rst:934 8fdd54afccea4f2788a1454e19f895a8
@@ -456,10 +384,7 @@ msgid "Mappings"
 msgstr ""
 
 #: ../../style-guide.rst:936 c7b5bae7fa85434984042c0523affd51
-msgid ""
-"In variable declarations, do not separate the keyword ``mapping`` from "
-"its type by a space. Do not separate any nested ``mapping`` keyword from "
-"its type by whitespace."
+msgid "In variable declarations, do not separate the keyword ``mapping`` from its type by a space. Do not separate any nested ``mapping`` keyword from its type by whitespace."
 msgstr ""
 
 #: ../../style-guide.rst:959 51af5e41322f48dfa30acc151b50f783
@@ -467,9 +392,7 @@ msgid "Variable Declarations"
 msgstr ""
 
 #: ../../style-guide.rst:961 15aac95cfff043c2b9d3fb3407c1467e
-msgid ""
-"Declarations of array variables should not have a space between the type "
-"and the brackets."
+msgid "Declarations of array variables should not have a space between the type and the brackets."
 msgstr ""
 
 #: ../../style-guide.rst:978 4bad740ef46a41c78e21096390c02cb8
@@ -485,11 +408,7 @@ msgid "Surround operators with a single space on either side."
 msgstr ""
 
 #: ../../style-guide.rst:1018 7c1d934d1ddb47959312a888a9ace3de
-msgid ""
-"Operators with a higher priority than others can exclude surrounding "
-"whitespace in order to denote precedence.  This is meant to allow for "
-"improved readability for complex statement. You should always use the "
-"same amount of whitespace on either side of an operator:"
+msgid "Operators with a higher priority than others can exclude surrounding whitespace in order to denote precedence.  This is meant to allow for improved readability for complex statement. You should always use the same amount of whitespace on either side of an operator:"
 msgstr ""
 
 #: ../../style-guide.rst:1041 fa1590df78e4402bbc9dc915a11c931f
@@ -541,9 +460,7 @@ msgid "Functions"
 msgstr ""
 
 #: ../../style-guide.rst:1060 c5a08f95054743e9be22559b6ac8abe7
-msgid ""
-"It might be clearer to declare types close to their use in events or "
-"state variables."
+msgid "It might be clearer to declare types close to their use in events or state variables."
 msgstr ""
 
 #: ../../style-guide.rst:1065 4eb281356ff34f558d257ea815863877
@@ -551,23 +468,15 @@ msgid "Naming Conventions"
 msgstr ""
 
 #: ../../style-guide.rst:1067 258ff4059d514fd0875753beead87e2c
-msgid ""
-"Naming conventions are powerful when adopted and used broadly.  The use "
-"of different conventions can convey significant *meta* information that "
-"would otherwise not be immediately available."
+msgid "Naming conventions are powerful when adopted and used broadly.  The use of different conventions can convey significant *meta* information that would otherwise not be immediately available."
 msgstr ""
 
 #: ../../style-guide.rst:1071 092ecbf7f6e1438eab0760a3d572c80c
-msgid ""
-"The naming recommendations given here are intended to improve the "
-"readability, and thus they are not rules, but rather guidelines to try "
-"and help convey the most information through the names of things."
+msgid "The naming recommendations given here are intended to improve the readability, and thus they are not rules, but rather guidelines to try and help convey the most information through the names of things."
 msgstr ""
 
 #: ../../style-guide.rst:1075 6390228d73fd4c4485441482bb9303e4
-msgid ""
-"Lastly, consistency within a codebase should always supersede any "
-"conventions outlined in this document."
+msgid "Lastly, consistency within a codebase should always supersede any conventions outlined in this document."
 msgstr ""
 
 #: ../../style-guide.rst:1080 74aad557940845cc953b51d97c79ac3d
@@ -575,9 +484,7 @@ msgid "Naming Styles"
 msgstr ""
 
 #: ../../style-guide.rst:1082 6c5e419eebde411da4e1caa706db39e9
-msgid ""
-"To avoid confusion, the following names will be used to refer to "
-"different naming styles."
+msgid "To avoid confusion, the following names will be used to refer to different naming styles."
 msgstr ""
 
 #: ../../style-guide.rst:1085 b7742729114345f7a20882ef25957478
@@ -609,9 +516,7 @@ msgid "``CapitalizedWords`` (or CapWords)"
 msgstr ""
 
 #: ../../style-guide.rst:1092 7576dae33fdd4c1c8ce40e6f364a1d01
-msgid ""
-"``mixedCase`` (differs from CapitalizedWords by initial lowercase "
-"character!)"
+msgid "``mixedCase`` (differs from CapitalizedWords by initial lowercase character!)"
 msgstr ""
 
 #: ../../style-guide.rst:1093 be2c40a451b74695a382978405a511d8
@@ -619,12 +524,7 @@ msgid "``Capitalized_Words_With_Underscores``"
 msgstr ""
 
 #: ../../style-guide.rst:1095 6738a39ca22644a1b9b3d0de126f8bbe
-msgid ""
-"When using initialisms in CapWords, capitalize all the letters of the "
-"initialisms. Thus HTTPServerError is better than HttpServerError. When "
-"using initialisms in mixedCase, capitalize all the letters of the "
-"initialisms, except keep the first one lower case if it is the beginning "
-"of the name. Thus xmlHTTPRequest is better than XMLHTTPRequest."
+msgid "When using initialisms in CapWords, capitalize all the letters of the initialisms. Thus HTTPServerError is better than HttpServerError. When using initialisms in mixedCase, capitalize all the letters of the initialisms, except keep the first one lower case if it is the beginning of the name. Thus xmlHTTPRequest is better than XMLHTTPRequest."
 msgstr ""
 
 #: ../../style-guide.rst:1099 6c306c2483794d659940815a74ddf7a2
@@ -644,9 +544,7 @@ msgid "``I`` - Uppercase letter eye"
 msgstr ""
 
 #: ../../style-guide.rst:1105 a49f3a52266748879f837cf098734d2b
-msgid ""
-"Never use any of these for single letter variable names.  They are often "
-"indistinguishable from the numerals one and zero."
+msgid "Never use any of these for single letter variable names.  They are often indistinguishable from the numerals one and zero."
 msgstr ""
 
 #: ../../style-guide.rst:1110 e746cc7402df4efa91ac78a660435426
@@ -654,10 +552,7 @@ msgid "Contract and Library Names"
 msgstr ""
 
 #: ../../style-guide.rst:1112 ab80c8b9b0984e30b6aaf7d4465984f3
-msgid ""
-"Contracts and libraries should be named using the CapWords style. "
-"Examples: ``SimpleToken``, ``SmartBank``, ``CertificateHashRepository``, "
-"``Player``, ``Congress``, ``Owned``."
+msgid "Contracts and libraries should be named using the CapWords style. Examples: ``SimpleToken``, ``SmartBank``, ``CertificateHashRepository``, ``Player``, ``Congress``, ``Owned``."
 msgstr ""
 
 #: ../../style-guide.rst:1113 6621279ea8764611890261112ad25edc
@@ -665,17 +560,11 @@ msgid "Contract and library names should also match their filenames."
 msgstr ""
 
 #: ../../style-guide.rst:1114 96220a7520ee4f80b27f674d8512d188
-msgid ""
-"If a contract file includes multiple contracts and/or libraries, then the"
-" filename should match the *core contract*. This is not recommended "
-"however if it can be avoided."
+msgid "If a contract file includes multiple contracts and/or libraries, then the filename should match the *core contract*. This is not recommended however if it can be avoided."
 msgstr ""
 
 #: ../../style-guide.rst:1116 925464fbc9424811b683a22878a60e8d
-msgid ""
-"As shown in the example below, if the contract name is ``Congress`` and "
-"the library name is ``Owned``, then their associated filenames should be "
-"``Congress.sol`` and ``Owned.sol``."
+msgid "As shown in the example below, if the contract name is ``Congress`` and the library name is ``Owned``, then their associated filenames should be ``Congress.sol`` and ``Owned.sol``."
 msgstr ""
 
 #: ../../style-guide.rst:1143 ../../style-guide.rst:1182
@@ -688,9 +577,7 @@ msgid "Struct Names"
 msgstr ""
 
 #: ../../style-guide.rst:1200 58c401b37ba64923b099ae3c8ee40a04
-msgid ""
-"Structs should be named using the CapWords style. Examples: ``MyCoin``, "
-"``Position``, ``PositionXY``."
+msgid "Structs should be named using the CapWords style. Examples: ``MyCoin``, ``Position``, ``PositionXY``."
 msgstr ""
 
 #: ../../style-guide.rst:1204 8300173e84c34438ad3d04d544ddb86f
@@ -698,9 +585,7 @@ msgid "Event Names"
 msgstr ""
 
 #: ../../style-guide.rst:1206 6657a5a56a4b46faabca86521e4d9ce4
-msgid ""
-"Events should be named using the CapWords style. Examples: ``Deposit``, "
-"``Transfer``, ``Approval``, ``BeforeTransfer``, ``AfterTransfer``."
+msgid "Events should be named using the CapWords style. Examples: ``Deposit``, ``Transfer``, ``Approval``, ``BeforeTransfer``, ``AfterTransfer``."
 msgstr ""
 
 #: ../../style-guide.rst:1210 805aeb334bc44b1498c4316ab63d4fc6
@@ -708,9 +593,7 @@ msgid "Function Names"
 msgstr ""
 
 #: ../../style-guide.rst:1212 29f59a231d6f4f53b1550491197112c6
-msgid ""
-"Functions should use mixedCase. Examples: ``getBalance``, ``transfer``, "
-"``verifyOwner``, ``addMember``, ``changeOwner``."
+msgid "Functions should use mixedCase. Examples: ``getBalance``, ``transfer``, ``verifyOwner``, ``addMember``, ``changeOwner``."
 msgstr ""
 
 #: ../../style-guide.rst:1216 c2a7ef2fec62408886d017ac28fd3c78
@@ -718,15 +601,11 @@ msgid "Function Argument Names"
 msgstr ""
 
 #: ../../style-guide.rst:1218 060d8f09d9024abe9b5c4e33272b2653
-msgid ""
-"Function arguments should use mixedCase. Examples: ``initialSupply``, "
-"``account``, ``recipientAddress``, ``senderAddress``, ``newOwner``."
+msgid "Function arguments should use mixedCase. Examples: ``initialSupply``, ``account``, ``recipientAddress``, ``senderAddress``, ``newOwner``."
 msgstr ""
 
 #: ../../style-guide.rst:1220 ed3bb40328bd4f43812dfec44bba6270
-msgid ""
-"When writing library functions that operate on a custom struct, the "
-"struct should be the first argument and should always be named ``self``."
+msgid "When writing library functions that operate on a custom struct, the struct should be the first argument and should always be named ``self``."
 msgstr ""
 
 #: ../../style-guide.rst:1225 af8e4b5811794b5788b45e607b3141bb
@@ -734,9 +613,7 @@ msgid "Local and State Variable Names"
 msgstr ""
 
 #: ../../style-guide.rst:1227 4fbe2ba3e2c948bcb83f43e77d73b0d0
-msgid ""
-"Use mixedCase. Examples: ``totalSupply``, ``remainingSupply``, "
-"``balancesOf``, ``creatorAddress``, ``isPreSale``, ``tokenExchangeRate``."
+msgid "Use mixedCase. Examples: ``totalSupply``, ``remainingSupply``, ``balancesOf``, ``creatorAddress``, ``isPreSale``, ``tokenExchangeRate``."
 msgstr ""
 
 #: ../../style-guide.rst:1231 27e68099a09e4a9dae402636ee0f1008
@@ -744,10 +621,7 @@ msgid "Constants"
 msgstr ""
 
 #: ../../style-guide.rst:1233 8fb95dcb1c3f4306a1c87a08357d97e8
-msgid ""
-"Constants should be named with all capital letters with underscores "
-"separating words. Examples: ``MAX_BLOCKS``, ``TOKEN_NAME``, "
-"``TOKEN_TICKER``, ``CONTRACT_VERSION``."
+msgid "Constants should be named with all capital letters with underscores separating words. Examples: ``MAX_BLOCKS``, ``TOKEN_NAME``, ``TOKEN_TICKER``, ``CONTRACT_VERSION``."
 msgstr ""
 
 #: ../../style-guide.rst:1238 fb7e25dd6acf406a885e3823cd8c2dda
@@ -755,9 +629,7 @@ msgid "Modifier Names"
 msgstr ""
 
 #: ../../style-guide.rst:1240 77b5f378666341a48064d896a63f2a11
-msgid ""
-"Use mixedCase. Examples: ``onlyBy``, ``onlyAfter``, "
-"``onlyDuringThePreSale``."
+msgid "Use mixedCase. Examples: ``onlyBy``, ``onlyAfter``, ``onlyDuringThePreSale``."
 msgstr ""
 
 #: ../../style-guide.rst:1244 db22573d8a5d471ab1c80ee629a39c5e
@@ -765,10 +637,7 @@ msgid "Enums"
 msgstr ""
 
 #: ../../style-guide.rst:1246 f09f990a2e7c4a4d9c2fbaa996349b8a
-msgid ""
-"Enums, in the style of simple type declarations, should be named using "
-"the CapWords style. Examples: ``TokenGroup``, ``Frame``, ``HashStyle``, "
-"``CharacterLocation``."
+msgid "Enums, in the style of simple type declarations, should be named using the CapWords style. Examples: ``TokenGroup``, ``Frame``, ``HashStyle``, ``CharacterLocation``."
 msgstr ""
 
 #: ../../style-guide.rst:1250 e14169c4167c46ea88f385d49ba6ee4f
@@ -780,9 +649,7 @@ msgid "``single_trailing_underscore_``"
 msgstr ""
 
 #: ../../style-guide.rst:1254 6947c0255c494aec8439d54862f8d908
-msgid ""
-"This convention is suggested when the desired name collides with that of "
-"a built-in or otherwise reserved name."
+msgid "This convention is suggested when the desired name collides with that of a built-in or otherwise reserved name."
 msgstr ""
 
 #: ../../style-guide.rst:1261 b8885bc1d5c6497d83f7969773567cd4
@@ -790,29 +657,18 @@ msgid "NatSpec"
 msgstr ""
 
 #: ../../style-guide.rst:1263 ca6c058b523e4102b4b2e7cb6d0c9755
-msgid ""
-"Solidity contracts can also contain NatSpec comments. They are written "
-"with a triple slash (``///``) or a double asterisk block (``/** ... */``)"
-" and they should be used directly above function declarations or "
-"statements."
+msgid "Solidity contracts can also contain NatSpec comments. They are written with a triple slash (``///``) or a double asterisk block (``/** ... */``) and they should be used directly above function declarations or statements."
 msgstr ""
 
 #: ../../style-guide.rst:1267 2795f55f86294fcf826e2c13e879740a
-msgid ""
-"For example, the contract from :ref:`a simple smart contract <simple-"
-"smart-contract>` with the comments added looks like the one below:"
+msgid "For example, the contract from :ref:`a simple smart contract <simple-smart-contract>` with the comments added looks like the one below:"
 msgstr ""
 
 #: ../../style-guide.rst:1295 6dad3c76fb6547d28fa4c0fce6f747e6
-msgid ""
-"It is recommended that Solidity contracts are fully annotated using "
-":ref:`NatSpec <natspec>` for all public interfaces (everything in the "
-"ABI)."
+msgid "It is recommended that Solidity contracts are fully annotated using :ref:`NatSpec <natspec>` for all public interfaces (everything in the ABI)."
 msgstr ""
 
 #: ../../style-guide.rst:1297 3495aa4826fc48919bcee623903fe761
-msgid ""
-"Please see the section about :ref:`NatSpec <natspec>` for a detailed "
-"explanation."
+msgid "Please see the section about :ref:`NatSpec <natspec>` for a detailed explanation."
 msgstr ""
 

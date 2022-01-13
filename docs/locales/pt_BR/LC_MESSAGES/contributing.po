@@ -1,30 +1,29 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016-2021, Ethereum
-# This file is distributed under the same license as the Solidity package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Solidity 0.8.12\n"
+"Project-Id-Version: solidity-test\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-13 16:47+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: contributing.po\n"
+"X-Crowdin-File-ID: 71\n"
+"Language: pt_BR\n"
 
 #: ../../contributing.rst:3 b22fcba0b3dc4bacb96f82e32f55702b
 msgid "Contributing"
 msgstr ""
 
 #: ../../contributing.rst:5 d2f85859194f43b3a934ee435c823443
-msgid ""
-"Help is always welcome and there are plenty of options how you can "
-"contribute to Solidity."
+msgid "Help is always welcome and there are plenty of options how you can contribute to Solidity."
 msgstr ""
 
 #: ../../contributing.rst:7 cca1fbe9f7cb4bcea6229c033809af4c
@@ -37,12 +36,7 @@ msgstr ""
 
 #: ../../contributing.rst:10 648dfec1073e414e86dc24bfaee9cb0c
 #, python-format
-msgid ""
-"Fixing and responding to `Solidity's GitHub issues "
-"<https://github.com/ethereum/solidity/issues>`_, especially those tagged "
-"as `\"good first issue\" "
-"<https://github.com/ethereum/solidity/labels/good%20first%20issue>`_ "
-"which are meant as introductory issues for external contributors."
+msgid "Fixing and responding to `Solidity's GitHub issues <https://github.com/ethereum/solidity/issues>`_, especially those tagged as `\"good first issue\" <https://github.com/ethereum/solidity/labels/good%20first%20issue>`_ which are meant as introductory issues for external contributors."
 msgstr ""
 
 #: ../../contributing.rst:14 6813fae99c2b42b1a08412353069ea25
@@ -54,34 +48,19 @@ msgid "Translating the documentation into more languages."
 msgstr ""
 
 #: ../../contributing.rst:16 0b42dce9d1714c269b39727574cddbb9
-msgid ""
-"Responding to questions from other users on `StackExchange "
-"<https://ethereum.stackexchange.com>`_ and the `Solidity Gitter Chat "
-"<https://gitter.im/ethereum/solidity>`_."
+msgid "Responding to questions from other users on `StackExchange <https://ethereum.stackexchange.com>`_ and the `Solidity Gitter Chat <https://gitter.im/ethereum/solidity>`_."
 msgstr ""
 
 #: ../../contributing.rst:19 724374cf4561488c910264f3901fb947
-msgid ""
-"Getting involved in the language design process by proposing language "
-"changes or new features in the `Solidity forum "
-"<https://forum.soliditylang.org/>`_ and providing feedback."
+msgid "Getting involved in the language design process by proposing language changes or new features in the `Solidity forum <https://forum.soliditylang.org/>`_ and providing feedback."
 msgstr ""
 
 #: ../../contributing.rst:21 5b13139144ea4f79b58a0ab67f780ee0
-msgid ""
-"To get started, you can try :ref:`building-from-source` in order to "
-"familiarize yourself with the components of Solidity and the build "
-"process. Also, it may be useful to become well-versed at writing smart-"
-"contracts in Solidity."
+msgid "To get started, you can try :ref:`building-from-source` in order to familiarize yourself with the components of Solidity and the build process. Also, it may be useful to become well-versed at writing smart-contracts in Solidity."
 msgstr ""
 
 #: ../../contributing.rst:25 dbb0f5694b8743f8b348e6ce6bf84088
-msgid ""
-"Please note that this project is released with a `Contributor Code of "
-"Conduct "
-"<https://raw.githubusercontent.com/ethereum/solidity/develop/CODE_OF_CONDUCT.md>`_."
-" By participating in this project - in the issues, pull requests, or "
-"Gitter channels - you agree to abide by its terms."
+msgid "Please note that this project is released with a `Contributor Code of Conduct <https://raw.githubusercontent.com/ethereum/solidity/develop/CODE_OF_CONDUCT.md>`_. By participating in this project - in the issues, pull requests, or Gitter channels - you agree to abide by its terms."
 msgstr ""
 
 #: ../../contributing.rst:28 99335c8466ec49ea8cfb4ad791f3cd6f
@@ -89,10 +68,7 @@ msgid "Team Calls"
 msgstr ""
 
 #: ../../contributing.rst:30 2f796e95afbe450ca0e975281d9ed8c8
-msgid ""
-"If you have issues or pull requests to discuss, or are interested in "
-"hearing what the team and contributors are working on, you can join our "
-"public team calls:"
+msgid "If you have issues or pull requests to discuss, or are interested in hearing what the team and contributors are working on, you can join our public team calls:"
 msgstr ""
 
 #: ../../contributing.rst:33 890ae4c25d684a199b4628621da10676
@@ -112,10 +88,7 @@ msgid "How to Report Issues"
 msgstr ""
 
 #: ../../contributing.rst:41 f97028f864ba4310b3df42f8d0b6b041
-msgid ""
-"To report an issue, please use the `GitHub issues tracker "
-"<https://github.com/ethereum/solidity/issues>`_. When reporting issues, "
-"please mention the following details:"
+msgid "To report an issue, please use the `GitHub issues tracker <https://github.com/ethereum/solidity/issues>`_. When reporting issues, please mention the following details:"
 msgstr ""
 
 #: ../../contributing.rst:45 132294117aaa4d86b3ce15bc700e8fa4
@@ -139,9 +112,7 @@ msgid "Actual vs. expected behaviour."
 msgstr ""
 
 #: ../../contributing.rst:51 a8c197b1233b47d5aa5b4fa5366bcf44
-msgid ""
-"Reducing the source code that caused the issue to a bare minimum is "
-"always very helpful and sometimes even clarifies a misunderstanding."
+msgid "Reducing the source code that caused the issue to a bare minimum is always very helpful and sometimes even clarifies a misunderstanding."
 msgstr ""
 
 #: ../../contributing.rst:55 9aba63a0cf7948958ff5d0ed06fafeed
@@ -149,48 +120,27 @@ msgid "Workflow for Pull Requests"
 msgstr ""
 
 #: ../../contributing.rst:57 b3b8c2a1f6a04f9ab6721befe0a32b26
-msgid ""
-"In order to contribute, please fork off of the ``develop`` branch and "
-"make your changes there. Your commit messages should detail *why* you "
-"made your change in addition to *what* you did (unless it is a tiny "
-"change)."
+msgid "In order to contribute, please fork off of the ``develop`` branch and make your changes there. Your commit messages should detail *why* you made your change in addition to *what* you did (unless it is a tiny change)."
 msgstr ""
 
 #: ../../contributing.rst:61 43e98574832843cab4c4a405ebaee8bc
-msgid ""
-"If you need to pull in any changes from ``develop`` after making your "
-"fork (for example, to resolve potential merge conflicts), please avoid "
-"using ``git merge`` and instead, ``git rebase`` your branch. This will "
-"help us review your change more easily."
+msgid "If you need to pull in any changes from ``develop`` after making your fork (for example, to resolve potential merge conflicts), please avoid using ``git merge`` and instead, ``git rebase`` your branch. This will help us review your change more easily."
 msgstr ""
 
 #: ../../contributing.rst:66 c8001e3820ec4c2d8fd66ccf84dd5cb8
-msgid ""
-"Additionally, if you are writing a new feature, please ensure you add "
-"appropriate test cases under ``test/`` (see below)."
+msgid "Additionally, if you are writing a new feature, please ensure you add appropriate test cases under ``test/`` (see below)."
 msgstr ""
 
 #: ../../contributing.rst:69 209a2701545e4b499bfe51d09182d5f4
-msgid ""
-"However, if you are making a larger change, please consult with the "
-"`Solidity Development Gitter channel <https://gitter.im/ethereum"
-"/solidity-dev>`_ (different from the one mentioned above, this one is "
-"focused on compiler and language development instead of language usage) "
-"first."
+msgid "However, if you are making a larger change, please consult with the `Solidity Development Gitter channel <https://gitter.im/ethereum/solidity-dev>`_ (different from the one mentioned above, this one is focused on compiler and language development instead of language usage) first."
 msgstr ""
 
 #: ../../contributing.rst:73 d4e3a0a3b216480db63d5e44cec55cfc
-msgid ""
-"New features and bugfixes should be added to the ``Changelog.md`` file: "
-"please follow the style of previous entries, when applicable."
+msgid "New features and bugfixes should be added to the ``Changelog.md`` file: please follow the style of previous entries, when applicable."
 msgstr ""
 
 #: ../../contributing.rst:76 3be41fcd3f284334a9e99c850e73d1a4
-msgid ""
-"Finally, please make sure you respect the `coding style "
-"<https://github.com/ethereum/solidity/blob/develop/CODING_STYLE.md>`_ for"
-" this project. Also, even though we do CI testing, please test your code "
-"and ensure that it builds locally before submitting a pull request."
+msgid "Finally, please make sure you respect the `coding style <https://github.com/ethereum/solidity/blob/develop/CODING_STYLE.md>`_ for this project. Also, even though we do CI testing, please test your code and ensure that it builds locally before submitting a pull request."
 msgstr ""
 
 #: ../../contributing.rst:81 fc09c92bedc1457c85a9324840a64d09
@@ -206,18 +156,11 @@ msgid "Prerequisites"
 msgstr ""
 
 #: ../../contributing.rst:89 3c3a3de95e6e4334921508adb17fa1a4
-msgid ""
-"For running all compiler tests you may want to optionally install a few "
-"dependencies (`evmone <https://github.com/ethereum/evmone/releases>`_, "
-"`libz3 <https://github.com/Z3Prover/z3>`_, and `libhera "
-"<https://github.com/ewasm/hera>`_)."
+msgid "For running all compiler tests you may want to optionally install a few dependencies (`evmone <https://github.com/ethereum/evmone/releases>`_, `libz3 <https://github.com/Z3Prover/z3>`_, and `libhera <https://github.com/ewasm/hera>`_)."
 msgstr ""
 
 #: ../../contributing.rst:94 3d0b0045f2f64bf8814fce954f5dd89c
-msgid ""
-"On macOS some of the testing scripts expect GNU coreutils to be "
-"installed. This can be easiest accomplished using Homebrew: ``brew "
-"install coreutils``."
+msgid "On macOS some of the testing scripts expect GNU coreutils to be installed. This can be easiest accomplished using Homebrew: ``brew install coreutils``."
 msgstr ""
 
 #: ../../contributing.rst:98 0ed7f9e3d7434c25a8bac7fdd1cd32cb
@@ -225,82 +168,43 @@ msgid "Running the Tests"
 msgstr ""
 
 #: ../../contributing.rst:100 bf98a9f378474ef199d98982f3931e11
-msgid ""
-"Solidity includes different types of tests, most of them bundled into the"
-" `Boost C++ Test Framework "
-"<https://www.boost.org/doc/libs/release/libs/test/doc/html/index.html>`_ "
-"application ``soltest``. Running ``build/test/soltest`` or its wrapper "
-"``scripts/soltest.sh`` is sufficient for most changes."
+msgid "Solidity includes different types of tests, most of them bundled into the `Boost C++ Test Framework <https://www.boost.org/doc/libs/release/libs/test/doc/html/index.html>`_ application ``soltest``. Running ``build/test/soltest`` or its wrapper ``scripts/soltest.sh`` is sufficient for most changes."
 msgstr ""
 
 #: ../../contributing.rst:104 0788e8ebc2324828aa6669a104941a85
-msgid ""
-"The ``./scripts/tests.sh`` script executes most Solidity tests "
-"automatically, including those bundled into the `Boost C++ Test Framework"
-" <https://www.boost.org/doc/libs/release/libs/test/doc/html/index.html>`_"
-" application ``soltest`` (or its wrapper ``scripts/soltest.sh``), as well"
-" as command line tests and compilation tests."
+msgid "The ``./scripts/tests.sh`` script executes most Solidity tests automatically, including those bundled into the `Boost C++ Test Framework <https://www.boost.org/doc/libs/release/libs/test/doc/html/index.html>`_ application ``soltest`` (or its wrapper ``scripts/soltest.sh``), as well as command line tests and compilation tests."
 msgstr ""
 
 #: ../../contributing.rst:109 f6d4c89f436441b381dca8c257ad69d6
-msgid ""
-"The test system automatically tries to discover the location of the "
-"`evmone <https://github.com/ethereum/evmone/releases>`_ for running the "
-"semantic tests."
+msgid "The test system automatically tries to discover the location of the `evmone <https://github.com/ethereum/evmone/releases>`_ for running the semantic tests."
 msgstr ""
 
 #: ../../contributing.rst:112 7c15d763ffde4f79844fe262590b21a4
-msgid ""
-"The ``evmone`` library must be located in the ``deps`` or ``deps/lib`` "
-"directory relative to the current working directory, to its parent or its"
-" parent's parent. Alternatively an explicit location for the ``evmone`` "
-"shared object can be specified via the ``ETH_EVMONE`` environment "
-"variable."
+msgid "The ``evmone`` library must be located in the ``deps`` or ``deps/lib`` directory relative to the current working directory, to its parent or its parent's parent. Alternatively an explicit location for the ``evmone`` shared object can be specified via the ``ETH_EVMONE`` environment variable."
 msgstr ""
 
 #: ../../contributing.rst:116 47f6e5c57fd8411b88d889addb372098
-msgid ""
-"``evmone`` is needed mainly for running semantic and gas tests. If you do"
-" not have it installed, you can skip these tests by passing the ``--no-"
-"semantic-tests`` flag to ``scripts/soltest.sh``."
+msgid "``evmone`` is needed mainly for running semantic and gas tests. If you do not have it installed, you can skip these tests by passing the ``--no-semantic-tests`` flag to ``scripts/soltest.sh``."
 msgstr ""
 
 #: ../../contributing.rst:120 0bca402602424ccf9496cb2fb631ee12
-msgid ""
-"Running Ewasm tests is disabled by default and can be explicitly enabled "
-"via ``./scripts/soltest.sh --ewasm`` and requires `hera "
-"<https://github.com/ewasm/hera>`_ to be found by ``soltest``. The "
-"mechanism for locating the ``hera`` library is the same as for "
-"``evmone``, except that the variable for specifying an explicit location "
-"is called ``ETH_HERA``."
+msgid "Running Ewasm tests is disabled by default and can be explicitly enabled via ``./scripts/soltest.sh --ewasm`` and requires `hera <https://github.com/ewasm/hera>`_ to be found by ``soltest``. The mechanism for locating the ``hera`` library is the same as for ``evmone``, except that the variable for specifying an explicit location is called ``ETH_HERA``."
 msgstr ""
 
 #: ../../contributing.rst:126 b84d2d886f1d45eab669ecec0037c77e
-msgid ""
-"The ``evmone`` and ``hera`` libraries should both end with the file name "
-"extension ``.so`` on Linux, ``.dll`` on Windows systems and ``.dylib`` on"
-" macOS."
+msgid "The ``evmone`` and ``hera`` libraries should both end with the file name extension ``.so`` on Linux, ``.dll`` on Windows systems and ``.dylib`` on macOS."
 msgstr ""
 
 #: ../../contributing.rst:129 ba378c40a2874f25a46b98a538294254
-msgid ""
-"For running SMT tests, the ``libz3`` library must be installed and "
-"locatable by ``cmake`` during compiler configure stage."
+msgid "For running SMT tests, the ``libz3`` library must be installed and locatable by ``cmake`` during compiler configure stage."
 msgstr ""
 
 #: ../../contributing.rst:132 030b12f94953498d9edd5709d88d64ff
-msgid ""
-"If the ``libz3`` library is not installed on your system, you should "
-"disable the SMT tests by exporting ``SMT_FLAGS=--no-smt`` before running "
-"``./scripts/tests.sh`` or running ``./scripts/soltest.sh --no-smt``. "
-"These tests are ``libsolidity/smtCheckerTests`` and "
-"``libsolidity/smtCheckerTestsJSON``."
+msgid "If the ``libz3`` library is not installed on your system, you should disable the SMT tests by exporting ``SMT_FLAGS=--no-smt`` before running ``./scripts/tests.sh`` or running ``./scripts/soltest.sh --no-smt``. These tests are ``libsolidity/smtCheckerTests`` and ``libsolidity/smtCheckerTestsJSON``."
 msgstr ""
 
 #: ../../contributing.rst:139 82f41eddc9244373bf356cfe6bbba99e
-msgid ""
-"To get a list of all unit tests run by Soltest, run "
-"``./build/test/soltest --list_content=HRF``."
+msgid "To get a list of all unit tests run by Soltest, run ``./build/test/soltest --list_content=HRF``."
 msgstr ""
 
 #: ../../contributing.rst:141 5ffbe04411dd414b820fa7266a3b8ff1
@@ -308,22 +212,15 @@ msgid "For quicker results you can run a subset of, or specific tests."
 msgstr ""
 
 #: ../../contributing.rst:143 a551e5caa9e24867bb1b91cc96472e9e
-msgid ""
-"To run a subset of tests, you can use filters: ``./scripts/soltest.sh -t "
-"TestSuite/TestName``, where ``TestName`` can be a wildcard ``*``."
+msgid "To run a subset of tests, you can use filters: ``./scripts/soltest.sh -t TestSuite/TestName``, where ``TestName`` can be a wildcard ``*``."
 msgstr ""
 
 #: ../../contributing.rst:147 b292b2a97dc346bdaf1f59659d26955d
-msgid ""
-"Or, for example, to run all the tests for the yul disambiguator: "
-"``./scripts/soltest.sh -t \"yulOptimizerTests/disambiguator/*\" --no-"
-"smt``."
+msgid "Or, for example, to run all the tests for the yul disambiguator: ``./scripts/soltest.sh -t \"yulOptimizerTests/disambiguator/*\" --no-smt``."
 msgstr ""
 
 #: ../../contributing.rst:150 9cfded3810134615a694d6950d187457
-msgid ""
-"``./build/test/soltest --help`` has extensive help on all of the options "
-"available."
+msgid "``./build/test/soltest --help`` has extensive help on all of the options available."
 msgstr ""
 
 #: ../../contributing.rst:152 d897d7bed8c345749ba912ef1af5ddeb
@@ -331,40 +228,23 @@ msgid "See especially:"
 msgstr ""
 
 #: ../../contributing.rst:154 8cfd8a6d91d94827a461f79a148a82b9
-msgid ""
-"`show_progress (-p) "
-"<https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/show_progress.html>`_"
-" to show test completion,"
+msgid "`show_progress (-p) <https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/show_progress.html>`_ to show test completion,"
 msgstr ""
 
 #: ../../contributing.rst:155 95b75c2a956442da83fa6a5ae0479ea1
-msgid ""
-"`run_test (-t) "
-"<https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/run_test.html>`_"
-" to run specific tests cases, and"
+msgid "`run_test (-t) <https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/run_test.html>`_ to run specific tests cases, and"
 msgstr ""
 
 #: ../../contributing.rst:156 86394e58b44546bebecfebf03e0091a5
-msgid ""
-"`report-level (-r) "
-"<https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/report_level.html>`_"
-" give a more detailed report."
+msgid "`report-level (-r) <https://www.boost.org/doc/libs/release/libs/test/doc/html/boost_test/utf_reference/rt_param_reference/report_level.html>`_ give a more detailed report."
 msgstr ""
 
 #: ../../contributing.rst:160 c3b1c04cdf4f4ea59fb2c9fd7982f57b
-msgid ""
-"Those working in a Windows environment wanting to run the above basic "
-"sets without libz3. Using Git Bash, you use: "
-"``./build/test/Release/soltest.exe -- --no-smt``. If you are running this"
-" in plain Command Prompt, use ``.\\build\\test\\Release\\soltest.exe -- "
-"--no-smt``."
+msgid "Those working in a Windows environment wanting to run the above basic sets without libz3. Using Git Bash, you use: ``./build/test/Release/soltest.exe -- --no-smt``. If you are running this in plain Command Prompt, use ``.\\build\\test\\Release\\soltest.exe -- --no-smt``."
 msgstr ""
 
 #: ../../contributing.rst:164 95a44e6aa2e74f238e6651dd31d8d3e7
-msgid ""
-"If you want to debug using GDB, make sure you build differently than the "
-"\"usual\". For example, you could run the following command in your "
-"``build`` folder: .. code-block:: bash"
+msgid "If you want to debug using GDB, make sure you build differently than the \"usual\". For example, you could run the following command in your ``build`` folder: .. code-block:: bash"
 msgstr ""
 
 #: ../../contributing.rst:168 8d1ac061c1a6458f84d38718b860821a
@@ -372,16 +252,11 @@ msgid "cmake -DCMAKE_BUILD_TYPE=Debug .. make"
 msgstr ""
 
 #: ../../contributing.rst:171 36ccf21be51d4508ac96bfebdf2d33ef
-msgid ""
-"This creates symbols so that when you debug a test using the ``--debug`` "
-"flag, you have access to functions and variables in which you can break "
-"or print with."
+msgid "This creates symbols so that when you debug a test using the ``--debug`` flag, you have access to functions and variables in which you can break or print with."
 msgstr ""
 
 #: ../../contributing.rst:174 a7e5026071c54154ba0a9d647c8f7647
-msgid ""
-"The CI runs additional tests (including ``solc-js`` and testing third "
-"party Solidity frameworks) that require compiling the Emscripten target."
+msgid "The CI runs additional tests (including ``solc-js`` and testing third party Solidity frameworks) that require compiling the Emscripten target."
 msgstr ""
 
 #: ../../contributing.rst:178 45ead4be20a9469d898e2593a8cd04fd
@@ -389,44 +264,23 @@ msgid "Writing and Running Syntax Tests"
 msgstr ""
 
 #: ../../contributing.rst:180 ccd798e768f946b0a26305e5b2474d2e
-msgid ""
-"Syntax tests check that the compiler generates the correct error messages"
-" for invalid code and properly accepts valid code. They are stored in "
-"individual files inside the ``tests/libsolidity/syntaxTests`` folder. "
-"These files must contain annotations, stating the expected result(s) of "
-"the respective test. The test suite compiles and checks them against the "
-"given expectations."
+msgid "Syntax tests check that the compiler generates the correct error messages for invalid code and properly accepts valid code. They are stored in individual files inside the ``tests/libsolidity/syntaxTests`` folder. These files must contain annotations, stating the expected result(s) of the respective test. The test suite compiles and checks them against the given expectations."
 msgstr ""
 
 #: ../../contributing.rst:186 7b31e694039e497097a622fbf85646e1
-msgid ""
-"For example: "
-"``./test/libsolidity/syntaxTests/double_stateVariable_declaration.sol``"
+msgid "For example: ``./test/libsolidity/syntaxTests/double_stateVariable_declaration.sol``"
 msgstr ""
 
 #: ../../contributing.rst:197 1fb07a8d20a84935881fe59c73ea905b
-msgid ""
-"A syntax test must contain at least the contract under test itself, "
-"followed by the separator ``// ----``. The comments that follow the "
-"separator are used to describe the expected compiler errors or warnings. "
-"The number range denotes the location in the source where the error "
-"occurred. If you want the contract to compile without any errors or "
-"warning you can leave out the separator and the comments that follow it."
+msgid "A syntax test must contain at least the contract under test itself, followed by the separator ``// ----``. The comments that follow the separator are used to describe the expected compiler errors or warnings. The number range denotes the location in the source where the error occurred. If you want the contract to compile without any errors or warning you can leave out the separator and the comments that follow it."
 msgstr ""
 
 #: ../../contributing.rst:202 2486d664d86c4df483a64b5fbef2571b
-msgid ""
-"In the above example, the state variable ``variable`` was declared twice,"
-" which is not allowed. This results in a ``DeclarationError`` stating "
-"that the identifier was already declared."
+msgid "In the above example, the state variable ``variable`` was declared twice, which is not allowed. This results in a ``DeclarationError`` stating that the identifier was already declared."
 msgstr ""
 
 #: ../../contributing.rst:204 fb3e398f37a24db8ac9b9fe13aabf7c9
-msgid ""
-"The ``isoltest`` tool is used for these tests and you can find it under "
-"``./build/test/tools/``. It is an interactive tool which allows editing "
-"of failing contracts using your preferred text editor. Let's try to break"
-" this test by removing the second declaration of ``variable``:"
+msgid "The ``isoltest`` tool is used for these tests and you can find it under ``./build/test/tools/``. It is an interactive tool which allows editing of failing contracts using your preferred text editor. Let's try to break this test by removing the second declaration of ``variable``:"
 msgstr ""
 
 #: ../../contributing.rst:215 365adf49865245c7be6ef4c1f4f32f54
@@ -434,10 +288,7 @@ msgid "Running ``./build/test/tools/isoltest`` again results in a test failure:"
 msgstr ""
 
 #: ../../contributing.rst:231 c58fe71e991447439bb4e19d4212a9cc
-msgid ""
-"``isoltest`` prints the expected result next to the obtained result, and "
-"also provides a way to edit, update or skip the current contract file, or"
-" quit the application."
+msgid "``isoltest`` prints the expected result next to the obtained result, and also provides a way to edit, update or skip the current contract file, or quit the application."
 msgstr ""
 
 #: ../../contributing.rst:234 55970472996a4d9d85c2960195b8afc4
@@ -445,18 +296,11 @@ msgid "It offers several options for failing tests:"
 msgstr ""
 
 #: ../../contributing.rst:236 ba97e465069345b4b09be3f11a2ea30d
-msgid ""
-"``edit``: ``isoltest`` tries to open the contract in an editor so you can"
-" adjust it. It either uses the editor given on the command line (as "
-"``isoltest --editor /path/to/editor``), in the environment variable "
-"``EDITOR`` or just ``/usr/bin/editor`` (in that order)."
+msgid "``edit``: ``isoltest`` tries to open the contract in an editor so you can adjust it. It either uses the editor given on the command line (as ``isoltest --editor /path/to/editor``), in the environment variable ``EDITOR`` or just ``/usr/bin/editor`` (in that order)."
 msgstr ""
 
 #: ../../contributing.rst:237 9c854b308d8d4a7e82158dc3e33599b3
-msgid ""
-"``update``: Updates the expectations for contract under test. This "
-"updates the annotations by removing unmet expectations and adding missing"
-" expectations. The test is then run again."
+msgid "``update``: Updates the expectations for contract under test. This updates the annotations by removing unmet expectations and adding missing expectations. The test is then run again."
 msgstr ""
 
 #: ../../contributing.rst:238 e00432632127444e90eea23fc5c38ad7
@@ -468,9 +312,7 @@ msgid "``quit``: Quits ``isoltest``."
 msgstr ""
 
 #: ../../contributing.rst:241 bb4d2c65d1e14f77a44b56b4a61a4c7f
-msgid ""
-"All of these options apply to the current contract, expect ``quit`` which"
-" stops the entire testing process."
+msgid "All of these options apply to the current contract, expect ``quit`` which stops the entire testing process."
 msgstr ""
 
 #: ../../contributing.rst:243 894257aa17cb42d8b893f8d6d0f3b215
@@ -482,11 +324,7 @@ msgid "and re-run the test. It now passes again:"
 msgstr ""
 
 #: ../../contributing.rst:262 8d4ae988fd9242eb9f620e6c8a9f00ec
-msgid ""
-"Choose a name for the contract file that explains what it tests, e.g. "
-"``double_variable_declaration.sol``. Do not put more than one contract "
-"into a single file, unless you are testing inheritance or cross-contract "
-"calls. Each file should test one aspect of your new feature."
+msgid "Choose a name for the contract file that explains what it tests, e.g. ``double_variable_declaration.sol``. Do not put more than one contract into a single file, unless you are testing inheritance or cross-contract calls. Each file should test one aspect of your new feature."
 msgstr ""
 
 #: ../../contributing.rst:268 d78c49148867475c837a9c54d272f32f
@@ -494,58 +332,31 @@ msgid "Running the Fuzzer via AFL"
 msgstr ""
 
 #: ../../contributing.rst:270 6fdd8f04280a466b867311638e4114c1
-msgid ""
-"Fuzzing is a technique that runs programs on more or less random inputs "
-"to find exceptional execution states (segmentation faults, exceptions, "
-"etc). Modern fuzzers are clever and run a directed search inside the "
-"input. We have a specialized binary called ``solfuzzer`` which takes "
-"source code as input and fails whenever it encounters an internal "
-"compiler error, segmentation fault or similar, but does not fail if e.g.,"
-" the code contains an error. This way, fuzzing tools can find internal "
-"problems in the compiler."
+msgid "Fuzzing is a technique that runs programs on more or less random inputs to find exceptional execution states (segmentation faults, exceptions, etc). Modern fuzzers are clever and run a directed search inside the input. We have a specialized binary called ``solfuzzer`` which takes source code as input and fails whenever it encounters an internal compiler error, segmentation fault or similar, but does not fail if e.g., the code contains an error. This way, fuzzing tools can find internal problems in the compiler."
 msgstr ""
 
 #: ../../contributing.rst:276 7576e3ee890343e488610449a99052ae
-msgid ""
-"We mainly use `AFL <https://lcamtuf.coredump.cx/afl/>`_ for fuzzing. You "
-"need to download and install the AFL packages from your repositories "
-"(afl, afl-clang) or build them manually. Next, build Solidity (or just "
-"the ``solfuzzer`` binary) with AFL as your compiler:"
+msgid "We mainly use `AFL <https://lcamtuf.coredump.cx/afl/>`_ for fuzzing. You need to download and install the AFL packages from your repositories (afl, afl-clang) or build them manually. Next, build Solidity (or just the ``solfuzzer`` binary) with AFL as your compiler:"
 msgstr ""
 
 #: ../../contributing.rst:288 396ea41de8ef4bb78b2aa0355350cf90
-msgid ""
-"At this stage you should be able to see a message similar to the "
-"following:"
+msgid "At this stage you should be able to see a message similar to the following:"
 msgstr ""
 
 #: ../../contributing.rst:299 94512f3a1977429d8d4112fb6c414f41
-msgid ""
-"If the instrumentation messages did not appear, try switching the cmake "
-"flags pointing to AFL's clang binaries:"
+msgid "If the instrumentation messages did not appear, try switching the cmake flags pointing to AFL's clang binaries:"
 msgstr ""
 
 #: ../../contributing.rst:308 33939b2c09e648c6bffe5db7adafdb3d
-msgid ""
-"Otherwise, upon execution the fuzzer halts with an error saying binary is"
-" not instrumented:"
+msgid "Otherwise, upon execution the fuzzer halts with an error saying binary is not instrumented:"
 msgstr ""
 
 #: ../../contributing.rst:330 0ee143fe1cde423eaabb420e95607656
-msgid ""
-"Next, you need some example source files. This makes it much easier for "
-"the fuzzer to find errors. You can either copy some files from the syntax"
-" tests or extract test files from the documentation or the other tests:"
+msgid "Next, you need some example source files. This makes it much easier for the fuzzer to find errors. You can either copy some files from the syntax tests or extract test files from the documentation or the other tests:"
 msgstr ""
 
 #: ../../contributing.rst:343 65621c3bcc034ded850a0c43a7debdea
-msgid ""
-"The AFL documentation states that the corpus (the initial input files) "
-"should not be too large. The files themselves should not be larger than 1"
-" kB and there should be at most one input file per functionality, so "
-"better start with a small number of. There is also a tool called ``afl-"
-"cmin`` that can trim input files that result in similar behaviour of the "
-"binary."
+msgid "The AFL documentation states that the corpus (the initial input files) should not be too large. The files themselves should not be larger than 1 kB and there should be at most one input file per functionality, so better start with a small number of. There is also a tool called ``afl-cmin`` that can trim input files that result in similar behaviour of the binary."
 msgstr ""
 
 #: ../../contributing.rst:349 bffd4234d64f4afbb66eaaa77b320207
@@ -553,11 +364,7 @@ msgid "Now run the fuzzer (the ``-m`` extends the size of memory to 60 MB):"
 msgstr ""
 
 #: ../../contributing.rst:355 0992008f8bdc4ee3a582b3bcbe39414c
-msgid ""
-"The fuzzer creates source files that lead to failures in "
-"``/tmp/fuzzer_reports``. Often it finds many similar source files that "
-"produce the same error. You can use the tool ``scripts/uniqueErrors.sh`` "
-"to filter out the unique errors."
+msgid "The fuzzer creates source files that lead to failures in ``/tmp/fuzzer_reports``. Often it finds many similar source files that produce the same error. You can use the tool ``scripts/uniqueErrors.sh`` to filter out the unique errors."
 msgstr ""
 
 #: ../../contributing.rst:360 11059a79f2524fd1bde0e9ad04b48321
@@ -565,21 +372,11 @@ msgid "Whiskers"
 msgstr ""
 
 #: ../../contributing.rst:362 1a28d7ced97d4fef9ac91e63640f1ccd
-msgid ""
-"*Whiskers* is a string templating system similar to `Mustache "
-"<https://mustache.github.io>`_. It is used by the compiler in various "
-"places to aid readability, and thus maintainability and verifiability, of"
-" the code."
+msgid "*Whiskers* is a string templating system similar to `Mustache <https://mustache.github.io>`_. It is used by the compiler in various places to aid readability, and thus maintainability and verifiability, of the code."
 msgstr ""
 
 #: ../../contributing.rst:365 e0ffabf76a384c5d91eb30de04d6bcaa
-msgid ""
-"The syntax comes with a substantial difference to Mustache. The template "
-"markers ``{{`` and ``}}`` are replaced by ``<`` and ``>`` in order to aid"
-" parsing and avoid conflicts with :ref:`yul` (The symbols ``<`` and ``>``"
-" are invalid in inline assembly, while ``{`` and ``}`` are used to "
-"delimit blocks). Another limitation is that lists are only resolved one "
-"depth and they do not recurse. This may change in the future."
+msgid "The syntax comes with a substantial difference to Mustache. The template markers ``{{`` and ``}}`` are replaced by ``<`` and ``>`` in order to aid parsing and avoid conflicts with :ref:`yul` (The symbols ``<`` and ``>`` are invalid in inline assembly, while ``{`` and ``}`` are used to delimit blocks). Another limitation is that lists are only resolved one depth and they do not recurse. This may change in the future."
 msgstr ""
 
 #: ../../contributing.rst:370 e145aaf348d74999a6e7cedab77feb78
@@ -587,23 +384,11 @@ msgid "A rough specification is the following:"
 msgstr ""
 
 #: ../../contributing.rst:372 cadfab58810f4c48a4ae4c9952f16403
-msgid ""
-"Any occurrence of ``<name>`` is replaced by the string-value of the "
-"supplied variable ``name`` without any escaping and without iterated "
-"replacements. An area can be delimited by ``<#name>...</name>``. It is "
-"replaced by as many concatenations of its contents as there were sets of "
-"variables supplied to the template system, each time replacing any "
-"``<inner>`` items by their respective value. Top-level variables can also"
-" be used inside such areas."
+msgid "Any occurrence of ``<name>`` is replaced by the string-value of the supplied variable ``name`` without any escaping and without iterated replacements. An area can be delimited by ``<#name>...</name>``. It is replaced by as many concatenations of its contents as there were sets of variables supplied to the template system, each time replacing any ``<inner>`` items by their respective value. Top-level variables can also be used inside such areas."
 msgstr ""
 
 #: ../../contributing.rst:378 3f2416da5fb3408cb1ff0b2aff8b0f29
-msgid ""
-"There are also conditionals of the form ``<?name>...<!name>...</name>``, "
-"where template replacements continue recursively either in the first or "
-"the second segment depending on the value of the boolean parameter "
-"``name``. If ``<?+name>...<!+name>...</+name>`` is used, then the check "
-"is whether the string parameter ``name`` is non-empty."
+msgid "There are also conditionals of the form ``<?name>...<!name>...</name>``, where template replacements continue recursively either in the first or the second segment depending on the value of the boolean parameter ``name``. If ``<?+name>...<!+name>...</+name>`` is used, then the check is whether the string parameter ``name`` is non-empty."
 msgstr ""
 
 #: ../../contributing.rst:386 a9cf74b54943429ca11ac6c16b1e5b35
@@ -611,9 +396,7 @@ msgid "Documentation Style Guide"
 msgstr ""
 
 #: ../../contributing.rst:388 f1e7517fc4dd46babcabd2b3d478a8e4
-msgid ""
-"In the following section you find style recommendations specifically "
-"focusing on documentation contributions to Solidity."
+msgid "In the following section you find style recommendations specifically focusing on documentation contributions to Solidity."
 msgstr ""
 
 #: ../../contributing.rst:392 aa4df3ab65524568868a535e78c0d27d
@@ -621,38 +404,23 @@ msgid "English Language"
 msgstr ""
 
 #: ../../contributing.rst:394 b6e4fcc680a44a6c85ca3a519c274b63
-msgid ""
-"Use English, with British English spelling preferred, unless using "
-"project or brand names. Try to reduce the usage of local slang and "
-"references, making your language as clear to all readers as possible. "
-"Below are some references to help:"
+msgid "Use English, with British English spelling preferred, unless using project or brand names. Try to reduce the usage of local slang and references, making your language as clear to all readers as possible. Below are some references to help:"
 msgstr ""
 
 #: ../../contributing.rst:397 f976538aa6044f818d46302839f137a7
-msgid ""
-"`Simplified technical English "
-"<https://en.wikipedia.org/wiki/Simplified_Technical_English>`_"
+msgid "`Simplified technical English <https://en.wikipedia.org/wiki/Simplified_Technical_English>`_"
 msgstr ""
 
 #: ../../contributing.rst:398 5c4b86c2fd9f4cacb20879c848628268
-msgid ""
-"`International English "
-"<https://en.wikipedia.org/wiki/International_English>`_"
+msgid "`International English <https://en.wikipedia.org/wiki/International_English>`_"
 msgstr ""
 
 #: ../../contributing.rst:399 a62d69a9dfe941e7930cb0aef1c5cf35
-msgid ""
-"`British English spelling <https://en.oxforddictionaries.com/spelling"
-"/british-and-spelling>`_"
+msgid "`British English spelling <https://en.oxforddictionaries.com/spelling/british-and-spelling>`_"
 msgstr ""
 
 #: ../../contributing.rst:404 3bd928ef7a63401d93098d880cbfc408
-msgid ""
-"While the official Solidity documentation is written in English, there "
-"are community contributed :ref:`translations` in other languages "
-"available. Please refer to the `translation guide <https://github.com"
-"/solidity-docs/translation-guide>`_ for information on how to contribute "
-"to the community translations."
+msgid "While the official Solidity documentation is written in English, there are community contributed :ref:`translations` in other languages available. Please refer to the `translation guide <https://github.com/solidity-docs/translation-guide>`_ for information on how to contribute to the community translations."
 msgstr ""
 
 #: ../../contributing.rst:409 790dcf4b955b4da1aea44a2604ca6545
@@ -660,10 +428,7 @@ msgid "Title Case for Headings"
 msgstr ""
 
 #: ../../contributing.rst:411 7d1808e8dc7e4106bdee6b1e5b03e42c
-msgid ""
-"Use `title case <https://titlecase.com>`_ for headings. This means "
-"capitalise all principal words in titles, but not articles, conjunctions,"
-" and prepositions unless they start the title."
+msgid "Use `title case <https://titlecase.com>`_ for headings. This means capitalise all principal words in titles, but not articles, conjunctions, and prepositions unless they start the title."
 msgstr ""
 
 #: ../../contributing.rst:415 dfa007bfb9994e0ca0db7093bb4d047a
@@ -707,11 +472,7 @@ msgid "Active and Passive Voice"
 msgstr ""
 
 #: ../../contributing.rst:433 586ffba2c029423086be6d53615ae282
-msgid ""
-"Active voice is typically recommended for tutorial style documentation as"
-" it helps the reader understand who or what is performing a task. "
-"However, as the Solidity documentation is a mixture of tutorials and "
-"reference content, passive voice is sometimes more applicable."
+msgid "Active voice is typically recommended for tutorial style documentation as it helps the reader understand who or what is performing a task. However, as the Solidity documentation is a mixture of tutorials and reference content, passive voice is sometimes more applicable."
 msgstr ""
 
 #: ../../contributing.rst:438 9e893c2dc7c94936ab03bba3f9d8cb72
@@ -719,39 +480,27 @@ msgid "As a summary:"
 msgstr ""
 
 #: ../../contributing.rst:440 ff4d9560d3f741668fe68a869c6fefde
-msgid ""
-"Use passive voice for technical reference, for example language "
-"definition and internals of the Ethereum VM."
+msgid "Use passive voice for technical reference, for example language definition and internals of the Ethereum VM."
 msgstr ""
 
 #: ../../contributing.rst:441 f0843ac1bafa49909f8c255085d0a96c
-msgid ""
-"Use active voice when describing recommendations on how to apply an "
-"aspect of Solidity."
+msgid "Use active voice when describing recommendations on how to apply an aspect of Solidity."
 msgstr ""
 
 #: ../../contributing.rst:443 10c6c0f49fa7419389d2b3d86756c86e
-msgid ""
-"For example, the below is in passive voice as it specifies an aspect of "
-"Solidity:"
+msgid "For example, the below is in passive voice as it specifies an aspect of Solidity:"
 msgstr ""
 
 #: ../../contributing.rst:445 affce11f6beb4afa80e60c2a41b0cc57
-msgid ""
-"Functions can be declared ``pure`` in which case they promise not to read"
-" from or modify the state."
+msgid "Functions can be declared ``pure`` in which case they promise not to read from or modify the state."
 msgstr ""
 
 #: ../../contributing.rst:448 651d875191aa434db59a5e754bc63df3
-msgid ""
-"For example, the below is in active voice as it discusses an application "
-"of Solidity:"
+msgid "For example, the below is in active voice as it discusses an application of Solidity:"
 msgstr ""
 
 #: ../../contributing.rst:450 7fab04883bd942ea910eabfe69e6e339
-msgid ""
-"When invoking the compiler, you can specify how to discover the first "
-"element of a path, and also path prefix remappings."
+msgid "When invoking the compiler, you can specify how to discover the first element of a path, and also path prefix remappings."
 msgstr ""
 
 #: ../../contributing.rst:454 0e0802bb8c2c44ac9b4b57867f042181
@@ -759,9 +508,7 @@ msgid "Common Terms"
 msgstr ""
 
 #: ../../contributing.rst:456 8eddcaf009ad4ec2883696ec6f3e067a
-msgid ""
-"\"Function parameters\" and \"return variables\", not input and output "
-"parameters."
+msgid "\"Function parameters\" and \"return variables\", not input and output parameters."
 msgstr ""
 
 #: ../../contributing.rst:459 e400d1fd8a57495fa2817446e1f0e671
@@ -769,19 +516,11 @@ msgid "Code Examples"
 msgstr ""
 
 #: ../../contributing.rst:461 d32a60c09792432abb5041b2ed6964ee
-msgid ""
-"A CI process tests all code block formatted code examples that begin with"
-" ``pragma solidity``, ``contract``, ``library`` or ``interface`` using "
-"the ``./test/cmdlineTests.sh`` script when you create a PR. If you are "
-"adding new code examples, ensure they work and pass tests before creating"
-" the PR."
+msgid "A CI process tests all code block formatted code examples that begin with ``pragma solidity``, ``contract``, ``library`` or ``interface`` using the ``./test/cmdlineTests.sh`` script when you create a PR. If you are adding new code examples, ensure they work and pass tests before creating the PR."
 msgstr ""
 
 #: ../../contributing.rst:465 42102b7c8f8e46378267d9e6c2fcc254
-msgid ""
-"Ensure that all code examples begin with a ``pragma`` version that spans "
-"the largest where the contract code is valid. For example ``pragma "
-"solidity >=0.4.0 <0.9.0;``."
+msgid "Ensure that all code examples begin with a ``pragma`` version that spans the largest where the contract code is valid. For example ``pragma solidity >=0.4.0 <0.9.0;``."
 msgstr ""
 
 #: ../../contributing.rst:469 1be19619415a445d9bda005ae4218677
@@ -789,10 +528,7 @@ msgid "Running Documentation Tests"
 msgstr ""
 
 #: ../../contributing.rst:471 5a2be0f96bd1440f8e79275e0df80934
-msgid ""
-"Make sure your contributions pass our documentation tests by running "
-"``./scripts/docs.sh`` that installs dependencies needed for documentation"
-" and checks for any problems such as broken links or syntax issues."
+msgid "Make sure your contributions pass our documentation tests by running ``./scripts/docs.sh`` that installs dependencies needed for documentation and checks for any problems such as broken links or syntax issues."
 msgstr ""
 
 #: ../../contributing.rst:475 935aee029afb449ead8de37c6e3bf827
@@ -800,63 +536,34 @@ msgid "Solidity Language Design"
 msgstr ""
 
 #: ../../contributing.rst:477 ef0b486652a74c68829793d6773b43bc
-msgid ""
-"To actively get involved in the language design process and share your "
-"ideas concerning the future of Solidity, please join the `Solidity forum "
-"<https://forum.soliditylang.org/>`_."
+msgid "To actively get involved in the language design process and share your ideas concerning the future of Solidity, please join the `Solidity forum <https://forum.soliditylang.org/>`_."
 msgstr ""
 
 #: ../../contributing.rst:480 960ac5f602944da6966d2dd62679b872
-msgid ""
-"The Solidity forum serves as the place to propose and discuss new "
-"language features and their implementation in the early stages of "
-"ideation or modifications of existing features."
+msgid "The Solidity forum serves as the place to propose and discuss new language features and their implementation in the early stages of ideation or modifications of existing features."
 msgstr ""
 
 #: ../../contributing.rst:483 4db45d9e9f9f47a4a9a209546f94ed14
-msgid ""
-"As soon as proposals get more tangible, their implementation will also be"
-" discussed in the `Solidity GitHub repository "
-"<https://github.com/ethereum/solidity>`_ in the form of issues."
+msgid "As soon as proposals get more tangible, their implementation will also be discussed in the `Solidity GitHub repository <https://github.com/ethereum/solidity>`_ in the form of issues."
 msgstr ""
 
 #: ../../contributing.rst:487 4a36e90e8372453dbff94f83f940efa2
-msgid ""
-"In addition to the forum and issue discussions, we regularly host "
-"language design discussion calls in which selected topics, issues or "
-"feature implementations are debated in detail. The invitation to those "
-"calls is shared via the forum."
+msgid "In addition to the forum and issue discussions, we regularly host language design discussion calls in which selected topics, issues or feature implementations are debated in detail. The invitation to those calls is shared via the forum."
 msgstr ""
 
 #: ../../contributing.rst:490 2534d7f3e4e84a16971bdff858385ef6
-msgid ""
-"We are also sharing feedback surveys and other content that is relevant "
-"to language design in the forum."
+msgid "We are also sharing feedback surveys and other content that is relevant to language design in the forum."
 msgstr ""
 
 #: ../../contributing.rst:492 1ea966e391b24b7ba6d8aca499e4805b
-msgid ""
-"If you want to know where the team is standing in terms or implementing "
-"new features, you can follow the implementation status in the `Solidity "
-"Github project <https://github.com/ethereum/solidity/projects/43>`_. "
-"Issues in the design backlog need further specification and will either "
-"be discussed in a language design call or in a regular team call. You can"
-" see the upcoming changes for the next breaking release by changing from "
-"the default branch (`develop`) to the `breaking branch "
-"<https://github.com/ethereum/solidity/tree/breaking>`_."
+msgid "If you want to know where the team is standing in terms or implementing new features, you can follow the implementation status in the `Solidity Github project <https://github.com/ethereum/solidity/projects/43>`_. Issues in the design backlog need further specification and will either be discussed in a language design call or in a regular team call. You can see the upcoming changes for the next breaking release by changing from the default branch (`develop`) to the `breaking branch <https://github.com/ethereum/solidity/tree/breaking>`_."
 msgstr ""
 
 #: ../../contributing.rst:496 029652880af14a1c8e143d59d5b828ab
-msgid ""
-"For ad-hoc cases and questions you can reach out to us via the `Solidity-"
-"dev Gitter channel <https://gitter.im/ethereum/solidity-dev>`_, a "
-"dedicated chatroom for conversations around the Solidity compiler and "
-"language development."
+msgid "For ad-hoc cases and questions you can reach out to us via the `Solidity-dev Gitter channel <https://gitter.im/ethereum/solidity-dev>`_, a dedicated chatroom for conversations around the Solidity compiler and language development."
 msgstr ""
 
 #: ../../contributing.rst:499 b564f4a5abd947fb95727f3d09867584
-msgid ""
-"We are happy to hear your thoughts on how we can improve the language "
-"design process to be even more collaborative and transparent."
+msgid "We are happy to hear your thoughts on how we can improve the language design process to be even more collaborative and transparent."
 msgstr ""
 

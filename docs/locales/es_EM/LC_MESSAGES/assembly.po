@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: solidity-test\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Modern)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: es-EM\n"
+"X-Crowdin-File: assembly.po\n"
+"X-Crowdin-File-ID: 49\n"
+"Language: es_EM\n"
+
+#: ../../assembly.rst:5 7b42ad6a1b0545c78cea8b548e153598
+msgid "Inline Assembly"
+msgstr ""
+
+#: ../../assembly.rst:10 224dbceff841416b93b05c234ad8f34f
+msgid "You can interleave Solidity statements with inline assembly in a language close to the one of the Ethereum virtual machine. This gives you more fine-grained control, which is especially useful when you are enhancing the language by writing libraries."
+msgstr ""
+
+#: ../../assembly.rst:14 12035b9a78134486a113eaf0df7f5077
+msgid "The language used for inline assembly in Solidity is called :ref:`Yul <yul>` and it is documented in its own section. This section will only cover how the inline assembly code can interface with the surrounding Solidity code."
+msgstr ""
+
+#: ../../assembly.rst:20 a82ce283831041d2babf4b186eee69f1
+msgid "Inline assembly is a way to access the Ethereum Virtual Machine at a low level. This bypasses several important safety features and checks of Solidity. You should only use it for tasks that need it, and only if you are confident with using it."
+msgstr ""
+
+#: ../../assembly.rst:26 853d659ce577423a820703e4fc4e7373
+msgid "An inline assembly block is marked by ``assembly { ... }``, where the code inside the curly braces is code in the :ref:`Yul <yul>` language."
+msgstr ""
+
+#: ../../assembly.rst:29 b2e87dc56e03424fa8504ee51cf6e352
+msgid "The inline assembly code can access local Solidity variables as explained below."
+msgstr ""
+
+#: ../../assembly.rst:31 cb858d75fc4241a9a43e36083e197ef2
+msgid "Different inline assembly blocks share no namespace, i.e. it is not possible to call a Yul function or access a Yul variable defined in a different inline assembly block."
+msgstr ""
+
+#: ../../assembly.rst:35 f97c711d8de3416186e070be931c4dd6
+msgid "Example"
+msgstr ""
+
+#: ../../assembly.rst:37 14a21549f2e542e5b43334fc12f39e91
+msgid "The following example provides library code to access the code of another contract and load it into a ``bytes`` variable. This is possible with \"plain Solidity\" too, by using ``<address>.code``. But the point here is that reusable assembly libraries can enhance the Solidity language without a compiler change."
+msgstr ""
+
+#: ../../assembly.rst:65 954fa392f19a45bd8f9303c3de14b965
+msgid "Inline assembly is also beneficial in cases where the optimizer fails to produce efficient code, for example:"
+msgstr ""
+
+#: ../../assembly.rst:122 0f30888d8ffd40ebb54cf11d21f4e488
+msgid "Access to External Variables, Functions and Libraries"
+msgstr ""
+
+#: ../../assembly.rst:124 7b22103593224c0c91778b6c26ae2cf9
+msgid "You can access Solidity variables and other identifiers by using their name."
+msgstr ""
+
+#: ../../assembly.rst:126 7fc9d6a9ed6441fc99df0d5e46517807
+msgid "Local variables of value type are directly usable in inline assembly. They can both be read and assigned to."
+msgstr ""
+
+#: ../../assembly.rst:129 7b0efd9141924f948115ae476f10bced
+msgid "Local variables that refer to memory evaluate to the address of the variable in memory not the value itself. Such variables can also be assigned to, but note that an assignment will only change the pointer and not the data and that it is your responsibility to respect Solidity's memory management. See :ref:`Conventions in Solidity <conventions-in-solidity>`."
+msgstr ""
+
+#: ../../assembly.rst:134 b7616a0b11d94939bfffee666cccda23
+msgid "Similarly, local variables that refer to statically-sized calldata arrays or calldata structs evaluate to the address of the variable in calldata, not the value itself. The variable can also be assigned a new offset, but note that no validation to ensure that the variable will not point beyond ``calldatasize()`` is performed."
+msgstr ""
+
+#: ../../assembly.rst:139 4cf2529dbde14ecd9e46b2aaae7bca25
+msgid "For external function pointers the address and the function selector can be accessed using ``x.address`` and ``x.selector``. The selector consists of four right-aligned bytes. Both values are can be assigned to. For example:"
+msgstr ""
+
+#: ../../assembly.rst:160 cb5c8bc6289f47ea8ddb0f30c7e5fe1f
+msgid "For dynamic calldata arrays, you can access their calldata offset (in bytes) and length (number of elements) using ``x.offset`` and ``x.length``. Both expressions can also be assigned to, but as for the static case, no validation will be performed to ensure that the resulting data area is within the bounds of ``calldatasize()``."
+msgstr ""
+
+#: ../../assembly.rst:165 4440502468ae41b3ad0fffde06d3a2ab
+msgid "For local storage variables or state variables, a single Yul identifier is not sufficient, since they do not necessarily occupy a single full storage slot. Therefore, their \"address\" is composed of a slot and a byte-offset inside that slot. To retrieve the slot pointed to by the variable ``x``, you use ``x.slot``, and to retrieve the byte-offset you use ``x.offset``. Using ``x`` itself will result in an error."
+msgstr ""
+
+#: ../../assembly.rst:172 0d7e352067a34643a93d915a08edc630
+msgid "You can also assign to the ``.slot`` part of a local storage variable pointer. For these (structs, arrays or mappings), the ``.offset`` part is always zero. It is not possible to assign to the ``.slot`` or ``.offset`` part of a state variable, though."
+msgstr ""
+
+#: ../../assembly.rst:177 cb5be89f739b4848b8007886370f5022
+msgid "Local Solidity variables are available for assignments, for example:"
+msgstr ""
+
+#: ../../assembly.rst:197 25d931ebed4046f48186ea660f79da12
+msgid "If you access variables of a type that spans less than 256 bits (for example ``uint64``, ``address``, or ``bytes16``), you cannot make any assumptions about bits not part of the encoding of the type. Especially, do not assume them to be zero. To be safe, always clear the data properly before you use it in a context where this is important: ``uint32 x = f(); assembly { x := and(x, 0xffffffff) /* now use x */ }`` To clean signed types, you can use the ``signextend`` opcode: ``assembly { signextend(<num_bytes_of_x_minus_one>, x) }``"
+msgstr ""
+
+#: ../../assembly.rst:208 a9a87f54461f40fca1346c15856652bc
+msgid "Since Solidity 0.6.0 the name of a inline assembly variable may not shadow any declaration visible in the scope of the inline assembly block (including variable, contract and function declarations)."
+msgstr ""
+
+#: ../../assembly.rst:212 bc349f63086f47d796b5ec126766aab5
+msgid "Since Solidity 0.7.0, variables and functions declared inside the inline assembly block may not contain ``.``, but using ``.`` is valid to access Solidity variables from outside the inline assembly block."
+msgstr ""
+
+#: ../../assembly.rst:217 d75db5f294e9407bb62d5838adf624a7
+msgid "Things to Avoid"
+msgstr ""
+
+#: ../../assembly.rst:219 9ec0e13eba9948d1beb2993053830ec7
+msgid "Inline assembly might have a quite high-level look, but it actually is extremely low-level. Function calls, loops, ifs and switches are converted by simple rewriting rules and after that, the only thing the assembler does for you is re-arranging functional-style opcodes, counting stack height for variable access and removing stack slots for assembly-local variables when the end of their block is reached."
+msgstr ""
+
+#: ../../assembly.rst:229 125eaae448ea445ab244b37429e5e6e5
+msgid "Conventions in Solidity"
+msgstr ""
+
+#: ../../assembly.rst:231 8f1f1fb90426498e91c12ea5b86812b4
+msgid "In contrast to EVM assembly, Solidity has types which are narrower than 256 bits, e.g. ``uint24``. For efficiency, most arithmetic operations ignore the fact that types can be shorter than 256 bits, and the higher-order bits are cleaned when necessary, i.e., shortly before they are written to memory or before comparisons are performed. This means that if you access such a variable from within inline assembly, you might have to manually clean the higher-order bits first."
+msgstr ""
+
+#: ../../assembly.rst:240 7d217bf57f544dab85fa52b8ca054fd9
+msgid "Solidity manages memory in the following way. There is a \"free memory pointer\" at position ``0x40`` in memory. If you want to allocate memory, use the memory starting from where this pointer points at and update it. There is no guarantee that the memory has not been used before and thus you cannot assume that its contents are zero bytes. There is no built-in mechanism to release or free allocated memory. Here is an assembly snippet you can use for allocating memory that follows the process outlined above"
+msgstr ""
+
+#: ../../assembly.rst:255 3c4136e93acd4f5abfb1ba603fe80c42
+msgid "The first 64 bytes of memory can be used as \"scratch space\" for short-term allocation. The 32 bytes after the free memory pointer (i.e., starting at ``0x60``) are meant to be zero permanently and is used as the initial value for empty dynamic memory arrays. This means that the allocatable memory starts at ``0x80``, which is the initial value of the free memory pointer."
+msgstr ""
+
+#: ../../assembly.rst:262 6e05f8d2b16d4b1a9ff825358c1291a3
+msgid "Elements in memory arrays in Solidity always occupy multiples of 32 bytes (this is even true for ``bytes1[]``, but not for ``bytes`` and ``string``). Multi-dimensional memory arrays are pointers to memory arrays. The length of a dynamic array is stored at the first slot of the array and followed by the array elements."
+msgstr ""
+
+#: ../../assembly.rst:268 e737840236674e02b1dfa9b84d0ff579
+msgid "Statically-sized memory arrays do not have a length field, but it might be added later to allow better convertibility between statically- and dynamically-sized arrays, so do not rely on this."
+msgstr ""
+
