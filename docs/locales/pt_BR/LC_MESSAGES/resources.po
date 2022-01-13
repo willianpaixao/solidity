@@ -1,21 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016-2021, Ethereum
-# This file is distributed under the same license as the Solidity package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Solidity 0.8.12\n"
+"Project-Id-Version: solidity-test\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-13 16:47+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: resources.po\n"
+"X-Crowdin-File-ID: 17\n"
+"Language: pt_BR\n"
 
 #: ../../resources.rst:3 e7577b3906374a45bacf33c334318521
 msgid "Resources"
@@ -38,9 +39,7 @@ msgid "`Solidity Portal <https://soliditylang.org/>`_"
 msgstr ""
 
 #: ../../resources.rst:11 7f0715fd001b479cbdba1c9169b1a088
-msgid ""
-"`Solidity Changelog "
-"<https://github.com/ethereum/solidity/blob/develop/Changelog.md>`_"
+msgid "`Solidity Changelog <https://github.com/ethereum/solidity/blob/develop/Changelog.md>`_"
 msgstr ""
 
 #: ../../resources.rst:12 74c8f660e9ab4573b76dfc41c90dd2a3
@@ -48,15 +47,11 @@ msgid "`Solidity Source Code on GitHub <https://github.com/ethereum/solidity/>`_
 msgstr ""
 
 #: ../../resources.rst:13 be3b6a2de4fa412395149001045e383f
-msgid ""
-"`Solidity Language Users Chat "
-"<https://matrix.to/#/#ethereum_solidity:gitter.im>`_"
+msgid "`Solidity Language Users Chat <https://matrix.to/#/#ethereum_solidity:gitter.im>`_"
 msgstr ""
 
 #: ../../resources.rst:14 be9ae8c0446f4cc8805826c76df98aa3
-msgid ""
-"`Solidity Compiler Developers Chat <https://matrix.to"
-"/#/#ethereum_solidity-dev:gitter.im>`_"
+msgid "`Solidity Compiler Developers Chat <https://matrix.to/#/#ethereum_solidity-dev:gitter.im>`_"
 msgstr ""
 
 #: ../../resources.rst:15 67766a657050482e9d5265275213a8a8
@@ -76,9 +71,7 @@ msgid "`Brownie <https://eth-brownie.readthedocs.io/en/stable/>`_"
 msgstr ""
 
 #: ../../resources.rst:23 85c873e17e5a4e17a7dc5023c33fc8a4
-msgid ""
-"Python-based development and testing framework for smart contracts "
-"targeting the Ethereum Virtual Machine."
+msgid "Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine."
 msgstr ""
 
 #: ../../resources.rst:26 e4a03edc95334a70bffd8c6aa16a5229
@@ -86,9 +79,7 @@ msgid "`Dapp <https://dapp.tools/>`_"
 msgstr ""
 
 #: ../../resources.rst:26 f3356105068f40c59994d2b56d3d27ee
-msgid ""
-"Tool for building, testing and deploying smart contracts from the command"
-" line."
+msgid "Tool for building, testing and deploying smart contracts from the command line."
 msgstr ""
 
 #: ../../resources.rst:29 dfdbba76271740a8aa0daa5fca4e78c7
@@ -104,9 +95,7 @@ msgid "`Hardhat <https://hardhat.org/>`_"
 msgstr ""
 
 #: ../../resources.rst:32 b298bed8761349838f4aaee79b7aead0
-msgid ""
-"Ethereum development environment with local Ethereum network, debugging "
-"features and plugin ecosystem."
+msgid "Ethereum development environment with local Ethereum network, debugging features and plugin ecosystem."
 msgstr ""
 
 #: ../../resources.rst:35 a8e7b00f6e55441a895a97c9d72c4514
@@ -114,9 +103,7 @@ msgid "`Remix <https://remix.ethereum.org/>`_"
 msgstr ""
 
 #: ../../resources.rst:35 fe0d5e8fb20c4b399587901fe81f667c
-msgid ""
-"Browser-based IDE with integrated compiler and Solidity runtime "
-"environment without server-side components."
+msgid "Browser-based IDE with integrated compiler and Solidity runtime environment without server-side components."
 msgstr ""
 
 #: ../../resources.rst:38 0b498f1a9966435396060703ff7caae1
@@ -148,9 +135,7 @@ msgid "`Etheratom <https://github.com/0mkara/etheratom>`_"
 msgstr ""
 
 #: ../../resources.rst:49 a5c75b8046ba4267b51a90a8d7b67d30
-msgid ""
-"Plugin for the Atom editor that features syntax highlighting, compilation"
-" and a runtime environment (Backend node & VM compatible)."
+msgid "Plugin for the Atom editor that features syntax highlighting, compilation and a runtime environment (Backend node & VM compatible)."
 msgstr ""
 
 #: ../../resources.rst:52 f599e74ace0e4d089b9006c4e0d19a68
@@ -166,9 +151,7 @@ msgid "`Atom Solium Linter <https://atom.io/packages/linter-solium>`_"
 msgstr ""
 
 #: ../../resources.rst:55 e377e6440c9743af9a557e48d8d13a80
-msgid ""
-"Configurable Solidity linter for Atom using Solium (now Ethlint) as a "
-"base."
+msgid "Configurable Solidity linter for Atom using Solium (now Ethlint) as a base."
 msgstr ""
 
 #: ../../resources.rst:57 2feab61efd724c16adc00eda3105d3e1
@@ -180,9 +163,7 @@ msgid "`Emacs Solidity <https://github.com/ethereum/emacs-solidity/>`_"
 msgstr ""
 
 #: ../../resources.rst:60 25384611537a41a4b6d40d73f92b00c3
-msgid ""
-"Plugin for the Emacs editor providing syntax highlighting and compilation"
-" error reporting."
+msgid "Plugin for the Emacs editor providing syntax highlighting and compilation error reporting."
 msgstr ""
 
 #: ../../resources.rst:62 74131c481ed6418b82da62288a90dfeb
@@ -190,9 +171,7 @@ msgid "IntelliJ"
 msgstr ""
 
 #: ../../resources.rst:65 b0d9c603f350483ba0c7b9dd9b804f3b
-msgid ""
-"`IntelliJ IDEA plugin <https://plugins.jetbrains.com/plugin/9475"
-"-intellij-solidity>`_"
+msgid "`IntelliJ IDEA plugin <https://plugins.jetbrains.com/plugin/9475-intellij-solidity>`_"
 msgstr ""
 
 #: ../../resources.rst:65 4da14b857eb6441db7c7b83400609a1b
@@ -204,9 +183,7 @@ msgid "Sublime"
 msgstr ""
 
 #: ../../resources.rst:70 fe50db47913f41fa9ef7a552c9443c52
-msgid ""
-"`Package for SublimeText - Solidity language syntax "
-"<https://packagecontrol.io/packages/Ethereum/>`_"
+msgid "`Package for SublimeText - Solidity language syntax <https://packagecontrol.io/packages/Ethereum/>`_"
 msgstr ""
 
 #: ../../resources.rst:70 8f2169984e9841bb82775e9b36996b7b
@@ -238,15 +215,11 @@ msgid "Visual Studio Code"
 msgstr ""
 
 #: ../../resources.rst:83 b8b7830e114b4e98a044beaa69b913f6
-msgid ""
-"`Visual Studio Code extension <https://juan.blanco.ws/solidity-contracts-"
-"in-visual-studio-code/>`_"
+msgid "`Visual Studio Code extension <https://juan.blanco.ws/solidity-contracts-in-visual-studio-code/>`_"
 msgstr ""
 
 #: ../../resources.rst:83 ef52059c4d564f8597151f0cde2ecb5b
-msgid ""
-"Solidity plugin for Microsoft Visual Studio Code that includes syntax "
-"highlighting and the Solidity compiler."
+msgid "Solidity plugin for Microsoft Visual Studio Code that includes syntax highlighting and the Solidity compiler."
 msgstr ""
 
 #: ../../resources.rst:86 e35f9cbf432f41e4a7081cca9259e7f1
@@ -254,15 +227,11 @@ msgid "Solidity Tools"
 msgstr ""
 
 #: ../../resources.rst:89 bc6e4a336dba4aca878b400f602cfdc0
-msgid ""
-"`ABI to Solidity interface converter "
-"<https://gist.github.com/chriseth/8f533d133fa0c15b0d6eaf3ec502c82b>`_"
+msgid "`ABI to Solidity interface converter <https://gist.github.com/chriseth/8f533d133fa0c15b0d6eaf3ec502c82b>`_"
 msgstr ""
 
 #: ../../resources.rst:89 2495d59a5be4491fa219e40f1ecd3ff5
-msgid ""
-"A script for generating contract interfaces from the ABI of a smart "
-"contract."
+msgid "A script for generating contract interfaces from the ABI of a smart contract."
 msgstr ""
 
 #: ../../resources.rst:92 76681ca9fa85422897c8c588d9db2729
@@ -294,9 +263,7 @@ msgid "`evmdis <https://github.com/Arachnid/evmdis>`_"
 msgstr ""
 
 #: ../../resources.rst:101 32271a0a53334ecc85f3ace326ee4d38
-msgid ""
-"EVM Disassembler that performs static analysis on the bytecode to provide"
-" a higher level of abstraction than raw EVM operations."
+msgid "EVM Disassembler that performs static analysis on the bytecode to provide a higher level of abstraction than raw EVM operations."
 msgstr ""
 
 #: ../../resources.rst:104 64dc51d00e774c8d8b4bf59b8b120522
@@ -304,9 +271,7 @@ msgid "`EVM Lab <https://github.com/ethereum/evmlab/>`_"
 msgstr ""
 
 #: ../../resources.rst:104 33bd3d633a2643baa61e361e1c9b6607
-msgid ""
-"Rich tool package to interact with the EVM. Includes a VM, Etherchain "
-"API, and a trace-viewer with gas cost display."
+msgid "Rich tool package to interact with the EVM. Includes a VM, Etherchain API, and a trace-viewer with gas cost display."
 msgstr ""
 
 #: ../../resources.rst:107 58eeae1bf5d24a83b88c79ffe1229013
@@ -330,9 +295,7 @@ msgid "`PIET <https://piet.slock.it/>`_"
 msgstr ""
 
 #: ../../resources.rst:113 68eb9d4d3f5b47cf9bd9f4b5031eda7b
-msgid ""
-"A tool to develop, audit and use Solidity smart contracts through a "
-"simple graphical interface."
+msgid "A tool to develop, audit and use Solidity smart contracts through a simple graphical interface."
 msgstr ""
 
 #: ../../resources.rst:116 a299847fead54e7999447f5e6edc3cd7
@@ -340,9 +303,7 @@ msgid "`sol2uml <https://www.npmjs.com/package/sol2uml>`_"
 msgstr ""
 
 #: ../../resources.rst:116 f619effe5a1046a693c1fe01a457d561
-msgid ""
-"Unified Modeling Language (UML) class diagram generator for Solidity "
-"contracts."
+msgid "Unified Modeling Language (UML) class diagram generator for Solidity contracts."
 msgstr ""
 
 #: ../../resources.rst:119 5af1a7676a5b420cbac6f16a8cb30564
@@ -354,9 +315,7 @@ msgid "A script to quickly switch between Solidity compiler versions."
 msgstr ""
 
 #: ../../resources.rst:122 06e240133bc1413b9185472f32f535f6
-msgid ""
-"`Solidity prettier plugin <https://github.com/prettier-solidity/prettier-"
-"plugin-solidity>`_"
+msgid "`Solidity prettier plugin <https://github.com/prettier-solidity/prettier-plugin-solidity>`_"
 msgstr ""
 
 #: ../../resources.rst:122 16f2a7bec0b947f5a2ca6196ed444d10
@@ -376,9 +335,7 @@ msgid "`solgraph <https://github.com/raineorshine/solgraph>`_"
 msgstr ""
 
 #: ../../resources.rst:128 df2cb8b77cb34119aec7f8e84b5d2095
-msgid ""
-"Visualize Solidity control flow and highlight potential security "
-"vulnerabilities."
+msgid "Visualize Solidity control flow and highlight potential security vulnerabilities."
 msgstr ""
 
 #: ../../resources.rst:131 f18cb04638864a2195c7b430bd89df4b
@@ -386,9 +343,7 @@ msgid "`Solhint <https://github.com/protofire/solhint>`_"
 msgstr ""
 
 #: ../../resources.rst:131 9ef2241202e545e19a5b44ff7e67c767
-msgid ""
-"Solidity linter that provides security, style guide and best practice "
-"rules for smart contract validation."
+msgid "Solidity linter that provides security, style guide and best practice rules for smart contract validation."
 msgstr ""
 
 #: ../../resources.rst:134 e233ce33506a4244be0b2f33557ca73a
@@ -396,10 +351,7 @@ msgid "`Sūrya <https://github.com/ConsenSys/surya/>`_"
 msgstr ""
 
 #: ../../resources.rst:134 fb2320cc5e584612b3a9cecf66307615
-msgid ""
-"Utility tool for smart contract systems, offering a number of visual "
-"outputs and information about the contracts' structure. Also supports "
-"querying the function call graph."
+msgid "Utility tool for smart contract systems, offering a number of visual outputs and information about the contracts' structure. Also supports querying the function call graph."
 msgstr ""
 
 #: ../../resources.rst:137 05401237a1ff4518b6966d9aad54cc18
@@ -407,9 +359,7 @@ msgid "`Universal Mutator <https://github.com/agroce/universalmutator>`_"
 msgstr ""
 
 #: ../../resources.rst:137 6adb8165c9fe40f4ae2ea658cfa0e8d3
-msgid ""
-"A tool for mutation generation, with configurable rules and support for "
-"Solidity and Vyper."
+msgid "A tool for mutation generation, with configurable rules and support for Solidity and Vyper."
 msgstr ""
 
 #: ../../resources.rst:140 4021532e169d473f8475fc2ffd87036e
@@ -417,9 +367,7 @@ msgid "Third-Party Solidity Parsers and Grammars"
 msgstr ""
 
 #: ../../resources.rst:142 d10e91936a894a53a3a8f2fd73578a4a
-msgid ""
-"`Solidity Parser for JavaScript <https://github.com/solidity-"
-"parser/parser>`_"
+msgid "`Solidity Parser for JavaScript <https://github.com/solidity-parser/parser>`_"
 msgstr ""
 
 #: ../../resources.rst:143 8a7c8e336b2e4573acc5c475f9eb31d8

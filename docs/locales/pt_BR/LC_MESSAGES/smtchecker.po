@@ -1,62 +1,41 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016-2021, Ethereum
-# This file is distributed under the same license as the Solidity package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Solidity 0.8.12\n"
+"Project-Id-Version: solidity-test\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-13 16:47+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: smtchecker.po\n"
+"X-Crowdin-File-ID: 39\n"
+"Language: pt_BR\n"
 
 #: ../../smtchecker.rst:5 071538acbe9f4f5fbbb2e3cbbf44f6c1
 msgid "SMTChecker and Formal Verification"
 msgstr ""
 
 #: ../../smtchecker.rst:7 739a3aceb0194e5f9440d50bf9b81075
-msgid ""
-"Using formal verification it is possible to perform an automated "
-"mathematical proof that your source code fulfills a certain formal "
-"specification. The specification is still formal (just as the source "
-"code), but usually much simpler."
+msgid "Using formal verification it is possible to perform an automated mathematical proof that your source code fulfills a certain formal specification. The specification is still formal (just as the source code), but usually much simpler."
 msgstr ""
 
 #: ../../smtchecker.rst:12 4239cc896fc7492dba76be2f46233549
-msgid ""
-"Note that formal verification itself can only help you understand the "
-"difference between what you did (the specification) and how you did it "
-"(the actual implementation). You still need to check whether the "
-"specification is what you wanted and that you did not miss any unintended"
-" effects of it."
+msgid "Note that formal verification itself can only help you understand the difference between what you did (the specification) and how you did it (the actual implementation). You still need to check whether the specification is what you wanted and that you did not miss any unintended effects of it."
 msgstr ""
 
 #: ../../smtchecker.rst:17 895ffa388fe143db9ca1278b6fd4d6ad
-msgid ""
-"Solidity implements a formal verification approach based on `SMT "
-"(Satisfiability Modulo Theories) "
-"<https://en.wikipedia.org/wiki/Satisfiability_modulo_theories>`_ and "
-"`Horn <https://en.wikipedia.org/wiki/Horn-satisfiability>`_ solving. The "
-"SMTChecker module automatically tries to prove that the code satisfies "
-"the specification given by ``require`` and ``assert`` statements. That "
-"is, it considers ``require`` statements as assumptions and tries to prove"
-" that the conditions inside ``assert`` statements are always true.  If an"
-" assertion failure is found, a counterexample may be given to the user "
-"showing how the assertion can be violated. If no warning is given by the "
-"SMTChecker for a property, it means that the property is safe."
+msgid "Solidity implements a formal verification approach based on `SMT (Satisfiability Modulo Theories) <https://en.wikipedia.org/wiki/Satisfiability_modulo_theories>`_ and `Horn <https://en.wikipedia.org/wiki/Horn-satisfiability>`_ solving. The SMTChecker module automatically tries to prove that the code satisfies the specification given by ``require`` and ``assert`` statements. That is, it considers ``require`` statements as assumptions and tries to prove that the conditions inside ``assert`` statements are always true.  If an assertion failure is found, a counterexample may be given to the user showing how the assertion can be violated. If no warning is given by the SMTChecker for a property, it means that the property is safe."
 msgstr ""
 
 #: ../../smtchecker.rst:28 325f5e2807ec45f4856a410e8fab9639
-msgid ""
-"The other verification targets that the SMTChecker checks at compile time"
-" are:"
+msgid "The other verification targets that the SMTChecker checks at compile time are:"
 msgstr ""
 
 #: ../../smtchecker.rst:30 abdfde805f7943aeb1926d176f6ab375
@@ -84,9 +63,7 @@ msgid "Insufficient funds for a transfer."
 msgstr ""
 
 #: ../../smtchecker.rst:37 97880ed2a5c64d82abffeb94bdf058d9
-msgid ""
-"All the targets above are automatically checked by default if all engines"
-" are enabled, except underflow and overflow for Solidity >=0.8.7."
+msgid "All the targets above are automatically checked by default if all engines are enabled, except underflow and overflow for Solidity >=0.8.7."
 msgstr ""
 
 #: ../../smtchecker.rst:40 04b286e4b958402c81914531ee78ad1f
@@ -94,52 +71,23 @@ msgid "The potential warnings that the SMTChecker reports are:"
 msgstr ""
 
 #: ../../smtchecker.rst:42 c966d8fdde164675ae9be20082d1b8dd
-msgid ""
-"``<failing  property> happens here.``. This means that the SMTChecker "
-"proved that a certain property fails. A counterexample may be given, "
-"however in complex situations it may also not show a counterexample. This"
-" result may also be a false positive in certain cases, when the SMT "
-"encoding adds abstractions for Solidity code that is either hard or "
-"impossible to express."
+msgid "``<failing  property> happens here.``. This means that the SMTChecker proved that a certain property fails. A counterexample may be given, however in complex situations it may also not show a counterexample. This result may also be a false positive in certain cases, when the SMT encoding adds abstractions for Solidity code that is either hard or impossible to express."
 msgstr ""
 
 #: ../../smtchecker.rst:43 9fafdca09da84d2aa87bd5c64e217c98
-msgid ""
-"``<failing property> might happen here``. This means that the solver "
-"could not prove either case within the given timeout. Since the result is"
-" unknown, the SMTChecker reports the potential failure for soundness. "
-"This may be solved by increasing the query timeout, but the problem might"
-" also simply be too hard for the engine to solve."
+msgid "``<failing property> might happen here``. This means that the solver could not prove either case within the given timeout. Since the result is unknown, the SMTChecker reports the potential failure for soundness. This may be solved by increasing the query timeout, but the problem might also simply be too hard for the engine to solve."
 msgstr ""
 
 #: ../../smtchecker.rst:45 957ebed720d3497da9b5e537c8275bfe
-msgid ""
-"To enable the SMTChecker, you must select :ref:`which engine should "
-"run<smtchecker_engines>`, where the default is no engine. Selecting the "
-"engine enables the SMTChecker on all files."
+msgid "To enable the SMTChecker, you must select :ref:`which engine should run<smtchecker_engines>`, where the default is no engine. Selecting the engine enables the SMTChecker on all files."
 msgstr ""
 
 #: ../../smtchecker.rst:50 eb4ce5c991624454801b7be89f2f8477
-msgid ""
-"Prior to Solidity 0.8.4, the default way to enable the SMTChecker was via"
-" ``pragma experimental SMTChecker;`` and only the contracts containing "
-"the pragma would be analyzed. That pragma has been deprecated, and "
-"although it still enables the SMTChecker for backwards compatibility, it "
-"will be removed in Solidity 0.9.0. Note also that now using the pragma "
-"even in a single file enables the SMTChecker for all files."
+msgid "Prior to Solidity 0.8.4, the default way to enable the SMTChecker was via ``pragma experimental SMTChecker;`` and only the contracts containing the pragma would be analyzed. That pragma has been deprecated, and although it still enables the SMTChecker for backwards compatibility, it will be removed in Solidity 0.9.0. Note also that now using the pragma even in a single file enables the SMTChecker for all files."
 msgstr ""
 
 #: ../../smtchecker.rst:59 82b1b60917024ce295eeae97a1562e44
-msgid ""
-"The lack of warnings for a verification target represents an undisputed "
-"mathematical proof of correctness, assuming no bugs in the SMTChecker and"
-" the underlying solver. Keep in mind that these problems are *very hard* "
-"and sometimes *impossible* to solve automatically in the general case.  "
-"Therefore, several properties might not be solved or might lead to false "
-"positives for large contracts. Every proven property should be seen as an"
-" important achievement. For advanced users, see :ref:`SMTChecker Tuning "
-"<smtchecker_options>` to learn a few options that might help proving more"
-" complex properties."
+msgid "The lack of warnings for a verification target represents an undisputed mathematical proof of correctness, assuming no bugs in the SMTChecker and the underlying solver. Keep in mind that these problems are *very hard* and sometimes *impossible* to solve automatically in the general case.  Therefore, several properties might not be solved or might lead to false positives for large contracts. Every proven property should be seen as an important achievement. For advanced users, see :ref:`SMTChecker Tuning <smtchecker_options>` to learn a few options that might help proving more complex properties."
 msgstr ""
 
 #: ../../smtchecker.rst:71 ae70da394857466db090dffcadfa9fab
@@ -151,21 +99,11 @@ msgid "Overflow"
 msgstr ""
 
 #: ../../smtchecker.rst:98 d828ac336e4346b1939417abc7e3e65e
-msgid ""
-"The contract above shows an overflow check example. The SMTChecker does "
-"not check underflow and overflow by default for Solidity >=0.8.7, so we "
-"need to use the command line option ``--model-checker-targets "
-"\"underflow,overflow\"`` or the JSON option "
-"``settings.modelChecker.targets = [\"underflow\", \"overflow\"]``. See "
-":ref:`this section for targets configuration<smtchecker_targets>`. Here, "
-"it reports the following:"
+msgid "The contract above shows an overflow check example. The SMTChecker does not check underflow and overflow by default for Solidity >=0.8.7, so we need to use the command line option ``--model-checker-targets \"underflow,overflow\"`` or the JSON option ``settings.modelChecker.targets = [\"underflow\", \"overflow\"]``. See :ref:`this section for targets configuration<smtchecker_targets>`. Here, it reports the following:"
 msgstr ""
 
 #: ../../smtchecker.rst:122 aa5aaa9eb426400d9d338926612bb7fd
-msgid ""
-"If we add ``require`` statements that filter out overflow cases, the "
-"SMTChecker proves that no overflow is reachable (by not reporting "
-"warnings):"
+msgid "If we add ``require`` statements that filter out overflow cases, the SMTChecker proves that no overflow is reachable (by not reporting warnings):"
 msgstr ""
 
 #: ../../smtchecker.rst:151 5ac19230276741b98585d10ff164b252
@@ -173,35 +111,19 @@ msgid "Assert"
 msgstr ""
 
 #: ../../smtchecker.rst:153 dff7a82a0cde447c871cb78ec0e4d01e
-msgid ""
-"An assertion represents an invariant in your code: a property that must "
-"be true *for all transactions, including all input and storage values*, "
-"otherwise there is a bug."
+msgid "An assertion represents an invariant in your code: a property that must be true *for all transactions, including all input and storage values*, otherwise there is a bug."
 msgstr ""
 
 #: ../../smtchecker.rst:156 49058249762041298af97360a00dd27f
-msgid ""
-"The code below defines a function ``f`` that guarantees no overflow. "
-"Function ``inv`` defines the specification that ``f`` is monotonically "
-"increasing: for every possible pair ``(_a, _b)``, if ``_b > _a`` then "
-"``f(_b) > f(_a)``. Since ``f`` is indeed monotonically increasing, the "
-"SMTChecker proves that our property is correct. You are encouraged to "
-"play with the property and the function definition to see what results "
-"come out!"
+msgid "The code below defines a function ``f`` that guarantees no overflow. Function ``inv`` defines the specification that ``f`` is monotonically increasing: for every possible pair ``(_a, _b)``, if ``_b > _a`` then ``f(_b) > f(_a)``. Since ``f`` is indeed monotonically increasing, the SMTChecker proves that our property is correct. You are encouraged to play with the property and the function definition to see what results come out!"
 msgstr ""
 
 #: ../../smtchecker.rst:180 ba4fc204f5b743db943d12fd2ffe4017
-msgid ""
-"We can also add assertions inside loops to verify more complicated "
-"properties. The following code searches for the maximum element of an "
-"unrestricted array of numbers, and asserts the property that the found "
-"element must be greater or equal every element in the array."
+msgid "We can also add assertions inside loops to verify more complicated properties. The following code searches for the maximum element of an unrestricted array of numbers, and asserts the property that the found element must be greater or equal every element in the array."
 msgstr ""
 
 #: ../../smtchecker.rst:204 acfe4e5063914864a51f6eeacd27d602
-msgid ""
-"Note that in this example the SMTChecker will automatically try to prove "
-"three properties:"
+msgid "Note that in this example the SMTChecker will automatically try to prove three properties:"
 msgstr ""
 
 #: ../../smtchecker.rst:206 80f53c6f98974b1b93c2fd2d55a402a3
@@ -217,16 +139,11 @@ msgid "The assertion is always true."
 msgstr ""
 
 #: ../../smtchecker.rst:212 45ec125e8e454fd7b4dc750d3453c1eb
-msgid ""
-"The properties involve loops, which makes it *much much* harder than the "
-"previous examples, so beware of loops!"
+msgid "The properties involve loops, which makes it *much much* harder than the previous examples, so beware of loops!"
 msgstr ""
 
 #: ../../smtchecker.rst:215 db797ec18ea146a7a56bf1d454be405b
-msgid ""
-"All the properties are correctly proven safe. Feel free to change the "
-"properties and/or add restrictions on the array to see different results."
-" For example, changing the code to"
+msgid "All the properties are correctly proven safe. Feel free to change the properties and/or add restrictions on the array to see different results. For example, changing the code to"
 msgstr ""
 
 #: ../../smtchecker.rst:239 b119bac90ce048518eecebba6b2a1f0c
@@ -238,50 +155,27 @@ msgid "State Properties"
 msgstr ""
 
 #: ../../smtchecker.rst:260 fc0436f3f0e64d9c86f25b340cb9db24
-msgid ""
-"So far the examples only demonstrated the use of the SMTChecker over pure"
-" code, proving properties about specific operations or algorithms. A "
-"common type of properties in smart contracts are properties that involve "
-"the state of the contract. Multiple transactions might be needed to make "
-"an assertion fail for such a property."
+msgid "So far the examples only demonstrated the use of the SMTChecker over pure code, proving properties about specific operations or algorithms. A common type of properties in smart contracts are properties that involve the state of the contract. Multiple transactions might be needed to make an assertion fail for such a property."
 msgstr ""
 
 #: ../../smtchecker.rst:266 272068341ad94eaeb7fcb8e61f44ab3b
-msgid ""
-"As an example, consider a 2D grid where both axis have coordinates in the"
-" range (-2^128, 2^128 - 1). Let us place a robot at position (0, 0). The "
-"robot can only move diagonally, one step at a time, and cannot move "
-"outside the grid. The robot's state machine can be represented by the "
-"smart contract below."
+msgid "As an example, consider a 2D grid where both axis have coordinates in the range (-2^128, 2^128 - 1). Let us place a robot at position (0, 0). The robot can only move diagonally, one step at a time, and cannot move outside the grid. The robot's state machine can be represented by the smart contract below."
 msgstr ""
 
 #: ../../smtchecker.rst:311 c6dcd693c7bf4c469fa18f91ed343e27
-msgid ""
-"Function ``inv`` represents an invariant of the state machine that ``x + "
-"y`` must be even. The SMTChecker manages to prove that regardless how "
-"many commands we give the robot, even if infinitely many, the invariant "
-"can *never* fail. The interested reader may want to prove that fact "
-"manually as well.  Hint: this invariant is inductive."
+msgid "Function ``inv`` represents an invariant of the state machine that ``x + y`` must be even. The SMTChecker manages to prove that regardless how many commands we give the robot, even if infinitely many, the invariant can *never* fail. The interested reader may want to prove that fact manually as well.  Hint: this invariant is inductive."
 msgstr ""
 
 #: ../../smtchecker.rst:318 6a3de0b0e140460ea37594e0c6b47533
-msgid ""
-"We can also trick the SMTChecker into giving us a path to a certain "
-"position we think might be reachable.  We can add the property that (2, "
-"4) is *not* reachable, by adding the following function."
+msgid "We can also trick the SMTChecker into giving us a path to a certain position we think might be reachable.  We can add the property that (2, 4) is *not* reachable, by adding the following function."
 msgstr ""
 
 #: ../../smtchecker.rst:328 12cc8c5805dc4fd191e947acb17c8871
-msgid ""
-"This property is false, and while proving that the property is false, the"
-" SMTChecker tells us exactly *how* to reach (2, 4):"
+msgid "This property is false, and while proving that the property is false, the SMTChecker tells us exactly *how* to reach (2, 4):"
 msgstr ""
 
 #: ../../smtchecker.rst:354 93cc2172c2374e5aa84d1df0c07bceb0
-msgid ""
-"Note that the path above is not necessarily deterministic, as there are "
-"other paths that could reach (2, 4). The choice of which path is shown "
-"might change depending on the used solver, its version, or just randomly."
+msgid "Note that the path above is not necessarily deterministic, as there are other paths that could reach (2, 4). The choice of which path is shown might change depending on the used solver, its version, or just randomly."
 msgstr ""
 
 #: ../../smtchecker.rst:359 e68278486b7247998b8d6ebf998a6564
@@ -289,35 +183,19 @@ msgid "External Calls and Reentrancy"
 msgstr ""
 
 #: ../../smtchecker.rst:361 d86bb0ebfece42c19140e3e858d8704f
-msgid ""
-"Every external call is treated as a call to unknown code by the "
-"SMTChecker. The reasoning behind that is that even if the code of the "
-"called contract is available at compile time, there is no guarantee that "
-"the deployed contract will indeed be the same as the contract where the "
-"interface came from at compile time."
+msgid "Every external call is treated as a call to unknown code by the SMTChecker. The reasoning behind that is that even if the code of the called contract is available at compile time, there is no guarantee that the deployed contract will indeed be the same as the contract where the interface came from at compile time."
 msgstr ""
 
 #: ../../smtchecker.rst:367 817bcd68d2af4fa6926ff3e9c7a76059
-msgid ""
-"In some cases, it is possible to automatically infer properties over "
-"state variables that are still true even if the externally called code "
-"can do anything, including reenter the caller contract."
+msgid "In some cases, it is possible to automatically infer properties over state variables that are still true even if the externally called code can do anything, including reenter the caller contract."
 msgstr ""
 
 #: ../../smtchecker.rst:409 9c9b405d51364382ba4676bf56979dd7
-msgid ""
-"The example above shows a contract that uses a mutex flag to forbid "
-"reentrancy. The solver is able to infer that when ``unknown.run()`` is "
-"called, the contract is already \"locked\", so it would not be possible "
-"to change the value of ``x``, regardless of what the unknown called code "
-"does."
+msgid "The example above shows a contract that uses a mutex flag to forbid reentrancy. The solver is able to infer that when ``unknown.run()`` is called, the contract is already \"locked\", so it would not be possible to change the value of ``x``, regardless of what the unknown called code does."
 msgstr ""
 
 #: ../../smtchecker.rst:414 dc2f64e15b694ee98e994e9e0eea15b2
-msgid ""
-"If we \"forget\" to use the ``mutex`` modifier on function ``set``, the "
-"SMTChecker is able to synthesize the behaviour of the externally called "
-"code so that the assertion fails:"
+msgid "If we \"forget\" to use the ``mutex`` modifier on function ``set``, the SMTChecker is able to synthesize the behaviour of the externally called code so that the assertion fails:"
 msgstr ""
 
 #: ../../smtchecker.rst:440 8918248b29ac47ab98dc8173a41303fd
@@ -329,22 +207,11 @@ msgid "Timeout"
 msgstr ""
 
 #: ../../smtchecker.rst:445 3a21e3e029f14430bf7825302b069d19
-msgid ""
-"The SMTChecker uses a hardcoded resource limit (``rlimit``) chosen per "
-"solver, which is not precisely related to time. We chose the ``rlimit`` "
-"option as the default because it gives more determinism guarantees than "
-"time inside the solver."
+msgid "The SMTChecker uses a hardcoded resource limit (``rlimit``) chosen per solver, which is not precisely related to time. We chose the ``rlimit`` option as the default because it gives more determinism guarantees than time inside the solver."
 msgstr ""
 
 #: ../../smtchecker.rst:449 9f71b8dc0e5d4d09913c98dbe496daae
-msgid ""
-"This options translates roughly to \"a few seconds timeout\" per query. "
-"Of course many properties are very complex and need a lot of time to be "
-"solved, where determinism does not matter. If the SMTChecker does not "
-"manage to solve the contract properties with the default ``rlimit``, a "
-"timeout can be given in milliseconds via the CLI option ``--model-"
-"checker-timeout <time>`` or the JSON option "
-"``settings.modelChecker.timeout=<time>``, where 0 means no timeout."
+msgid "This options translates roughly to \"a few seconds timeout\" per query. Of course many properties are very complex and need a lot of time to be solved, where determinism does not matter. If the SMTChecker does not manage to solve the contract properties with the default ``rlimit``, a timeout can be given in milliseconds via the CLI option ``--model-checker-timeout <time>`` or the JSON option ``settings.modelChecker.timeout=<time>``, where 0 means no timeout."
 msgstr ""
 
 #: ../../smtchecker.rst:458 5621dbd1919a4284ae5e624efc77e397
@@ -352,13 +219,7 @@ msgid "Verification Targets"
 msgstr ""
 
 #: ../../smtchecker.rst:460 3db8a1445c3d4ec0826697a61b388793
-msgid ""
-"The types of verification targets created by the SMTChecker can also be "
-"customized via the CLI option ``--model-checker-target <targets>`` or the"
-" JSON option ``settings.modelChecker.targets=<targets>``. In the CLI "
-"case, ``<targets>`` is a no-space-comma-separated list of one or more "
-"verification targets, and an array of one or more targets as strings in "
-"the JSON input. The keywords that represent the targets are:"
+msgid "The types of verification targets created by the SMTChecker can also be customized via the CLI option ``--model-checker-target <targets>`` or the JSON option ``settings.modelChecker.targets=<targets>``. In the CLI case, ``<targets>`` is a no-space-comma-separated list of one or more verification targets, and an array of one or more targets as strings in the JSON input. The keywords that represent the targets are:"
 msgstr ""
 
 #: ../../smtchecker.rst:468 e90cbab3aaad404bb616d1ad9163bc83
@@ -398,22 +259,15 @@ msgid "All of the above: ``default`` (CLI only)."
 msgstr ""
 
 #: ../../smtchecker.rst:478 13a49325aebf485d8d27471746c8e45b
-msgid ""
-"A common subset of targets might be, for example: ``--model-checker-"
-"targets assert,overflow``."
+msgid "A common subset of targets might be, for example: ``--model-checker-targets assert,overflow``."
 msgstr ""
 
 #: ../../smtchecker.rst:481 a39ed6773dff4efc9cbf70e79b4d19b3
-msgid ""
-"All targets are checked by default, except underflow and overflow for "
-"Solidity >=0.8.7."
+msgid "All targets are checked by default, except underflow and overflow for Solidity >=0.8.7."
 msgstr ""
 
 #: ../../smtchecker.rst:483 3518c5dd7a944859ad60ba38642f94fd
-msgid ""
-"There is no precise heuristic on how and when to split verification "
-"targets, but it can be useful especially when dealing with large "
-"contracts."
+msgid "There is no precise heuristic on how and when to split verification targets, but it can be useful especially when dealing with large contracts."
 msgstr ""
 
 #: ../../smtchecker.rst:487 ff2e658291ba48c6aa5e4caa3b107a56
@@ -421,12 +275,7 @@ msgid "Unproved Targets"
 msgstr ""
 
 #: ../../smtchecker.rst:489 17effb90ff7f48789eb557cb6d59a61b
-msgid ""
-"If there are any unproved targets, the SMTChecker issues one warning "
-"stating how many unproved targets there are. If the user wishes to see "
-"all the specific unproved targets, the CLI option ``--model-checker-show-"
-"unproved`` and the JSON option ``settings.modelChecker.showUnproved = "
-"true`` can be used."
+msgid "If there are any unproved targets, the SMTChecker issues one warning stating how many unproved targets there are. If the user wishes to see all the specific unproved targets, the CLI option ``--model-checker-show-unproved`` and the JSON option ``settings.modelChecker.showUnproved = true`` can be used."
 msgstr ""
 
 #: ../../smtchecker.rst:495 b940c802329f4254b390d51a43449101
@@ -434,28 +283,11 @@ msgid "Verified Contracts"
 msgstr ""
 
 #: ../../smtchecker.rst:497 e894d5759112491b8e234a7d378cb1cf
-msgid ""
-"By default all the deployable contracts in the given sources are analyzed"
-" separately as the one that will be deployed. This means that if a "
-"contract has many direct and indirect inheritance parents, all of them "
-"will be analyzed on their own, even though only the most derived will be "
-"accessed directly on the blockchain. This causes an unnecessary burden on"
-" the SMTChecker and the solver.  To aid cases like this, users can "
-"specify which contracts should be analyzed as the deployed one. The "
-"parent contracts are of course still analyzed, but only in the context of"
-" the most derived contract, reducing the complexity of the encoding and "
-"generated queries. Note that abstract contracts are by default not "
-"analyzed as the most derived by the SMTChecker."
+msgid "By default all the deployable contracts in the given sources are analyzed separately as the one that will be deployed. This means that if a contract has many direct and indirect inheritance parents, all of them will be analyzed on their own, even though only the most derived will be accessed directly on the blockchain. This causes an unnecessary burden on the SMTChecker and the solver.  To aid cases like this, users can specify which contracts should be analyzed as the deployed one. The parent contracts are of course still analyzed, but only in the context of the most derived contract, reducing the complexity of the encoding and generated queries. Note that abstract contracts are by default not analyzed as the most derived by the SMTChecker."
 msgstr ""
 
 #: ../../smtchecker.rst:508 dadf5abde0914d10a2651c7ad3511351
-msgid ""
-"The chosen contracts can be given via a comma-separated list (whitespace "
-"is not allowed) of <source>:<contract> pairs in the CLI: ``--model-"
-"checker-contracts "
-"\"<source1.sol:contract1>,<source2.sol:contract2>,<source2.sol:contract3>\"``,"
-" and via the object ``settings.modelChecker.contracts`` in the :ref:`JSON"
-" input<compiler-api>`, which has the following form:"
+msgid "The chosen contracts can be given via a comma-separated list (whitespace is not allowed) of <source>:<contract> pairs in the CLI: ``--model-checker-contracts \"<source1.sol:contract1>,<source2.sol:contract2>,<source2.sol:contract3>\"``, and via the object ``settings.modelChecker.contracts`` in the :ref:`JSON input<compiler-api>`, which has the following form:"
 msgstr ""
 
 #: ../../smtchecker.rst:522 71436855a8aa4ac5bd524ce3366f9e5f
@@ -463,39 +295,19 @@ msgid "Reported Inferred Inductive Invariants"
 msgstr ""
 
 #: ../../smtchecker.rst:524 e7dc55b1172843469b9e92655659288b
-msgid ""
-"For properties that were proved safe with the CHC engine, the SMTChecker "
-"can retrieve inductive invariants that were inferred by the Horn solver "
-"as part of the proof. Currently two types of invariants can be reported "
-"to the user:"
+msgid "For properties that were proved safe with the CHC engine, the SMTChecker can retrieve inductive invariants that were inferred by the Horn solver as part of the proof. Currently two types of invariants can be reported to the user:"
 msgstr ""
 
 #: ../../smtchecker.rst:529 0ce06a612e294db98d7607b85d93fdf0
-msgid ""
-"Contract Invariants: these are properties over the contract's state "
-"variables that are true before and after every possible transaction that "
-"the contract may ever run. For example, ``x >= y``, where ``x`` and ``y``"
-" are a contract's state variables."
+msgid "Contract Invariants: these are properties over the contract's state variables that are true before and after every possible transaction that the contract may ever run. For example, ``x >= y``, where ``x`` and ``y`` are a contract's state variables."
 msgstr ""
 
 #: ../../smtchecker.rst:531 5067abe5acc543c4a6afddf3de749dbc
-msgid ""
-"Reentrancy Properties: they represent the behavior of the contract in the"
-" presence of external calls to unknown code. These properties can express"
-" a relation between the value of the state variables before and after the"
-" external call, where the external call is free to do anything, including"
-" making reentrant calls to the analyzed contract. Primed variables "
-"represent the state variables' values after said external call. Example: "
-"``lock -> x = x'``."
+msgid "Reentrancy Properties: they represent the behavior of the contract in the presence of external calls to unknown code. These properties can express a relation between the value of the state variables before and after the external call, where the external call is free to do anything, including making reentrant calls to the analyzed contract. Primed variables represent the state variables' values after said external call. Example: ``lock -> x = x'``."
 msgstr ""
 
 #: ../../smtchecker.rst:535 7b01c689e9374c43b812542440a3686a
-msgid ""
-"The user can choose the type of invariants to be reported using the CLI "
-"option ``--model-checker-invariants \"contract,reentrancy\"`` or as an "
-"array in the field ``settings.modelChecker.invariants`` in the :ref:`JSON"
-" input<compiler-api>`. By default the SMTChecker does not report "
-"invariants."
+msgid "The user can choose the type of invariants to be reported using the CLI option ``--model-checker-invariants \"contract,reentrancy\"`` or as an array in the field ``settings.modelChecker.invariants`` in the :ref:`JSON input<compiler-api>`. By default the SMTChecker does not report invariants."
 msgstr ""
 
 #: ../../smtchecker.rst:539 4fbbf8cf20064135a5ef1d0a04e1f4f5
@@ -503,15 +315,7 @@ msgid "Division and Modulo With Slack Variables"
 msgstr ""
 
 #: ../../smtchecker.rst:541 3da647e685864afdb05b22d7423cb363
-msgid ""
-"Spacer, the default Horn solver used by the SMTChecker, often dislikes "
-"division and modulo operations inside Horn rules. Because of that, by "
-"default the Solidity division and modulo operations are encoded using the"
-" constraint ``a = b * d + m`` where ``d = a / b`` and ``m = a % b``. "
-"However, other solvers, such as Eldarica, prefer the syntactically "
-"precise operations. The command line flag ``--model-checker-div-mod-no-"
-"slacks`` and the JSON option ``settings.modelChecker.divModNoSlacks`` can"
-" be used to toggle the encoding depending on the used solver preferences."
+msgid "Spacer, the default Horn solver used by the SMTChecker, often dislikes division and modulo operations inside Horn rules. Because of that, by default the Solidity division and modulo operations are encoded using the constraint ``a = b * d + m`` where ``d = a / b`` and ``m = a % b``. However, other solvers, such as Eldarica, prefer the syntactically precise operations. The command line flag ``--model-checker-div-mod-no-slacks`` and the JSON option ``settings.modelChecker.divModNoSlacks`` can be used to toggle the encoding depending on the used solver preferences."
 msgstr ""
 
 #: ../../smtchecker.rst:551 f66123250e9d445381fdd16bb7e241e6
@@ -519,29 +323,15 @@ msgid "Natspec Function Abstraction"
 msgstr ""
 
 #: ../../smtchecker.rst:553 391b548c3c0542ad8853016bf4366093
-msgid ""
-"Certain functions including common math methods such as ``pow`` and "
-"``sqrt`` may be too complex to be analyzed in a fully automated way. "
-"These functions can be annotated with Natspec tags that indicate to the "
-"SMTChecker that these functions should be abstracted. This means that the"
-" body of the function is not used, and when called, the function will:"
+msgid "Certain functions including common math methods such as ``pow`` and ``sqrt`` may be too complex to be analyzed in a fully automated way. These functions can be annotated with Natspec tags that indicate to the SMTChecker that these functions should be abstracted. This means that the body of the function is not used, and when called, the function will:"
 msgstr ""
 
 #: ../../smtchecker.rst:559 6d98da165c8f46bf80e56905586f09e5
-msgid ""
-"Return a nondeterministic value, and either keep the state variables "
-"unchanged if the abstracted function is view/pure, or also set the state "
-"variables to nondeterministic values otherwise. This can be used via the "
-"annotation ``/// @custom:smtchecker abstract-function-nondet``."
+msgid "Return a nondeterministic value, and either keep the state variables unchanged if the abstracted function is view/pure, or also set the state variables to nondeterministic values otherwise. This can be used via the annotation ``/// @custom:smtchecker abstract-function-nondet``."
 msgstr ""
 
 #: ../../smtchecker.rst:560 e812bd2a854343cabe210a95a87f1bb2
-msgid ""
-"Act as an uninterpreted function. This means that the semantics of the "
-"function (given by the body) are ignored, and the only property this "
-"function has is that given the same input it guarantees the same output. "
-"This is currently under development and will be available via the "
-"annotation ``/// @custom:smtchecker abstract-function-uf``."
+msgid "Act as an uninterpreted function. This means that the semantics of the function (given by the body) are ignored, and the only property this function has is that given the same input it guarantees the same output. This is currently under development and will be available via the annotation ``/// @custom:smtchecker abstract-function-uf``."
 msgstr ""
 
 #: ../../smtchecker.rst:565 775d410554744afa8e64bc4563450888
@@ -549,22 +339,11 @@ msgid "Model Checking Engines"
 msgstr ""
 
 #: ../../smtchecker.rst:567 ccc793d4ff424725865d4890a6146e56
-msgid ""
-"The SMTChecker module implements two different reasoning engines, a "
-"Bounded Model Checker (BMC) and a system of Constrained Horn Clauses "
-"(CHC).  Both engines are currently under development, and have different "
-"characteristics. The engines are independent and every property warning "
-"states from which engine it came. Note that all the examples above with "
-"counterexamples were reported by CHC, the more powerful engine."
+msgid "The SMTChecker module implements two different reasoning engines, a Bounded Model Checker (BMC) and a system of Constrained Horn Clauses (CHC).  Both engines are currently under development, and have different characteristics. The engines are independent and every property warning states from which engine it came. Note that all the examples above with counterexamples were reported by CHC, the more powerful engine."
 msgstr ""
 
 #: ../../smtchecker.rst:574 6914343988a0499990d6a691f1265451
-msgid ""
-"By default both engines are used, where CHC runs first, and every "
-"property that was not proven is passed over to BMC. You can choose a "
-"specific engine via the CLI option ``--model-checker-engine "
-"{all,bmc,chc,none}`` or the JSON option "
-"``settings.modelChecker.engine={all,bmc,chc,none}``."
+msgid "By default both engines are used, where CHC runs first, and every property that was not proven is passed over to BMC. You can choose a specific engine via the CLI option ``--model-checker-engine {all,bmc,chc,none}`` or the JSON option ``settings.modelChecker.engine={all,bmc,chc,none}``."
 msgstr ""
 
 #: ../../smtchecker.rst:580 e643bfc1adda4d4cacdf2248f91bf56f
@@ -572,21 +351,11 @@ msgid "Bounded Model Checker (BMC)"
 msgstr ""
 
 #: ../../smtchecker.rst:582 357ecf6603d04da7a32f3ff5590c77f6
-msgid ""
-"The BMC engine analyzes functions in isolation, that is, it does not take"
-" the overall behavior of the contract over multiple transactions into "
-"account when analyzing each function.  Loops are also ignored in this "
-"engine at the moment. Internal function calls are inlined as long as they"
-" are not recursive, directly or indirectly. External function calls are "
-"inlined if possible. Knowledge that is potentially affected by reentrancy"
-" is erased."
+msgid "The BMC engine analyzes functions in isolation, that is, it does not take the overall behavior of the contract over multiple transactions into account when analyzing each function.  Loops are also ignored in this engine at the moment. Internal function calls are inlined as long as they are not recursive, directly or indirectly. External function calls are inlined if possible. Knowledge that is potentially affected by reentrancy is erased."
 msgstr ""
 
 #: ../../smtchecker.rst:589 962dc90f373548b9a84e68211696c121
-msgid ""
-"The characteristics above make BMC prone to reporting false positives, "
-"but it is also lightweight and should be able to quickly find small local"
-" bugs."
+msgid "The characteristics above make BMC prone to reporting false positives, but it is also lightweight and should be able to quickly find small local bugs."
 msgstr ""
 
 #: ../../smtchecker.rst:593 912c9dea56ea4966a57f148e8d48544c
@@ -594,21 +363,11 @@ msgid "Constrained Horn Clauses (CHC)"
 msgstr ""
 
 #: ../../smtchecker.rst:595 c98f83d0b03c42f996b1cfb2586b1b98
-msgid ""
-"A contract's Control Flow Graph (CFG) is modelled as a system of Horn "
-"clauses, where the life cycle of the contract is represented by a loop "
-"that can visit every public/external function non-deterministically. This"
-" way, the behavior of the entire contract over an unbounded number of "
-"transactions is taken into account when analyzing any function. Loops are"
-" fully supported by this engine. Internal function calls are supported, "
-"and external function calls assume the called code is unknown and can do "
-"anything."
+msgid "A contract's Control Flow Graph (CFG) is modelled as a system of Horn clauses, where the life cycle of the contract is represented by a loop that can visit every public/external function non-deterministically. This way, the behavior of the entire contract over an unbounded number of transactions is taken into account when analyzing any function. Loops are fully supported by this engine. Internal function calls are supported, and external function calls assume the called code is unknown and can do anything."
 msgstr ""
 
 #: ../../smtchecker.rst:603 487cd45db1574aeba4f7c03bc4d51338
-msgid ""
-"The CHC engine is much more powerful than BMC in terms of what it can "
-"prove, and might require more computing resources."
+msgid "The CHC engine is much more powerful than BMC in terms of what it can prove, and might require more computing resources."
 msgstr ""
 
 #: ../../smtchecker.rst:607 20260ccb3e334d04b12e20ef7cb14a9b
@@ -616,39 +375,19 @@ msgid "SMT and Horn solvers"
 msgstr ""
 
 #: ../../smtchecker.rst:609 2ab5a53e1f464282b81be7973babc7be
-msgid ""
-"The two engines detailed above use automated theorem provers as their "
-"logical backends.  BMC uses an SMT solver, whereas CHC uses a Horn "
-"solver. Often the same tool can act as both, as seen in `z3 "
-"<https://github.com/Z3Prover/z3>`_, which is primarily an SMT solver and "
-"makes `Spacer <https://spacer.bitbucket.io/>`_ available as a Horn "
-"solver, and `Eldarica <https://github.com/uuverifiers/eldarica>`_ which "
-"does both."
+msgid "The two engines detailed above use automated theorem provers as their logical backends.  BMC uses an SMT solver, whereas CHC uses a Horn solver. Often the same tool can act as both, as seen in `z3 <https://github.com/Z3Prover/z3>`_, which is primarily an SMT solver and makes `Spacer <https://spacer.bitbucket.io/>`_ available as a Horn solver, and `Eldarica <https://github.com/uuverifiers/eldarica>`_ which does both."
 msgstr ""
 
 #: ../../smtchecker.rst:616 b7d0b44b09164bc39d0f01fd824c764c
-msgid ""
-"The user can choose which solvers should be used, if available, via the "
-"CLI option ``--model-checker-solvers {all,cvc4,smtlib2,z3}`` or the JSON "
-"option ``settings.modelChecker.solvers=[smtlib2,z3]``, where:"
+msgid "The user can choose which solvers should be used, if available, via the CLI option ``--model-checker-solvers {all,cvc4,smtlib2,z3}`` or the JSON option ``settings.modelChecker.solvers=[smtlib2,z3]``, where:"
 msgstr ""
 
 #: ../../smtchecker.rst:620 fb30dc09458c48f4ae01b4304a79f9e4
-msgid ""
-"``cvc4`` is only available if the ``solc`` binary is compiled with it. "
-"Only BMC uses ``cvc4``."
+msgid "``cvc4`` is only available if the ``solc`` binary is compiled with it. Only BMC uses ``cvc4``."
 msgstr ""
 
 #: ../../smtchecker.rst:621 978092e3fab54e2381a923dd9c32f8a1
-msgid ""
-"``smtlib2`` outputs SMT/Horn queries in the `smtlib2 "
-"<http://smtlib.cs.uiowa.edu/>`_ format. These can be used together with "
-"the compiler's `callback mechanism <https://github.com/ethereum/solc-"
-"js>`_ so that any solver binary from the system can be employed to "
-"synchronously return the results of the queries to the compiler. This is "
-"currently the only way to use Eldarica, for example, since it does not "
-"have a C++ API. This can be used by both BMC and CHC depending on which "
-"solvers are called."
+msgid "``smtlib2`` outputs SMT/Horn queries in the `smtlib2 <http://smtlib.cs.uiowa.edu/>`_ format. These can be used together with the compiler's `callback mechanism <https://github.com/ethereum/solc-js>`_ so that any solver binary from the system can be employed to synchronously return the results of the queries to the compiler. This is currently the only way to use Eldarica, for example, since it does not have a C++ API. This can be used by both BMC and CHC depending on which solvers are called."
 msgstr ""
 
 #: ../../smtchecker.rst:626 bce76ae537e04c298952991c4f52159f
@@ -660,30 +399,19 @@ msgid "if ``solc`` is compiled with it;"
 msgstr ""
 
 #: ../../smtchecker.rst:629 b02994deca0f4d05bc5f5859109123ac
-msgid ""
-"if a dynamic ``z3`` library of version 4.8.x is installed in a Linux "
-"system (from Solidity 0.7.6);"
+msgid "if a dynamic ``z3`` library of version 4.8.x is installed in a Linux system (from Solidity 0.7.6);"
 msgstr ""
 
 #: ../../smtchecker.rst:630 5dd58e99e114479b891f6b56bd103876
-msgid ""
-"statically in ``soljson.js`` (from Solidity 0.6.9), that is, the "
-"Javascript binary of the compiler."
+msgid "statically in ``soljson.js`` (from Solidity 0.6.9), that is, the Javascript binary of the compiler."
 msgstr ""
 
 #: ../../smtchecker.rst:632 bb3389edb2834545886a28e8de730550
-msgid ""
-"Since both BMC and CHC use ``z3``, and ``z3`` is available in a greater "
-"variety of environments, including in the browser, most users will almost"
-" never need to be concerned about this option. More advanced users might "
-"apply this option to try alternative solvers on more complex problems."
+msgid "Since both BMC and CHC use ``z3``, and ``z3`` is available in a greater variety of environments, including in the browser, most users will almost never need to be concerned about this option. More advanced users might apply this option to try alternative solvers on more complex problems."
 msgstr ""
 
 #: ../../smtchecker.rst:637 f0fca60ba3c948a982acf27c6766c11a
-msgid ""
-"Please note that certain combinations of chosen engine and solver will "
-"lead to the SMTChecker doing nothing, for example choosing CHC and "
-"``cvc4``."
+msgid "Please note that certain combinations of chosen engine and solver will lead to the SMTChecker doing nothing, for example choosing CHC and ``cvc4``."
 msgstr ""
 
 #: ../../smtchecker.rst:642 12ed4173277e4f86b6f35b10589e2a87
@@ -691,21 +419,11 @@ msgid "Abstraction and False Positives"
 msgstr ""
 
 #: ../../smtchecker.rst:644 cae26fa0a8514c87a3ded335d09a6675
-msgid ""
-"The SMTChecker implements abstractions in an incomplete and sound way: If"
-" a bug is reported, it might be a false positive introduced by "
-"abstractions (due to erasing knowledge or using a non-precise type). If "
-"it determines that a verification target is safe, it is indeed safe, that"
-" is, there are no false negatives (unless there is a bug in the "
-"SMTChecker)."
+msgid "The SMTChecker implements abstractions in an incomplete and sound way: If a bug is reported, it might be a false positive introduced by abstractions (due to erasing knowledge or using a non-precise type). If it determines that a verification target is safe, it is indeed safe, that is, there are no false negatives (unless there is a bug in the SMTChecker)."
 msgstr ""
 
 #: ../../smtchecker.rst:650 800c7dfd1ec64fadb7679089cf6df59f
-msgid ""
-"If a target cannot be proven you can try to help the solver by using the "
-"tuning options in the previous section. If you are sure of a false "
-"positive, adding ``require`` statements in the code with more information"
-" may also give some more power to the solver."
+msgid "If a target cannot be proven you can try to help the solver by using the tuning options in the previous section. If you are sure of a false positive, adding ``require`` statements in the code with more information may also give some more power to the solver."
 msgstr ""
 
 #: ../../smtchecker.rst:656 8d4439c53a034b9ea8fe66fd926d1dba
@@ -713,11 +431,7 @@ msgid "SMT Encoding and Types"
 msgstr ""
 
 #: ../../smtchecker.rst:658 95047e2379c240a78abe53aa70ddccde
-msgid ""
-"The SMTChecker encoding tries to be as precise as possible, mapping "
-"Solidity types and expressions to their closest `SMT-LIB "
-"<http://smtlib.cs.uiowa.edu/>`_ representation, as shown in the table "
-"below."
+msgid "The SMTChecker encoding tries to be as precise as possible, mapping Solidity types and expressions to their closest `SMT-LIB <http://smtlib.cs.uiowa.edu/>`_ representation, as shown in the table below."
 msgstr ""
 
 #: ../../smtchecker.rst:663 7d13e03ea563430fa8772037163a6241
@@ -787,16 +501,11 @@ msgid "LIA"
 msgstr ""
 
 #: ../../smtchecker.rst:678 5cb5eeb974e94f4b9d14edd75f860fd7
-msgid ""
-"Types that are not yet supported are abstracted by a single 256-bit "
-"unsigned integer, where their unsupported operations are ignored."
+msgid "Types that are not yet supported are abstracted by a single 256-bit unsigned integer, where their unsupported operations are ignored."
 msgstr ""
 
 #: ../../smtchecker.rst:681 b05f9c8b84a0465a93d9f28df95b13d6
-msgid ""
-"For more details on how the SMT encoding works internally, see the paper "
-"`SMT-based Verification of Solidity Smart Contracts "
-"<https://github.com/leonardoalt/text/blob/master/solidity_isola_2018/main.pdf>`_."
+msgid "For more details on how the SMT encoding works internally, see the paper `SMT-based Verification of Solidity Smart Contracts <https://github.com/leonardoalt/text/blob/master/solidity_isola_2018/main.pdf>`_."
 msgstr ""
 
 #: ../../smtchecker.rst:685 d44a9515caf84e6eaaf77692522fc79e
@@ -804,26 +513,15 @@ msgid "Function Calls"
 msgstr ""
 
 #: ../../smtchecker.rst:687 fdf2a40fcbe84e7994b300da206d6033
-msgid ""
-"In the BMC engine, function calls to the same contract (or base "
-"contracts) are inlined when possible, that is, when their implementation "
-"is available.  Calls to functions in other contracts are not inlined even"
-" if their code is available, since we cannot guarantee that the actual "
-"deployed code is the same."
+msgid "In the BMC engine, function calls to the same contract (or base contracts) are inlined when possible, that is, when their implementation is available.  Calls to functions in other contracts are not inlined even if their code is available, since we cannot guarantee that the actual deployed code is the same."
 msgstr ""
 
 #: ../../smtchecker.rst:692 ae208c678ac74d599d73067449b47107
-msgid ""
-"The CHC engine creates nonlinear Horn clauses that use summaries of the "
-"called functions to support internal function calls. External function "
-"calls are treated as calls to unknown code, including potential reentrant"
-" calls."
+msgid "The CHC engine creates nonlinear Horn clauses that use summaries of the called functions to support internal function calls. External function calls are treated as calls to unknown code, including potential reentrant calls."
 msgstr ""
 
 #: ../../smtchecker.rst:696 af8141b10e5d48189cae742e6493c70b
-msgid ""
-"Complex pure functions are abstracted by an uninterpreted function (UF) "
-"over the arguments."
+msgid "Complex pure functions are abstracted by an uninterpreted function (UF) over the arguments."
 msgstr ""
 
 #: ../../smtchecker.rst:700 085d3003bb1a493b818f8709a6aba892
@@ -863,10 +561,7 @@ msgid "external call to known code"
 msgstr ""
 
 #: ../../smtchecker.rst:709 35171673249b4452a47621f66569bb9a
-msgid ""
-"BMC: Inline function call or erase knowledge about state variables and "
-"local storage references. CHC: Assume called code is unknown. Try to "
-"infer invariants that hold after the call returns."
+msgid "BMC: Inline function call or erase knowledge about state variables and local storage references. CHC: Assume called code is unknown. Try to infer invariants that hold after the call returns."
 msgstr ""
 
 #: ../../smtchecker.rst:716 40090285a6ae427dbf2a82af41e60465
@@ -911,10 +606,7 @@ msgid "external functions without implementation"
 msgstr ""
 
 #: ../../smtchecker.rst:732 95d7c3e4b2fb4ab6bc64e1da6e63c894
-msgid ""
-"BMC: Erase state knowledge and assume result is nondeterminisc. CHC: "
-"Nondeterministic summary. Try to infer invariants that hold after the "
-"call returns."
+msgid "BMC: Erase state knowledge and assume result is nondeterminisc. CHC: Nondeterministic summary. Try to infer invariants that hold after the call returns."
 msgstr ""
 
 #: ../../smtchecker.rst:738 effb8843d68b428b9ba92c30e7bcab21
@@ -922,9 +614,7 @@ msgid "transfer"
 msgstr ""
 
 #: ../../smtchecker.rst:738 72dc4889d6204ea7910d7c819328204e
-msgid ""
-"BMC: Checks whether the contract's balance is sufficient. CHC: does not "
-"yet perform the check."
+msgid "BMC: Checks whether the contract's balance is sufficient. CHC: does not yet perform the check."
 msgstr ""
 
 #: ../../smtchecker.rst:742 fb341c6e472748189141f6d4053d1955
@@ -936,26 +626,15 @@ msgid "Currently unsupported"
 msgstr ""
 
 #: ../../smtchecker.rst:745 3f5bd6c6a4124f919ab49f349ba3a7dc
-msgid ""
-"Using abstraction means loss of precise knowledge, but in many cases it "
-"does not mean loss of proving power."
+msgid "Using abstraction means loss of precise knowledge, but in many cases it does not mean loss of proving power."
 msgstr ""
 
 #: ../../smtchecker.rst:771 425caedf1fd249b0a6d9c48b32eb3b55
-msgid ""
-"In the example above, the SMTChecker is not expressive enough to actually"
-" compute ``ecrecover``, but by modelling the function calls as "
-"uninterpreted functions we know that the return value is the same when "
-"called on equivalent parameters. This is enough to prove that the "
-"assertion above is always true."
+msgid "In the example above, the SMTChecker is not expressive enough to actually compute ``ecrecover``, but by modelling the function calls as uninterpreted functions we know that the return value is the same when called on equivalent parameters. This is enough to prove that the assertion above is always true."
 msgstr ""
 
 #: ../../smtchecker.rst:776 087fff785456403b99b8068f741ea6f3
-msgid ""
-"Abstracting a function call with an UF can be done for functions known to"
-" be deterministic, and can be easily done for pure functions.  It is "
-"however difficult to do this with general external functions, since they "
-"might depend on state variables."
+msgid "Abstracting a function call with an UF can be done for functions known to be deterministic, and can be easily done for pure functions.  It is however difficult to do this with general external functions, since they might depend on state variables."
 msgstr ""
 
 #: ../../smtchecker.rst:782 f75fb399406c4c2ea7910c6e3e8fd49a
@@ -963,32 +642,15 @@ msgid "Reference Types and Aliasing"
 msgstr ""
 
 #: ../../smtchecker.rst:784 82f8132292e64e8fac30f99aed907825
-msgid ""
-"Solidity implements aliasing for reference types with the same :ref:`data"
-" location<data-location>`. That means one variable may be modified "
-"through a reference to the same data area. The SMTChecker does not keep "
-"track of which references refer to the same data. This implies that "
-"whenever a local reference or state variable of reference type is "
-"assigned, all knowledge regarding variables of the same type and data "
-"location is erased. If the type is nested, the knowledge removal also "
-"includes all the prefix base types."
+msgid "Solidity implements aliasing for reference types with the same :ref:`data location<data-location>`. That means one variable may be modified through a reference to the same data area. The SMTChecker does not keep track of which references refer to the same data. This implies that whenever a local reference or state variable of reference type is assigned, all knowledge regarding variables of the same type and data location is erased. If the type is nested, the knowledge removal also includes all the prefix base types."
 msgstr ""
 
 #: ../../smtchecker.rst:839 0115078c09494003b47291afbd710c7b
-msgid ""
-"After the assignment to ``b[0]``, we need to clear knowledge about ``a`` "
-"since it has the same type (``uint[]``) and data location (memory).  We "
-"also need to clear knowledge about ``c``, since its base type is also a "
-"``uint[]`` located in memory. This implies that some ``c[i]`` could refer"
-" to the same data as ``b`` or ``a``."
+msgid "After the assignment to ``b[0]``, we need to clear knowledge about ``a`` since it has the same type (``uint[]``) and data location (memory).  We also need to clear knowledge about ``c``, since its base type is also a ``uint[]`` located in memory. This implies that some ``c[i]`` could refer to the same data as ``b`` or ``a``."
 msgstr ""
 
 #: ../../smtchecker.rst:845 07da4a04fea744639b04779b53dfa229
-msgid ""
-"Notice that we do not clear knowledge about ``array`` and ``d`` because "
-"they are located in storage, even though they also have type ``uint[]``."
-"  However, if ``d`` was assigned, we would need to clear knowledge about "
-"``array`` and vice-versa."
+msgid "Notice that we do not clear knowledge about ``array`` and ``d`` because they are located in storage, even though they also have type ``uint[]``.  However, if ``d`` was assigned, we would need to clear knowledge about ``array`` and vice-versa."
 msgstr ""
 
 #: ../../smtchecker.rst:851 3a4667e5228c4a48849276673f0e9778
@@ -996,20 +658,11 @@ msgid "Contract Balance"
 msgstr ""
 
 #: ../../smtchecker.rst:853 05a04208bb5c4b2abf90edf45e1d75e4
-msgid ""
-"A contract may be deployed with funds sent to it, if ``msg.value`` > 0 in"
-" the deployment transaction. However, the contract's address may already "
-"have funds before deployment, which are kept by the contract. Therefore, "
-"the SMTChecker assumes that ``address(this).balance >= msg.value`` in the"
-" constructor in order to be consistent with the EVM rules. The contract's"
-" balance may also increase without triggering any calls to the contract, "
-"if"
+msgid "A contract may be deployed with funds sent to it, if ``msg.value`` > 0 in the deployment transaction. However, the contract's address may already have funds before deployment, which are kept by the contract. Therefore, the SMTChecker assumes that ``address(this).balance >= msg.value`` in the constructor in order to be consistent with the EVM rules. The contract's balance may also increase without triggering any calls to the contract, if"
 msgstr ""
 
 #: ../../smtchecker.rst:862 8f9169c8e25847e2b9ff7d397321e187
-msgid ""
-"``selfdestruct`` is executed by another contract with the analyzed "
-"contract as the target of the remaining funds,"
+msgid "``selfdestruct`` is executed by another contract with the analyzed contract as the target of the remaining funds,"
 msgstr ""
 
 #: ../../smtchecker.rst:864 6720dbe8bc5c47979137c50a33488a36
@@ -1017,9 +670,7 @@ msgid "the contract is the coinbase (i.e., ``block.coinbase``) of some block."
 msgstr ""
 
 #: ../../smtchecker.rst:866 d9b6bfde05824c69876b983f5ba96f87
-msgid ""
-"To model this properly, the SMTChecker assumes that at every new "
-"transaction the contract's balance may grow by at least ``msg.value``."
+msgid "To model this properly, the SMTChecker assumes that at every new transaction the contract's balance may grow by at least ``msg.value``."
 msgstr ""
 
 #: ../../smtchecker.rst:871 5eb972df593e4f529773363bca1cab0b
@@ -1027,20 +678,10 @@ msgid "Real World Assumptions"
 msgstr ""
 
 #: ../../smtchecker.rst:873 cc33b6247ca74f2cbe8c9250d06dc478
-msgid ""
-"Some scenarios can be expressed in Solidity and the EVM, but are expected"
-" to never occur in practice. One of such cases is the length of a dynamic"
-" storage array overflowing during a push: If the ``push`` operation is "
-"applied to an array of length 2^256 - 1, its length silently overflows. "
-"However, this is unlikely to happen in practice, since the operations "
-"required to grow the array to that point would take billions of years to "
-"execute. Another similar assumption taken by the SMTChecker is that an "
-"address' balance can never overflow."
+msgid "Some scenarios can be expressed in Solidity and the EVM, but are expected to never occur in practice. One of such cases is the length of a dynamic storage array overflowing during a push: If the ``push`` operation is applied to an array of length 2^256 - 1, its length silently overflows. However, this is unlikely to happen in practice, since the operations required to grow the array to that point would take billions of years to execute. Another similar assumption taken by the SMTChecker is that an address' balance can never overflow."
 msgstr ""
 
 #: ../../smtchecker.rst:883 8578f5a9088b43db93cc9d9c4bfd3e78
-msgid ""
-"A similar idea was presented in `EIP-1985 "
-"<https://eips.ethereum.org/EIPS/eip-1985>`_."
+msgid "A similar idea was presented in `EIP-1985 <https://eips.ethereum.org/EIPS/eip-1985>`_."
 msgstr ""
 

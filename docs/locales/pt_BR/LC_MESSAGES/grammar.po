@@ -1,36 +1,33 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016-2021, Ethereum
-# This file is distributed under the same license as the Solidity package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Solidity 0.8.12\n"
+"Project-Id-Version: solidity-test\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-13 16:47+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-File: grammar.po\n"
+"X-Crowdin-File-ID: 23\n"
+"Language: pt_BR\n"
 
 #: ../../grammar.rst:3 191f5b3108634d09badc16b79f670ef8
 msgid "Language Grammar"
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:2 7264f51368c744a5af6823965fde81cd
-msgid ""
-"Solidity is a statically typed, contract-oriented, high-level language "
-"for implementing smart contracts on the Ethereum platform."
+msgid "Solidity is a statically typed, contract-oriented, high-level language for implementing smart contracts on the Ethereum platform."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:9 b190e566aa6143d890ef1494e5f78663
-msgid ""
-"On top level, Solidity allows pragmas, import directives, and definitions"
-" of contracts, interfaces, libraries, structs, enums and constants."
+msgid "On top level, Solidity allows pragmas, import directives, and definitions of contracts, interfaces, libraries, structs, enums and constants."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:30 7780fa2e918c4fedb796c99972139f66
@@ -58,9 +55,7 @@ msgid "Top-level definition of a library."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:74 0c40afc1c8db4e6f92c9531d3c7791f1
-msgid ""
-"Inheritance specifier for contracts and interfaces. Can optionally supply"
-" base constructor arguments."
+msgid "Inheritance specifier for contracts and interfaces. Can optionally supply base constructor arguments."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:80 75eb40c40ac446c8a9ad6accd35ad37b
@@ -68,17 +63,11 @@ msgid "Declarations that can be used in contracts, interfaces and libraries."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:82 92300bf18d974a93a0be778c406cdbe9
-msgid ""
-"Note that interfaces and libraries may not contain constructors, "
-"interfaces may not contain state variables and libraries may not contain "
-"fallback, receive functions nor non-constant state variables."
+msgid "Note that interfaces and libraries may not contain constructors, interfaces may not contain state variables and libraries may not contain fallback, receive functions nor non-constant state variables."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:101 82b642ba777b42de900b1dd9c7939ce3
-msgid ""
-"Arguments when calling a function or a similar callable object. The "
-"arguments are either given as comma separated list or as map of named "
-"arguments."
+msgid "Arguments when calling a function or a similar callable object. The arguments are either given as comma separated list or as map of named arguments."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:106 71016b1aca4740c989ee968b55ef5f51
@@ -86,9 +75,7 @@ msgid "Qualified name."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:111 ad1a3319593c4124afad92c9458039de
-msgid ""
-"Call to a modifier. If the modifier takes no arguments, the argument list"
-" can be skipped entirely (including opening and closing parentheses)."
+msgid "Call to a modifier. If the modifier takes no arguments, the argument list can be skipped entirely (including opening and closing parentheses)."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:116 768a8ab7723b4386b52ae1aea758e0df
@@ -100,38 +87,23 @@ msgid "A list of parameters, such as function arguments or return values."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:126 37a92e55262541a69b59be5cf3b83cce
-msgid ""
-"Definition of a constructor. Must always supply an implementation. Note "
-"that specifying internal or public visibility is deprecated."
+msgid "Definition of a constructor. Must always supply an implementation. Note that specifying internal or public visibility is deprecated."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:143 8b656bb7357946698d7ad00a1c4aebf7
-msgid ""
-"State mutability for function types. The default mutability 'non-payable'"
-" is assumed if no mutability is specified."
+msgid "State mutability for function types. The default mutability 'non-payable' is assumed if no mutability is specified."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:148 c8a7e0557a15458798ea1db997d3b910
-msgid ""
-"An override specifier used for functions, modifiers or state variables. "
-"In cases where there are ambiguous declarations in several base contracts"
-" being overridden, a complete list of base contracts has to be given."
+msgid "An override specifier used for functions, modifiers or state variables. In cases where there are ambiguous declarations in several base contracts being overridden, a complete list of base contracts has to be given."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:154 444c1e465e6741148c550580da35d002
-msgid ""
-"The definition of contract, library and interface functions. Depending on"
-" the context in which the function is defined, further restrictions may "
-"apply, e.g. functions in interfaces have to be unimplemented, i.e. may "
-"not contain a body block."
+msgid "The definition of contract, library and interface functions. Depending on the context in which the function is defined, further restrictions may apply, e.g. functions in interfaces have to be unimplemented, i.e. may not contain a body block."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:178 711a55c739474168a3f321077549c48c
-msgid ""
-"The definition of a modifier. Note that within the body block of a "
-"modifier, the underscore cannot be used as identifier, but is used as "
-"placeholder statement for the body of a function to which the modifier is"
-" applied."
+msgid "The definition of a modifier. Note that within the body block of a modifier, the underscore cannot be used as identifier, but is used as placeholder statement for the body of a function to which the modifier is applied."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:197 76ed68fea0c64e79aed304afd9db81b5
@@ -143,9 +115,7 @@ msgid "Definition of the special receive function."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:241 aed7e7c5fb564569931d3218efd9045c
-msgid ""
-"Definition of a struct. Can occur at top-level within a source unit or "
-"within a contract, library or interface."
+msgid "Definition of a struct. Can occur at top-level within a source unit or within a contract, library or interface."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:245 3a69365cd0a44a9f8d689f1cf52b14b7
@@ -153,15 +123,11 @@ msgid "The declaration of a named struct member."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:249 72ac27c52b4a40639209b454b66c0a46
-msgid ""
-"Definition of an enum. Can occur at top-level within a source unit or "
-"within a contract, library or interface."
+msgid "Definition of an enum. Can occur at top-level within a source unit or within a contract, library or interface."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:253 a0b59d22e9114df7a1fec64258992158
-msgid ""
-"Definition of a user defined value type. Can occur at top-level within a "
-"source unit or within a contract, library or interface."
+msgid "Definition of a user defined value type. Can occur at top-level within a source unit or within a contract, library or interface."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:259 1dc3e213498248a7aeb1773ae811fffc
@@ -189,15 +155,11 @@ msgid "Definition of an error."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:314 7e40b6481550410598c1f29a0bff26a4
-msgid ""
-"Using directive to bind library functions to types. Can occur within "
-"contracts and libraries."
+msgid "Using directive to bind library functions to types. Can occur within contracts and libraries."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:319 e968cc0497d7423780bb56d174f5b179
-msgid ""
-"A type name can be an elementary type, a function type, a mapping type, a"
-" user-defined type (e.g. a contract or struct) or an array type."
+msgid "A type name can be an elementary type, a function type, a mapping type, a user-defined type (e.g. a contract or struct) or an array type."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:335 937bb02f2f8249de8d8b213d7eac6b0c
@@ -205,50 +167,31 @@ msgid "The declaration of a single variable."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:341 8449e47c2a0e49538ae5e56c1a5d3a71
-msgid ""
-"Complex expression. Can be an index access, an index range access, a "
-"member access, a function call (with optional function call options), a "
-"type conversion, an unary or binary expression, a comparison or "
-"assignment, a ternary expression, a new-expression (i.e. a contract "
-"creation or the allocation of a dynamic memory array), a tuple, an inline"
-" array or a primary expression (i.e. an identifier, literal or type "
-"name)."
+msgid "Complex expression. Can be an index access, an index range access, a member access, a function call (with optional function call options), a type conversion, an unary or binary expression, a comparison or assignment, a ternary expression, a new-expression (i.e. a contract creation or the allocation of a dynamic memory array), a tuple, an inline array or a primary expression (i.e. an identifier, literal or type name)."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:384 d75fd0aae84c4af180c50b26e3262003
-msgid ""
-"An inline array expression denotes a statically sized array of the common"
-" type of the contained expressions."
+msgid "An inline array expression denotes a statically sized array of the common type of the contained expressions."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:389 e35339b1f6e24c30b355c598d3cb01c7
-msgid ""
-"Besides regular non-keyword Identifiers, some keywords like 'from' and "
-"'error' can also be used as identifiers."
+msgid "Besides regular non-keyword Identifiers, some keywords like 'from' and 'error' can also be used as identifiers."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:396 e3759ce134b0464d8e5d1f3b2ff686e6
-msgid ""
-"A full string literal consists of either one or several consecutive "
-"quoted strings."
+msgid "A full string literal consists of either one or several consecutive quoted strings."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:400 b4b044fb9b654bc195969399099c7d56
-msgid ""
-"A full hex string literal that consists of either one or several "
-"consecutive hex strings."
+msgid "A full hex string literal that consists of either one or several consecutive hex strings."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:404 89cdac5225534cbe982441abba85fa76
-msgid ""
-"A full unicode string literal that consists of either one or several "
-"consecutive unicode strings."
+msgid "A full unicode string literal that consists of either one or several consecutive unicode strings."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:409 c85ef10424f546068e2f544b990a4b7f
-msgid ""
-"Number literals can be decimal or hexadecimal numbers with an optional "
-"unit."
+msgid "Number literals can be decimal or hexadecimal numbers with an optional unit."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:413 2a0c87cba6c54ec3b108089afbc69dd6
@@ -272,9 +215,7 @@ msgid "A break statement. Only allowed inside for, while or do-while loops."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:457 a0c8e677c69f4de592ab431745674d14
-msgid ""
-"A try statement. The contained expression needs to be an external "
-"function call or a contract creation."
+msgid "A try statement. The contained expression needs to be an external function call or a contract creation."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:461 a749a6b76e064d4dab210f46637afead
@@ -290,23 +231,15 @@ msgid "A revert statement. The contained expression needs to refer to an error."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:475 e8e785fd72844021938a3351583cfc16
-msgid ""
-"An inline assembly block. The contents of an inline assembly block use a "
-"separate scanner/lexer, i.e. the set of keywords and allowed identifiers "
-"is different inside an inline assembly block."
+msgid "An inline assembly block. The contents of an inline assembly block use a separate scanner/lexer, i.e. the set of keywords and allowed identifiers is different inside an inline assembly block."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:484 34e4f5931fef4ee6ace9c05f209d39c8
-msgid ""
-"A tuple of variable names to be used in variable declarations. May "
-"contain empty fields."
+msgid "A tuple of variable names to be used in variable declarations. May contain empty fields."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:493 b332364bae544bb1b3639f3597806961
-msgid ""
-"A variable declaration statement. A single variable may be declared "
-"without initial value, whereas a tuple of variables can only be declared "
-"with initial value."
+msgid "A variable declaration statement. A single variable may be declared without initial value, whereas a tuple of variables can only be declared with initial value."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:502 97fb9e0f75984f6d938e4edf324ef0e6
@@ -314,42 +247,27 @@ msgid "Only elementary types or user defined types are viable as mapping keys."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:507 a9fa4c6276174033985a3dc542015c0a
-msgid ""
-"A Yul statement within an inline assembly block. continue and break "
-"statements are only valid within for loops. leave statements are only "
-"valid within function bodies."
+msgid "A Yul statement within an inline assembly block. continue and break statements are only valid within for loops. leave statements are only valid within function bodies."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:527 c65290260a9a4e95849f110d2782cbba
-msgid ""
-"The declaration of one or more Yul variables with optional initial value."
-" If multiple variables are declared, only a function call is a valid "
-"initial value."
+msgid "The declaration of one or more Yul variables with optional initial value. If multiple variables are declared, only a function call is a valid initial value."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:535 245053a965d440cbab745ffc1a5859a0
-msgid ""
-"Any expression can be assigned to a single Yul variable, whereas multi-"
-"assignments require a function call on the right-hand side."
+msgid "Any expression can be assigned to a single Yul variable, whereas multi-assignments require a function call on the right-hand side."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:547 ae46c39dd81c4946ab76380fd6c7a31b
-msgid ""
-"A Yul switch statement can consist of only a default-case (deprecated) or"
-" one or more non-default cases optionally followed by a default-case."
+msgid "A Yul switch statement can consist of only a default-case (deprecated) or one or more non-default cases optionally followed by a default-case."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:564 735efb100c3c4ee0807d0752f7881b43
-msgid ""
-"While only identifiers without dots can be declared within inline "
-"assembly, paths containing dots can refer to declarations outside the "
-"inline assembly block."
+msgid "While only identifiers without dots can be declared within inline assembly, paths containing dots can refer to declarations outside the inline assembly block."
 msgstr ""
 
 #: ../../grammar/SolidityParser.g4:569 4b8d084ab3e44f239b355fd210a03862
-msgid ""
-"A call to a function with return values can only occur as right-hand side"
-" of an assignment or a variable declaration."
+msgid "A call to a function with return values can only occur as right-hand side of an assignment or a variable declaration."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:41 7f4bb257bd4e440fafed2cd4b14bac2d
@@ -385,10 +303,7 @@ msgid "Any printable character except double quote or back slash."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:187 a39bd702470b4504893774a527870388
-msgid ""
-"Escape sequence. Apart from common single character escape sequences, "
-"line breaks can be escaped as well as four hex digit unicode escapes "
-"\\\\uXXXX and two digit hex escape sequences \\\\xXX are allowed."
+msgid "Escape sequence. Apart from common single character escape sequences, line breaks can be escaped as well as four hex digit unicode escapes \\\\uXXXX and two digit hex escape sequences \\\\xXX are allowed."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:198 63cd58d1666d4ff380ce47aa1350b1f6
@@ -396,28 +311,19 @@ msgid "A single quoted string literal allowing arbitrary unicode characters."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:210 b308afaabbb348998579501cb4abce68
-msgid ""
-"Hex strings need to consist of an even number of hex digits that may be "
-"grouped using underscores."
+msgid "Hex strings need to consist of an even number of hex digits that may be grouped using underscores."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:214 b875251e6c544665a726f675ed0b511d
-msgid ""
-"Hex numbers consist of a prefix and an arbitrary number of hex digits "
-"that may be delimited by underscores."
+msgid "Hex numbers consist of a prefix and an arbitrary number of hex digits that may be delimited by underscores."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:225 b96e66229d724d37a983117dced1b338
-msgid ""
-"A decimal number literal consists of decimal digits that may be delimited"
-" by underscores and an optional positive or negative exponent. If the "
-"digits contain a decimal point, the literal has fixed point type."
+msgid "A decimal number literal consists of decimal digits that may be delimited by underscores and an optional positive or negative exponent. If the digits contain a decimal point, the literal has fixed point type."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:235 5fec747c5fae44b38e2535fc852aff75
-msgid ""
-"An identifier in solidity has to start with a letter, a dollar-sign or an"
-" underscore and may additionally contain numbers after the first symbol."
+msgid "An identifier in solidity has to start with a letter, a dollar-sign or an underscore and may additionally contain numbers after the first symbol."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:275 227ac534d3ff40e2ba3d2d7704c6039c
@@ -425,36 +331,22 @@ msgid "Builtin functions in the EVM Yul dialect."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:300 b0914095ba94435bae694bd3f6cb02e5
-msgid ""
-"Yul identifiers consist of letters, dollar signs, underscores and "
-"numbers, but may not start with a number. In inline assembly there cannot"
-" be dots in user-defined identifiers. Instead see yulPath for expressions"
-" consisting of identifiers with dots."
+msgid "Yul identifiers consist of letters, dollar signs, underscores and numbers, but may not start with a number. In inline assembly there cannot be dots in user-defined identifiers. Instead see yulPath for expressions consisting of identifiers with dots."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:310 913d1caab824461b9f12e371c55c8e5d
-msgid ""
-"Hex literals in Yul consist of a prefix and one or more hexadecimal "
-"digits."
+msgid "Hex literals in Yul consist of a prefix and one or more hexadecimal digits."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:314 5d207be1f9c640b89586d91552251537
-msgid ""
-"Decimal literals in Yul may be zero or any sequence of decimal digits "
-"without leading zeroes."
+msgid "Decimal literals in Yul may be zero or any sequence of decimal digits without leading zeroes."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:318 7070a2cc7d4b4dcd81458ed761a2da41
-msgid ""
-"String literals in Yul consist of one or more double-quoted or single-"
-"quoted strings that may contain escape sequences and printable characters"
-" except unescaped line breaks or unescaped double-quotes or single-"
-"quotes, respectively."
+msgid "String literals in Yul consist of one or more double-quoted or single-quoted strings that may contain escape sequences and printable characters except unescaped line breaks or unescaped double-quotes or single-quotes, respectively."
 msgstr ""
 
 #: ../../grammar/SolidityLexer.g4:335 f1a70a831ee84af89c3429b16119f8d4
-msgid ""
-"Pragma token. Can contain any kind of symbol except a semicolon. Note "
-"that currently the solidity parser only allows a subset of this."
+msgid "Pragma token. Can contain any kind of symbol except a semicolon. Note that currently the solidity parser only allows a subset of this."
 msgstr ""
 

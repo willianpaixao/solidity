@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: solidity-test\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Modern)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: es-EM\n"
+"X-Crowdin-File: ir-breaking-changes.po\n"
+"X-Crowdin-File-ID: 69\n"
+"Language: es_EM\n"
+
+#: ../../ir-breaking-changes.rst:6 3286118b7a6741d2a4fc7dcd0447962a
+msgid "Solidity IR-based Codegen Changes"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:8 d6f41921be3d42ca952445d57ef3428f
+msgid "Solidity can generate EVM bytecode in two different ways: Either directly from Solidity to EVM opcodes (\"old codegen\") or through an intermediate representation (\"IR\") in Yul (\"new codegen\" or \"IR-based codegen\")."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:12 e5647f485bd44ab3b8e27344a0c86b14
+msgid "The IR-based code generator was introduced with an aim to not only allow code generation to be more transparent and auditable but also to enable more powerful optimization passes that span across functions."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:16 3256556cadbf47eeb09528fe072a0935
+msgid "Currently, the IR-based code generator is still marked experimental, but it supports all language features and has received a lot of testing, so we consider it almost ready for production use."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:20 2e255ed9e1a0411691edb9a49fbddaaa
+msgid "You can enable it on the command line using ``--experimental-via-ir`` or with the option ``{\"viaIR\": true}`` in standard-json and we encourage everyone to try it out!"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:24 11fc6600c4424b189cc7014343b75240
+msgid "For several reasons, there are tiny semantic differences between the old and the IR-based code generator, mostly in areas where we would not expect people to rely on this behaviour anyway. This section highlights the main differences between the old and the IR-based codegen."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:30 b88ac19bf0c14221bf1e1d30e03f7f8b
+msgid "Semantic Only Changes"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:32 0b0c1be36d524eda8de0a233db6cf200
+msgid "This section lists the changes that are semantic-only, thus potentially hiding new and different behavior in existing code."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:35 60f4617456f14bccaf7188f3b7b312ef
+msgid "When storage structs are deleted, every storage slot that contains a member of the struct is set to zero entirely. Formerly, padding space was left untouched. Consequently, if the padding space within a struct is used to store data (e.g. in the context of a contract upgrade), you have to be aware that ``delete`` will now also clear the added member (while it wouldn't have been cleared in the past)."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:62 8b07440476e246a28f9feb42b880afd6
+msgid "We have the same behavior for implicit delete, for example when array of structs is shortened."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:64 f12c6ab7c6d940eeaf32bd549664ee03
+msgid "Function modifiers are implemented in a slightly different way regarding function parameters and return variables. This especially has an effect if the placeholder ``_;`` is evaluated multiple times in a modifier. In the old code generator, each function parameter and return variable has a fixed slot on the stack. If the function is run multiple times because ``_;`` is used multiple times or used in a loop, then a change to the function parameter's or return variable's value is visible in the next execution of the function. The new code generator implements modifiers using actual functions and passes function parameters on. This means that multiple evaluations of a function's body will get the same values for the parameters, and the effect on return variables is that they are reset to their default (zero) value for each execution."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:85 7c3ec22698cd4fec91315c2e27f7d59a
+msgid "If you execute ``f(0)`` in the old code generator, it will return ``2``, while it will return ``1`` when using the new code generator."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:108 992a74a941f04755b30b6cd1dfa0729c
+msgid "The function ``C.foo()`` returns the following values:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:110 f4f526a220824dbba23825b7ba489cfa
+msgid "Old code generator: ``1`` as the return variable is initialized to ``0`` only once before the first ``_;`` evaluation and then overwritten by the ``return 1;``. It is not initialized again for the second ``_;`` evaluation and ``foo()`` does not explicitly assign it either (due to ``active == false``), thus it keeps its first value."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:114 45d76205a02748c49d78cc197842fb70
+msgid "New code generator: ``0`` as all parameters, including return parameters, will be re-initialized before each ``_;`` evaluation."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:117 9ce0eae56c25421890ff701ae299dec4
+msgid "The order of contract initialization has changed in case of inheritance."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:119 af5ac75e9f7f429f9c605a49fb7b953e
+msgid "The order used to be:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:121 ../../ir-breaking-changes.rst:128
+#: 01c99c85c2f7424fa1c5b4a6ca098051 16e92e7190524eaba463c52db75d9295
+msgid "All state variables are zero-initialized at the beginning."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:122 ../../ir-breaking-changes.rst:129
+#: 0eca751ba14e4dc3944b29784d80f8b8 51f0fdc4a1b64eef92541f28823b5fd8
+msgid "Evaluate base constructor arguments from most derived to most base contract."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:123 127d4c2fc3614d678a7a0cfb2140cb24
+msgid "Initialize all state variables in the whole inheritance hierarchy from most base to most derived."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:124 5e4288cc377c4d0b9b1d642222be1ccf
+msgid "Run the constructor, if present, for all contracts in the linearized hierarchy from most base to most derived."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:126 863d1b604e134d98bebff7438f4196df
+msgid "New order:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:130 77426fec30ef4133aa3a656252c84970
+msgid "For every contract in order from most base to most derived in the linearized hierarchy execute:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:132 74027105bb144709aa3d38effdeb621a
+msgid "If present at declaration, initial values are assigned to state variables."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:133 399bc15f409e4be8b9c773a112a28b96
+msgid "Constructor, if present."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:135 46cb3b0bfaf845f28b89bab0e5b37a20
+msgid "This causes differences in some contracts, for example:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:155 d408b5a9e9364f30855580ad2ae596ad
+msgid "Previously, ``y`` would be set to 0. This is due to the fact that we would first initialize state variables: First, ``x`` is set to 0, and when initializing ``y``, ``f()`` would return 0 causing ``y`` to be 0 as well. With the new rules, ``y`` will be set to 42. We first initialize ``x`` to 0, then call A's constructor which sets ``x`` to 42. Finally, when initializing ``y``, ``f()`` returns 42 causing ``y`` to be 42."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:158 8e8062dd241742d5afb9b1ef07700dfb
+msgid "Copying ``bytes`` arrays from memory to storage is implemented in a different way. The old code generator always copies full words, while the new one cuts the byte array after its end. The old behaviour can lead to dirty data being copied after the end of the array (but still in the same storage slot). This causes differences in some contracts, for example:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:184 40d784e1a67f48cab38f612dec93469a
+msgid "Previously ``f()`` would return ``0x6465616462656566313564656164000000000000000000000000000000000010`` (it has correct length, and correct first 8 elements, but then it contains dirty data which was set via assembly). Now it is returning ``0x6465616462656566000000000000000000000000000000000000000000000010`` (it has correct length, and correct elements, but does not contain superfluous data)."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:191 922345d4b3a9446ea9285a3a4df4d0a3
+msgid "For the old code generator, the evaluation order of expressions is unspecified. For the new code generator, we try to evaluate in source order (left to right), but do not guarantee it. This can lead to semantic differences."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:195 ../../ir-breaking-changes.rst:264
+#: ../../ir-breaking-changes.rst:318 0005b883e6ba40f49dff06d3e158b2fd
+#: 4d488bc8ddc146a98b5b60c72856ab6c fd6d00d36eec4d3093484803ae5b0f75
+msgid "For example:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:207 c434dacc9d98450ea54fef585c37c2c9
+msgid "The function ``preincr_u8(1)`` returns the following values:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:209 4f08ffc35e244cd283f81b5da784a8a3
+msgid "Old code generator: 3 (``1 + 2``) but the return value is unspecified in general"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:210 cc5c99d79cf74fee81a676ff2de9fb70
+msgid "New code generator: 4 (``2 + 2``) but the return value is not guaranteed"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:214 50e44ec078fe4761abe833b052f2eb4c
+msgid "On the other hand, function argument expressions are evaluated in the same order by both code generators with the exception of the global functions ``addmod`` and ``mulmod``. For example:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:231 9ed8ad2126f7454891d7f73988d1f18a
+msgid "The function ``g(1, 2)`` returns the following values:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:233 185bc2626e6e425d87c5159fccc1987b
+msgid "Old code generator: ``10`` (``add(2 + 3, 2 + 3)``) but the return value is unspecified in general"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:234 a0b1a1bcf8b2485e95c692f734fa534d
+msgid "New code generator: ``10`` but the return value is not guaranteed"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:236 15c2df0f86da4d628c1de4875e23afe3
+msgid "The arguments to the global functions ``addmod`` and ``mulmod`` are evaluated right-to-left by the old code generator and left-to-right by the new code generator. For example:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:254 bdfe334e5dd545659120851cbbcd9231
+msgid "The function ``f()`` returns the following values:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:256 f30faa760f1c483488aa152689340ab1
+msgid "Old code generator: ``aMod = 0`` and ``mMod = 2``"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:257 a926b0eceea840c3929829f2a1b600cc
+msgid "New code generator: ``aMod = 4`` and ``mMod = 0``"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:259 2500edebcd674a5abfbc5c1ef7c767bd
+msgid "The new code generator imposes a hard limit of ``type(uint64).max`` (``0xffffffffffffffff``) for the free memory pointer. Allocations that would increase its value beyond this limit revert. The old code generator does not have this limit."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:282 dc92f99eda354ff9aaf7992ff1a1faf8
+msgid "The function `f()` behaves as follows:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:284 22a619b9d61249da94d70390e11766da
+msgid "Old code generator: runs out of gas while zeroing the array contents after the large memory allocation"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:285 981b3cec54ff4eb28d4e5fd40a862f30
+msgid "New code generator: reverts due to free memory pointer overflow (does not run out of gas)"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:289 173b5b55f19a46bcaa6263630269b502
+msgid "Internals"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:292 5c89b05afb814db1bab3c9b5850468e5
+msgid "Internal function pointers"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:296 a2b83622a93d4e08885a6e639f7e48c3
+msgid "The old code generator uses code offsets or tags for values of internal function pointers. This is especially complicated since these offsets are different at construction time and after deployment and the values can cross this border via storage. Because of that, both offsets are encoded at construction time into the same value (into different bytes)."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:300 9286917c0c9c48618c34f155be94276c
+msgid "In the new code generator, function pointers use internal IDs that are allocated in sequence. Since calls via jumps are not possible, calls through function pointers always have to use an internal dispatch function that uses the ``switch`` statement to select the right function."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:304 d58a67455c79464cb07e11bb2d6dead7
+msgid "The ID ``0`` is reserved for uninitialized function pointers which then cause a panic in the dispatch function when called."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:306 f887b5f415614c368d5d46d9a1697069
+msgid "In the old code generator, internal function pointers are initialized with a special function that always causes a panic. This causes a storage write at construction time for internal function pointers in storage."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:310 2dd7fb6e59e04d939463f2078aaea6f9
+msgid "Cleanup"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:314 82b03d5ddbc242cc8b17445d22a0bac5
+msgid "The old code generator only performs cleanup before an operation whose result could be affected by the values of the dirty bits. The new code generator performs cleanup after any operation that can result in dirty bits. The hope is that the optimizer will be powerful enough to eliminate redundant cleanup operations."
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:336 039906785abb47968f16e8716c5feef8
+msgid "The function ``f(1)`` returns the following values:"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:338 243b9a72c0644c5ebfa4d45540f931ee
+msgid "Old code generator: (``fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe``, ``00000000000000000000000000000000000000000000000000000000000000fe``)"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:339 79aa020c708546cc8b3cae3832f19f2a
+msgid "New code generator: (``00000000000000000000000000000000000000000000000000000000000000fe``, ``00000000000000000000000000000000000000000000000000000000000000fe``)"
+msgstr ""
+
+#: ../../ir-breaking-changes.rst:341 7c392bbe67864785abb238c110701a94
+msgid "Note that, unlike the new code generator, the old code generator does not perform a cleanup after the bit-not assignment (``_a = ~_a``). This results in different values being assigned (within the inline assembly block) to return value ``_r1`` between the old and new code generators. However, both code generators perform a cleanup before the new value of ``_a`` is assigned to ``_r2``."
+msgstr ""
+

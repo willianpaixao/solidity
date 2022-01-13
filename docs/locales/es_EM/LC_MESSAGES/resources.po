@@ -1,0 +1,376 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: solidity-test\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: 2022-01-13 16:14\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Modern)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: solidity-test\n"
+"X-Crowdin-Project-ID: 494285\n"
+"X-Crowdin-Language: es-EM\n"
+"X-Crowdin-File: resources.po\n"
+"X-Crowdin-File-ID: 17\n"
+"Language: es_EM\n"
+
+#: ../../resources.rst:3 e7577b3906374a45bacf33c334318521
+msgid "Resources"
+msgstr ""
+
+#: ../../resources.rst:6 e1dad1767135441185cdccb18f1d1e57
+msgid "General Resources"
+msgstr ""
+
+#: ../../resources.rst:8 02548facf3134fbc8d7756699afcfe45
+msgid "`Ethereum.org Developer Portal <https://ethereum.org/en/developers/>`_"
+msgstr ""
+
+#: ../../resources.rst:9 8adc2c7f5309439cb46bf70271f636c6
+msgid "`Ethereum StackExchange <https://ethereum.stackexchange.com/>`_"
+msgstr ""
+
+#: ../../resources.rst:10 87f3ecb465364dddb1c9a3f495b89bf9
+msgid "`Solidity Portal <https://soliditylang.org/>`_"
+msgstr ""
+
+#: ../../resources.rst:11 7f0715fd001b479cbdba1c9169b1a088
+msgid "`Solidity Changelog <https://github.com/ethereum/solidity/blob/develop/Changelog.md>`_"
+msgstr ""
+
+#: ../../resources.rst:12 74c8f660e9ab4573b76dfc41c90dd2a3
+msgid "`Solidity Source Code on GitHub <https://github.com/ethereum/solidity/>`_"
+msgstr ""
+
+#: ../../resources.rst:13 be3b6a2de4fa412395149001045e383f
+msgid "`Solidity Language Users Chat <https://matrix.to/#/#ethereum_solidity:gitter.im>`_"
+msgstr ""
+
+#: ../../resources.rst:14 be9ae8c0446f4cc8805826c76df98aa3
+msgid "`Solidity Compiler Developers Chat <https://matrix.to/#/#ethereum_solidity-dev:gitter.im>`_"
+msgstr ""
+
+#: ../../resources.rst:15 67766a657050482e9d5265275213a8a8
+msgid "`Awesome Solidity <https://github.com/bkrem/awesome-solidity>`_"
+msgstr ""
+
+#: ../../resources.rst:16 ec69d52c454a4663924b413c1d930fdb
+msgid "`Solidity by Example <https://solidity-by-example.org/>`_"
+msgstr ""
+
+#: ../../resources.rst:20 4e93dc20e5064becae3bd5d0dfcece0f
+msgid "Integrated (Ethereum) Development Environments"
+msgstr ""
+
+#: ../../resources.rst:23 787a12577e8a47cf898b504f4741955b
+msgid "`Brownie <https://eth-brownie.readthedocs.io/en/stable/>`_"
+msgstr ""
+
+#: ../../resources.rst:23 85c873e17e5a4e17a7dc5023c33fc8a4
+msgid "Python-based development and testing framework for smart contracts targeting the Ethereum Virtual Machine."
+msgstr ""
+
+#: ../../resources.rst:26 e4a03edc95334a70bffd8c6aa16a5229
+msgid "`Dapp <https://dapp.tools/>`_"
+msgstr ""
+
+#: ../../resources.rst:26 f3356105068f40c59994d2b56d3d27ee
+msgid "Tool for building, testing and deploying smart contracts from the command line."
+msgstr ""
+
+#: ../../resources.rst:29 dfdbba76271740a8aa0daa5fca4e78c7
+msgid "`Embark <https://framework.embarklabs.io/>`_"
+msgstr ""
+
+#: ../../resources.rst:29 498612bebea9487cbe6377e763807db3
+msgid "Developer platform for building and deploying decentralized applications."
+msgstr ""
+
+#: ../../resources.rst:32 c364668b14a7441e9f5f82f978ff2b93
+msgid "`Hardhat <https://hardhat.org/>`_"
+msgstr ""
+
+#: ../../resources.rst:32 b298bed8761349838f4aaee79b7aead0
+msgid "Ethereum development environment with local Ethereum network, debugging features and plugin ecosystem."
+msgstr ""
+
+#: ../../resources.rst:35 a8e7b00f6e55441a895a97c9d72c4514
+msgid "`Remix <https://remix.ethereum.org/>`_"
+msgstr ""
+
+#: ../../resources.rst:35 fe0d5e8fb20c4b399587901fe81f667c
+msgid "Browser-based IDE with integrated compiler and Solidity runtime environment without server-side components."
+msgstr ""
+
+#: ../../resources.rst:38 0b498f1a9966435396060703ff7caae1
+msgid "`Scaffold-ETH <https://github.com/austintgriffith/scaffold-eth>`_"
+msgstr ""
+
+#: ../../resources.rst:38 e2d6107509ee4034a87b69855e935616
+msgid "Ethereum development stack focused on fast product iterations."
+msgstr ""
+
+#: ../../resources.rst:41 a09a608594784e93891b86f8feea4987
+msgid "`Truffle <https://www.trufflesuite.com/truffle>`_"
+msgstr ""
+
+#: ../../resources.rst:41 91997d888f414de9b00501499393f0b9
+msgid "Ethereum development framework."
+msgstr ""
+
+#: ../../resources.rst:44 b15d37c36c294faab026e5af87bd06cd
+msgid "Editor Integrations"
+msgstr ""
+
+#: ../../resources.rst:46 d6387b78a1374bdc8c9e0edc8f348856
+msgid "Atom"
+msgstr ""
+
+#: ../../resources.rst:49 18db81c7b3b746518d627d20a518811f
+msgid "`Etheratom <https://github.com/0mkara/etheratom>`_"
+msgstr ""
+
+#: ../../resources.rst:49 a5c75b8046ba4267b51a90a8d7b67d30
+msgid "Plugin for the Atom editor that features syntax highlighting, compilation and a runtime environment (Backend node & VM compatible)."
+msgstr ""
+
+#: ../../resources.rst:52 f599e74ace0e4d089b9006c4e0d19a68
+msgid "`Atom Solidity Linter <https://atom.io/packages/linter-solidity>`_"
+msgstr ""
+
+#: ../../resources.rst:52 6e34c19d26604052b03d1a30f78ecd28
+msgid "Plugin for the Atom editor that provides Solidity linting."
+msgstr ""
+
+#: ../../resources.rst:55 e1b9c4da91504effa4fb7d0f27aab8ce
+msgid "`Atom Solium Linter <https://atom.io/packages/linter-solium>`_"
+msgstr ""
+
+#: ../../resources.rst:55 e377e6440c9743af9a557e48d8d13a80
+msgid "Configurable Solidity linter for Atom using Solium (now Ethlint) as a base."
+msgstr ""
+
+#: ../../resources.rst:57 2feab61efd724c16adc00eda3105d3e1
+msgid "Emacs"
+msgstr ""
+
+#: ../../resources.rst:60 3f15ce5d90a647e89b5eef0de01d7aaf
+msgid "`Emacs Solidity <https://github.com/ethereum/emacs-solidity/>`_"
+msgstr ""
+
+#: ../../resources.rst:60 25384611537a41a4b6d40d73f92b00c3
+msgid "Plugin for the Emacs editor providing syntax highlighting and compilation error reporting."
+msgstr ""
+
+#: ../../resources.rst:62 74131c481ed6418b82da62288a90dfeb
+msgid "IntelliJ"
+msgstr ""
+
+#: ../../resources.rst:65 b0d9c603f350483ba0c7b9dd9b804f3b
+msgid "`IntelliJ IDEA plugin <https://plugins.jetbrains.com/plugin/9475-intellij-solidity>`_"
+msgstr ""
+
+#: ../../resources.rst:65 4da14b857eb6441db7c7b83400609a1b
+msgid "Solidity plugin for IntelliJ IDEA (and all other JetBrains IDEs)"
+msgstr ""
+
+#: ../../resources.rst:67 06b77032915d4052baff39d0a0e952db
+msgid "Sublime"
+msgstr ""
+
+#: ../../resources.rst:70 fe50db47913f41fa9ef7a552c9443c52
+msgid "`Package for SublimeText - Solidity language syntax <https://packagecontrol.io/packages/Ethereum/>`_"
+msgstr ""
+
+#: ../../resources.rst:70 8f2169984e9841bb82775e9b36996b7b
+msgid "Solidity syntax highlighting for SublimeText editor."
+msgstr ""
+
+#: ../../resources.rst:72 de8f045883634a66b911d55b8d0c9fce
+msgid "Vim"
+msgstr ""
+
+#: ../../resources.rst:75 fc3e366320494505bf95a52c179f7bb4
+msgid "`Vim Solidity <https://github.com/tomlion/vim-solidity/>`_"
+msgstr ""
+
+#: ../../resources.rst:75 73f7b48e2c1e4204b91f7959df7b22f3
+msgid "Plugin for the Vim editor providing syntax highlighting."
+msgstr ""
+
+#: ../../resources.rst:78 4ce5ace888874548a7c11a8b32e44794
+msgid "`Vim Syntastic <https://github.com/vim-syntastic/syntastic>`_"
+msgstr ""
+
+#: ../../resources.rst:78 5fdb1526d10b4963948c3a3107aa4a28
+msgid "Plugin for the Vim editor providing compile checking."
+msgstr ""
+
+#: ../../resources.rst:80 4f95b324537f4f419e261740a9d8b602
+msgid "Visual Studio Code"
+msgstr ""
+
+#: ../../resources.rst:83 b8b7830e114b4e98a044beaa69b913f6
+msgid "`Visual Studio Code extension <https://juan.blanco.ws/solidity-contracts-in-visual-studio-code/>`_"
+msgstr ""
+
+#: ../../resources.rst:83 ef52059c4d564f8597151f0cde2ecb5b
+msgid "Solidity plugin for Microsoft Visual Studio Code that includes syntax highlighting and the Solidity compiler."
+msgstr ""
+
+#: ../../resources.rst:86 e35f9cbf432f41e4a7081cca9259e7f1
+msgid "Solidity Tools"
+msgstr ""
+
+#: ../../resources.rst:89 bc6e4a336dba4aca878b400f602cfdc0
+msgid "`ABI to Solidity interface converter <https://gist.github.com/chriseth/8f533d133fa0c15b0d6eaf3ec502c82b>`_"
+msgstr ""
+
+#: ../../resources.rst:89 2495d59a5be4491fa219e40f1ecd3ff5
+msgid "A script for generating contract interfaces from the ABI of a smart contract."
+msgstr ""
+
+#: ../../resources.rst:92 76681ca9fa85422897c8c588d9db2729
+msgid "`abi-to-sol <https://github.com/gnidan/abi-to-sol>`_"
+msgstr ""
+
+#: ../../resources.rst:92 f3e56ab4f3d04000ab4f9034852d82d7
+msgid "Tool to generate Solidity interface source from a given ABI JSON."
+msgstr ""
+
+#: ../../resources.rst:95 bac70cf348bd47ef8f2c4c784af45d7c
+msgid "`Doxity <https://github.com/DigixGlobal/doxity>`_"
+msgstr ""
+
+#: ../../resources.rst:95 43d3045b29ba47c9b056ef515057a40b
+msgid "Documentation Generator for Solidity."
+msgstr ""
+
+#: ../../resources.rst:98 201485edcf824cb8a3ca31b105f7548e
+msgid "`Ethlint <https://github.com/duaraghav8/Ethlint>`_"
+msgstr ""
+
+#: ../../resources.rst:98 d6936a2c564146a3844de6c7ca3c9e50
+msgid "Linter to identify and fix style and security issues in Solidity."
+msgstr ""
+
+#: ../../resources.rst:101 a7300ac10e07401e924db466b15e42dc
+msgid "`evmdis <https://github.com/Arachnid/evmdis>`_"
+msgstr ""
+
+#: ../../resources.rst:101 32271a0a53334ecc85f3ace326ee4d38
+msgid "EVM Disassembler that performs static analysis on the bytecode to provide a higher level of abstraction than raw EVM operations."
+msgstr ""
+
+#: ../../resources.rst:104 64dc51d00e774c8d8b4bf59b8b120522
+msgid "`EVM Lab <https://github.com/ethereum/evmlab/>`_"
+msgstr ""
+
+#: ../../resources.rst:104 33bd3d633a2643baa61e361e1c9b6607
+msgid "Rich tool package to interact with the EVM. Includes a VM, Etherchain API, and a trace-viewer with gas cost display."
+msgstr ""
+
+#: ../../resources.rst:107 58eeae1bf5d24a83b88c79ffe1229013
+msgid "`hevm <https://github.com/dapphub/dapptools/tree/master/src/hevm#readme>`_"
+msgstr ""
+
+#: ../../resources.rst:107 d3eeccfefb434e47b598c03ccd047eb4
+msgid "EVM debugger and symbolic execution engine."
+msgstr ""
+
+#: ../../resources.rst:110 c7dedef675884abeb3348833791b6b3e
+msgid "`leafleth <https://github.com/clemlak/leafleth>`_"
+msgstr ""
+
+#: ../../resources.rst:110 656d6857eddd4f70a77d4af5b80219c0
+msgid "A documentation generator for Solidity smart-contracts."
+msgstr ""
+
+#: ../../resources.rst:113 a3094917ac7d434ca6428e6903f5c075
+msgid "`PIET <https://piet.slock.it/>`_"
+msgstr ""
+
+#: ../../resources.rst:113 68eb9d4d3f5b47cf9bd9f4b5031eda7b
+msgid "A tool to develop, audit and use Solidity smart contracts through a simple graphical interface."
+msgstr ""
+
+#: ../../resources.rst:116 a299847fead54e7999447f5e6edc3cd7
+msgid "`sol2uml <https://www.npmjs.com/package/sol2uml>`_"
+msgstr ""
+
+#: ../../resources.rst:116 f619effe5a1046a693c1fe01a457d561
+msgid "Unified Modeling Language (UML) class diagram generator for Solidity contracts."
+msgstr ""
+
+#: ../../resources.rst:119 5af1a7676a5b420cbac6f16a8cb30564
+msgid "`solc-select <https://github.com/crytic/solc-select>`_"
+msgstr ""
+
+#: ../../resources.rst:119 ceae50544bf345b9ba356a74aa45116c
+msgid "A script to quickly switch between Solidity compiler versions."
+msgstr ""
+
+#: ../../resources.rst:122 06e240133bc1413b9185472f32f535f6
+msgid "`Solidity prettier plugin <https://github.com/prettier-solidity/prettier-plugin-solidity>`_"
+msgstr ""
+
+#: ../../resources.rst:122 16f2a7bec0b947f5a2ca6196ed444d10
+msgid "A Prettier Plugin for Solidity."
+msgstr ""
+
+#: ../../resources.rst:125 b3e0185d4f834da3bed8dd5c7a0b60e1
+msgid "`Solidity REPL <https://github.com/raineorshine/solidity-repl>`_"
+msgstr ""
+
+#: ../../resources.rst:125 faad0f9d2ed348ccb2f7c31f508959d7
+msgid "Try Solidity instantly with a command-line Solidity console."
+msgstr ""
+
+#: ../../resources.rst:128 28f8b6b04344496f8a5fb4dcef214f62
+msgid "`solgraph <https://github.com/raineorshine/solgraph>`_"
+msgstr ""
+
+#: ../../resources.rst:128 df2cb8b77cb34119aec7f8e84b5d2095
+msgid "Visualize Solidity control flow and highlight potential security vulnerabilities."
+msgstr ""
+
+#: ../../resources.rst:131 f18cb04638864a2195c7b430bd89df4b
+msgid "`Solhint <https://github.com/protofire/solhint>`_"
+msgstr ""
+
+#: ../../resources.rst:131 9ef2241202e545e19a5b44ff7e67c767
+msgid "Solidity linter that provides security, style guide and best practice rules for smart contract validation."
+msgstr ""
+
+#: ../../resources.rst:134 e233ce33506a4244be0b2f33557ca73a
+msgid "`Sūrya <https://github.com/ConsenSys/surya/>`_"
+msgstr ""
+
+#: ../../resources.rst:134 fb2320cc5e584612b3a9cecf66307615
+msgid "Utility tool for smart contract systems, offering a number of visual outputs and information about the contracts' structure. Also supports querying the function call graph."
+msgstr ""
+
+#: ../../resources.rst:137 05401237a1ff4518b6966d9aad54cc18
+msgid "`Universal Mutator <https://github.com/agroce/universalmutator>`_"
+msgstr ""
+
+#: ../../resources.rst:137 6adb8165c9fe40f4ae2ea658cfa0e8d3
+msgid "A tool for mutation generation, with configurable rules and support for Solidity and Vyper."
+msgstr ""
+
+#: ../../resources.rst:140 4021532e169d473f8475fc2ffd87036e
+msgid "Third-Party Solidity Parsers and Grammars"
+msgstr ""
+
+#: ../../resources.rst:142 d10e91936a894a53a3a8f2fd73578a4a
+msgid "`Solidity Parser for JavaScript <https://github.com/solidity-parser/parser>`_"
+msgstr ""
+
+#: ../../resources.rst:143 8a7c8e336b2e4573acc5c475f9eb31d8
+msgid "A Solidity parser for JS built on top of a robust ANTLR4 grammar."
+msgstr ""
+
