@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../_templates/versions.html:16 c5712ab0deb440e0b4aeebe8f377ae4d
+msgid "Downloads"
+msgstr ""
+
+#: ../../_templates/versions.html:21 8ed7d4d0be2847af9aecf9a030d947d4
+msgid "Versions"
+msgstr ""
+
+#: ../../_templates/versions.html:27 3c9715a39abc4371b302ce0fdf86349f
+msgid "On Read the Docs"
+msgstr ""
+
+#: ../../_templates/versions.html:29 cf1353bb12c640499cc5c26001b1283c
+msgid "Project Home"
+msgstr ""
+
+#: ../../_templates/versions.html:32 65b72b49a1a34df986ca40282edd356d
+msgid "Builds"
+msgstr ""
+

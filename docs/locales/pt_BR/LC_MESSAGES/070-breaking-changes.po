@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../070-breaking-changes.rst:3 acdbccb7105a49bb8128a9b18b685f0e
+msgid "Solidity v0.7.0 Breaking Changes"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:5 2cc530078a614578b318ba23e3cd4e0b
+msgid ""
+"This section highlights the main breaking changes introduced in Solidity "
+"version 0.7.0, along with the reasoning behind the changes and how to "
+"update affected code. For the full list check `the release changelog "
+"<https://github.com/ethereum/solidity/releases/tag/v0.7.0>`_."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:13 7226ac4f663c4dc980df586dc42e89ed
+msgid "Silent Changes of the Semantics"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:15 8ed00bcbdf9e4eaf9a29e0cdeb34db61
+msgid ""
+"Exponentiation and shifts of literals by non-literals (e.g. ``1 << x`` or"
+" ``2 ** x``) will always use either the type ``uint256`` (for non-"
+"negative literals) or ``int256`` (for negative literals) to perform the "
+"operation. Previously, the operation was performed in the type of the "
+"shift amount / the exponent which can be misleading."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:23 cc6b9dd0f50044e19915971fc31eaa44
+msgid "Changes to the Syntax"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:25 fb45708b54ef4b388c2c9bec9508838b
+msgid ""
+"In external function and contract creation calls, Ether and gas is now "
+"specified using a new syntax: ``x.f{gas: 10000, value: 2 ether}(arg1, "
+"arg2)``. The old syntax -- ``x.f.gas(10000).value(2 ether)(arg1, arg2)`` "
+"-- will cause an error."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:29 2fe6357cd5b745e18d5188ca104124d1
+msgid ""
+"The global variable ``now`` is deprecated, ``block.timestamp`` should be "
+"used instead. The single identifier ``now`` is too generic for a global "
+"variable and could give the impression that it changes during transaction"
+" processing, whereas ``block.timestamp`` correctly reflects the fact that"
+" it is just a property of the block."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:34 9c7ae5bc13244a81a4b022cbc6450aee
+msgid ""
+"NatSpec comments on variables are only allowed for public state variables"
+" and not for local or internal variables."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:37 609690e5906f471090c794e4f5b5bb3a
+msgid ""
+"The token ``gwei`` is a keyword now (used to specify, e.g. ``2 gwei`` as "
+"a number) and cannot be used as an identifier."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:40 e26db8745a2942069cc88b7510216d97
+msgid ""
+"String literals now can only contain printable ASCII characters and this "
+"also includes a variety of escape sequences, such as hexadecimal "
+"(``\\xff``) and unicode escapes (``\\u20ac``)."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:43 57f7d26a1b1a4dab8a98718346e43f1c
+msgid ""
+"Unicode string literals are supported now to accommodate valid UTF-8 "
+"sequences. They are identified with the ``unicode`` prefix: "
+"``unicode\"Hello 😃\"``."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:46 9a20bdeed6654f839d3906dd82589c7c
+msgid ""
+"State Mutability: The state mutability of functions can now be restricted"
+" during inheritance: Functions with default state mutability can be "
+"overridden by ``pure`` and ``view`` functions while ``view`` functions "
+"can be overridden by ``pure`` functions. At the same time, public state "
+"variables are considered ``view`` and even ``pure`` if they are "
+"constants."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:55 12b24932bc27488ca5dd49af4c058d8f
+msgid "Inline Assembly"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:57 b631180f75d84680a1323d939a221711
+msgid ""
+"Disallow ``.`` in user-defined function and variable names in inline "
+"assembly. It is still valid if you use Solidity in Yul-only mode."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:60 9d7d63b2acb8428a970528cc4a417254
+msgid ""
+"Slot and offset of storage pointer variable ``x`` are accessed via "
+"``x.slot`` and ``x.offset`` instead of ``x_slot`` and ``x_offset``."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:64 8a05ed9062f04004bf823a4baee7cb63
+msgid "Removal of Unused or Unsafe Features"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:67 1672033e4c1e4c76b64ba89dfc8dafb5
+msgid "Mappings outside Storage"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:69 1c8ab41879fb475aa5633e19e43d5cf3
+msgid ""
+"If a struct or array contains a mapping, it can only be used in storage. "
+"Previously, mapping members were silently skipped in memory, which is "
+"confusing and error-prone."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:73 6f2226ac0ce4451a9460b0412ff92568
+msgid ""
+"Assignments to structs or arrays in storage does not work if they contain"
+" mappings. Previously, mappings were silently skipped during the copy "
+"operation, which is misleading and error-prone."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:79 a663c68ae60a41b198744d6646126890
+msgid "Functions and Events"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:81 93f2c93d2a0548b59dfa4bc862e6d650
+msgid ""
+"Visibility (``public`` / ``internal``) is not needed for constructors "
+"anymore: To prevent a contract from being created, it can be marked "
+"``abstract``. This makes the visibility concept for constructors "
+"obsolete."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:85 0226ed54e9654cc2936b143ecc713ea7
+msgid ""
+"Type Checker: Disallow ``virtual`` for library functions: Since libraries"
+" cannot be inherited from, library functions should not be virtual."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:88 b3ee0df074814e59aa3af05eb66f5906
+msgid ""
+"Multiple events with the same name and parameter types in the same "
+"inheritance hierarchy are disallowed."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:91 4a25710300ac490aa6f9e9cccca53494
+msgid ""
+"``using A for B`` only affects the contract it is mentioned in. "
+"Previously, the effect was inherited. Now, you have to repeat the "
+"``using`` statement in all derived contracts that make use of the "
+"feature."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:96 e12198dc9358401385a272b66c28b28e
+msgid "Expressions"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:98 e970e8fbb475469586c73d369449c942
+msgid ""
+"Shifts by signed types are disallowed. Previously, shifts by negative "
+"amounts were allowed, but reverted at runtime."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:101 256c847be2304ce3a48c0399dddf5ce1
+msgid ""
+"The ``finney`` and ``szabo`` denominations are removed. They are rarely "
+"used and do not make the actual amount readily visible. Instead, explicit"
+" values like ``1e20`` or the very common ``gwei`` can be used."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:106 e32e14bd1e1540da836f8c66ec74e3b3
+msgid "Declarations"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:108 e618ec5dc6ee4ab6b6c5ccd6826244e5
+msgid ""
+"The keyword ``var`` cannot be used anymore. Previously, this keyword "
+"would parse but result in a type error and a suggestion about which type "
+"to use. Now, it results in a parser error."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:113 8293832a76f74ff39adcfc7991f0ed87
+msgid "Interface Changes"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:115 4d550fdc0077427ba222c0dc5b493f84
+msgid "JSON AST: Mark hex string literals with ``kind: \"hexString\"``."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:116 4bca1abc8c88450c852864dfdfe3a60e
+msgid "JSON AST: Members with value ``null`` are removed from JSON output."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:117 692a2f67d0d94569bdf36b1421fdaa56
+msgid "NatSpec: Constructors and functions have consistent userdoc output."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:121 98c97ed1a4424dd2b4b7951d8c9deebe
+msgid "How to update your code"
+msgstr ""
+
+#: ../../070-breaking-changes.rst:123 1f94d16c37cd4003812f28b882c773e3
+msgid ""
+"This section gives detailed instructions on how to update prior code for "
+"every breaking change."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:125 063a18e0410646399e106a1510e9b48a
+msgid ""
+"Change ``x.f.value(...)()`` to ``x.f{value: ...}()``. Similarly ``(new "
+"C).value(...)()`` to ``new C{value: ...}()`` and "
+"``x.f.gas(...).value(...)()`` to ``x.f{gas: ..., value: ...}()``."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:127 e1dc49e186dc49929e1d8e9d9340a354
+msgid "Change ``now`` to ``block.timestamp``."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:128 9f1c0f7e488f4508a44f8b33b6ce32b5
+msgid ""
+"Change types of right operand in shift operators to unsigned types. For "
+"example change ``x >> (256 - y)`` to ``x >> uint(256 - y)``."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:130 7bde01670a2049a58d715a348a2dddc5
+msgid ""
+"Repeat the ``using A for B`` statements in all derived contracts if "
+"needed."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:131 d3ef82af0f934e1fa72d6f23a3c41f95
+msgid "Remove the ``public`` keyword from every constructor."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:132 d4ae524808d14b2889c33ef4a86fecda
+msgid ""
+"Remove the ``internal`` keyword from every constructor and add "
+"``abstract`` to the contract (if not already present)."
+msgstr ""
+
+#: ../../070-breaking-changes.rst:133 b166b5744054474f8e4d7cf3504a91fd
+msgid ""
+"Change ``_slot`` and ``_offset`` suffixes in inline assembly to ``.slot``"
+" and ``.offset``, respectively."
+msgstr ""
+

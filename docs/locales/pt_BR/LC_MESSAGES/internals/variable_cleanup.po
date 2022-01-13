@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../internals/variable_cleanup.rst:5 0df0100e99f24a0c9eebc6d37f77a5a4
+msgid "Cleaning Up Variables"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:7 8b80efdbdfd449a5a2de193e16e919fd
+msgid ""
+"When a value is shorter than 256 bit, in some cases the remaining bits "
+"must be cleaned. The Solidity compiler is designed to clean such "
+"remaining bits before any operations that might be adversely affected by "
+"the potential garbage in the remaining bits. For example, before writing "
+"a value to  memory, the remaining bits need to be cleared because the "
+"memory contents can be used for computing hashes or sent as the data of a"
+" message call.  Similarly, before storing a value in the storage, the "
+"remaining bits need to be cleaned because otherwise the garbled value can"
+" be observed."
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:17 b86235bc67784bfb90131da9b6de34c6
+msgid ""
+"Note that access via inline assembly is not considered such an operation:"
+" If you use inline assembly to access Solidity variables shorter than 256"
+" bits, the compiler does not guarantee that the value is properly cleaned"
+" up."
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:22 3f56ba9fa61f422a981128a0146f1589
+msgid ""
+"Moreover, we do not clean the bits if the immediately following operation"
+" is not affected.  For instance, since any non-zero value is considered "
+"``true`` by ``JUMPI`` instruction, we do not clean the boolean values "
+"before they are used as the condition for ``JUMPI``."
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:28 696b734358a74bf2ba6e2b7f72bfd95e
+msgid ""
+"In addition to the design principle above, the Solidity compiler cleans "
+"input data when it is loaded onto the stack."
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:31 5b3935d403fa4fbfb76f467efbbfdca1
+msgid "Different types have different rules for cleaning up invalid values:"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:34 f86ab48f0b6b49a6a6436a23fac948a9
+msgid "Type"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:34 1f8c510dc53940a5bdc8a430b19c5c84
+msgid "Valid Values"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:34 774c3feb105246c28d47069c21ae03d3
+msgid "Invalid Values Mean"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:36 b5413dc7afdd483fb6f274b9ea723183
+msgid "enum of n members"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:36 eef11ff9c1004415865803ec772101ff
+msgid "0 until n - 1"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:36 80d1d9df3caf40f29bf31c74c7dbff2f
+msgid "exception"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:39 a324adda35cd4039b29a77339232761d
+msgid "bool"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:39 e029fb87a03942fc8d9a091a41de921d
+msgid "0 or 1"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:39 b3729d6cf81f4fff93b67c08ec128f50
+msgid "1"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:41 7db25a961e10478b917a8549b7e8c36e
+msgid "signed integers"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:41 332374b48f614e3c9f00197249a2b428
+msgid "sign-extended word"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:41
+#: ../../internals/variable_cleanup.rst:48 2ae6a4b2bb4649c0b16eb33c64e5cbde
+#: 6925758d208445ab8e808dd1306fef17
+msgid "currently silently wraps; in the future exceptions will be thrown"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:48 59c7747954b3467dbb52e1489e80bcdc
+msgid "unsigned integers"
+msgstr ""
+
+#: ../../internals/variable_cleanup.rst:48 3df8c95188d341819c4e6d0612ae32e3
+msgid "higher bits zeroed"
+msgstr ""
+

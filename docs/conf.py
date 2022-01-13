@@ -297,3 +297,10 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# -- Options for gettext builder ------------------------------------------
+
+# Generates uuid information for version tracking in message catalogs.
+gettext_uuid = True
+
+gettext_compact = False

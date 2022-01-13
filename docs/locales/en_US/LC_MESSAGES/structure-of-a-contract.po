@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../structure-of-a-contract.rst:7 dd670aee10ad4f648aa736e81de27b52
+msgid "Structure of a Contract"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:9 0d84276446c0495cadb1c3f79bde569e
+msgid ""
+"Contracts in Solidity are similar to classes in object-oriented "
+"languages. Each contract can contain declarations of :ref:`structure-"
+"state-variables`, :ref:`structure-functions`, :ref:`structure-function-"
+"modifiers`, :ref:`structure-events`, :ref:`structure-errors`, :ref"
+":`structure-struct-types` and :ref:`structure-enum-types`. Furthermore, "
+"contracts can inherit from other contracts."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:14 2963e07d04bc431a9270637bd93de868
+msgid ""
+"There are also special kinds of contracts called "
+":ref:`libraries<libraries>` and :ref:`interfaces<interfaces>`."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:16 05c001dc789d43008b5b9ca8d7540484
+msgid ""
+"The section about :ref:`contracts<contracts>` contains more details than "
+"this section, which serves to provide a quick overview."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:22 1d03a3797f6c4450a2ca4abf7e3d3938
+msgid "State Variables"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:24 de74d5455fc847e7a279512017413048
+msgid ""
+"State variables are variables whose values are permanently stored in "
+"contract storage."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:37 a30a33e888764d7eac8aebe3f5b5e6d6
+msgid ""
+"See the :ref:`types` section for valid state variable types and :ref"
+":`visibility-and-getters` for possible choices for visibility."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:44 395661cd994d4af59b8317ffd5c8be62
+msgid "Functions"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:46 acf56d24107e4a72b08eb8bb4458fd10
+msgid ""
+"Functions are the executable units of code. Functions are usually defined"
+" inside a contract, but they can also be defined outside of contracts."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:66 f377116f75b241dbb36cf1494e3e6ec7
+msgid ""
+":ref:`function-calls` can happen internally or externally and have "
+"different levels of :ref:`visibility<visibility-and-getters>` towards "
+"other contracts. :ref:`Functions<functions>` accept :ref:`parameters and "
+"return variables<function-parameters-return-variables>` to pass "
+"parameters and values between them."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:74 1e5ff7334ffa4358919162f1eba3af9c
+msgid "Function Modifiers"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:76 198dad0373e54be38d1df5401240002a
+msgid ""
+"Function modifiers can be used to amend the semantics of functions in a "
+"declarative way (see :ref:`modifiers` in the contracts section)."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:79 b326364466e440c294ed5b3d1783f385
+msgid ""
+"Overloading, that is, having the same modifier name with different "
+"parameters, is not possible."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:82 b1040448259e468ba9ec1cd63373fdb7
+msgid "Like functions, modifiers can be :ref:`overridden <modifier-overriding>`."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:108 3161ff062c9e4cceb3d10ce68d15258b
+msgid "Events"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:110 4b7fe25c9f434a3f9c0c95665e795ec1
+msgid "Events are convenience interfaces with the EVM logging facilities."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:126 167f7cf4b89d4e22a799f534880f4849
+msgid ""
+"See :ref:`events` in contracts section for information on how events are "
+"declared and can be used from within a dapp."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:132 97ea9ea38ca5422984468948b695d7e0
+msgid "Errors"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:134 249d5d644e3044b4b469e9b0558ef460
+msgid ""
+"Errors allow you to define descriptive names and data for failure "
+"situations. Errors can be used in :ref:`revert statements <revert-"
+"statement>`. In comparison to string descriptions, errors are much "
+"cheaper and allow you to encode additional data. You can use NatSpec to "
+"describe the error to the user."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:161 df15397767f349a6bf9248b46e59ceb1
+msgid "See :ref:`errors` in the contracts section for more information."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:166 30063561a0514f87ad41f123dd9e481e
+msgid "Struct Types"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:168 2520b967d5784a25bb4e93bc03a04354
+msgid ""
+"Structs are custom defined types that can group several variables (see "
+":ref:`structs` in types section)."
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:188 1ac32121b0334e0f9ea70844572adc3b
+msgid "Enum Types"
+msgstr ""
+
+#: ../../structure-of-a-contract.rst:190 c03111bd398647e496815ab267862b08
+msgid ""
+"Enums can be used to create custom types with a finite set of 'constant "
+"values' (see :ref:`enums` in types section)."
+msgstr ""
+

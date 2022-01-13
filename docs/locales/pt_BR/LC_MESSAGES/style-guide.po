@@ -1,0 +1,818 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../style-guide.rst:5 a68087cc09414edba7c06a8100d3bf6b
+msgid "Style Guide"
+msgstr ""
+
+#: ../../style-guide.rst:9 b32163d771054e91a73125a1c3a2b66a
+msgid "Introduction"
+msgstr ""
+
+#: ../../style-guide.rst:11 19d5a6bab4a846658eb836bbf4d3953a
+msgid ""
+"This guide is intended to provide coding conventions for writing solidity"
+" code. This guide should be thought of as an evolving document that will "
+"change over time as useful conventions are found and old conventions are "
+"rendered obsolete."
+msgstr ""
+
+#: ../../style-guide.rst:15 dc9c748b9d46411da928e1064fd575ea
+msgid ""
+"Many projects will implement their own style guides.  In the event of "
+"conflicts, project specific style guides take precedence."
+msgstr ""
+
+#: ../../style-guide.rst:18 264952e2d2c54088bb440881bf094caf
+msgid ""
+"The structure and many of the recommendations within this style guide "
+"were taken from python's `pep8 style guide "
+"<https://www.python.org/dev/peps/pep-0008/>`_."
+msgstr ""
+
+#: ../../style-guide.rst:22 ef1d9ffa56a441eda760a5c2dd049eff
+msgid ""
+"The goal of this guide is *not* to be the right way or the best way to "
+"write solidity code.  The goal of this guide is *consistency*.  A quote "
+"from python's `pep8 <https://www.python.org/dev/peps/pep-0008/#a-foolish-"
+"consistency-is-the-hobgoblin-of-little-minds>`_ captures this concept "
+"well."
+msgstr ""
+
+#: ../../style-guide.rst:29 8dcd7f4f1ab340549cc042e9247d1085
+msgid ""
+"A style guide is about consistency. Consistency with this style guide is "
+"important. Consistency within a project is more important. Consistency "
+"within one module or function is most important."
+msgstr ""
+
+#: ../../style-guide.rst:31 a14c449b9a844c5b86b7cac377b5b405
+msgid ""
+"But most importantly: **know when to be inconsistent** -- sometimes the "
+"style guide just doesn't apply. When in doubt, use your best judgement. "
+"Look at other examples and decide what looks best. And don't hesitate to "
+"ask!"
+msgstr ""
+
+#: ../../style-guide.rst:36 6a392382fc904ed799707a44e94150a4
+msgid "Code Layout"
+msgstr ""
+
+#: ../../style-guide.rst:40 fd667c2fb90a49f4a5177831a0c3f46b
+msgid "Indentation"
+msgstr ""
+
+#: ../../style-guide.rst:42 a2b617fa58434e298b8e12794f349e6c
+msgid "Use 4 spaces per indentation level."
+msgstr ""
+
+#: ../../style-guide.rst:45 94c6195c92a6460eb753134a51ceaae7
+msgid "Tabs or Spaces"
+msgstr ""
+
+#: ../../style-guide.rst:47 3ed121822c734ba8abb323a94b8569ab
+msgid "Spaces are the preferred indentation method."
+msgstr ""
+
+#: ../../style-guide.rst:49 9821e07d8751413a8b9ca0c2bbf8e713
+msgid "Mixing tabs and spaces should be avoided."
+msgstr ""
+
+#: ../../style-guide.rst:52 7b51c81689a4425f969d1c646de606fa
+msgid "Blank Lines"
+msgstr ""
+
+#: ../../style-guide.rst:54 6adf7d135ea8421abd79f0ab525412d8
+msgid "Surround top level declarations in solidity source with two blank lines."
+msgstr ""
+
+#: ../../style-guide.rst:56 ../../style-guide.rst:99 ../../style-guide.rst:161
+#: ../../style-guide.rst:203 ../../style-guide.rst:225
+#: ../../style-guide.rst:271 ../../style-guide.rst:324
+#: ../../style-guide.rst:401 ../../style-guide.rst:421
+#: ../../style-guide.rst:435 ../../style-guide.rst:453
+#: ../../style-guide.rst:489 ../../style-guide.rst:526
+#: ../../style-guide.rst:556 ../../style-guide.rst:577
+#: ../../style-guide.rst:617 ../../style-guide.rst:657
+#: ../../style-guide.rst:686 ../../style-guide.rst:734
+#: ../../style-guide.rst:788 ../../style-guide.rst:838
+#: ../../style-guide.rst:940 ../../style-guide.rst:964
+#: ../../style-guide.rst:982 ../../style-guide.rst:998
+#: ../../style-guide.rst:1023 ../../style-guide.rst:1118
+#: 12dc77a45aea4cc39e8e7b0f18cf174c 2dd9a4af0ab74cfab6acf974bc6dcb92
+#: 3e8e4952f79741728dea4b6cf2a89016 54323022e29d4d68bfc3878b45cb399b
+#: 57e19286da8c4a21bd8eef5d9da332bc 5ea359160d1c4814aec9d0d623e8d323
+#: 6b53577294ff4a13b3721951e7dd58fc 8209d207fded4fb39ae28e838c6a5129
+#: 8b4f4c19691c4fb0bc1081b11bfb57fd 8b9b91c2f3424bb2ac343e59efb2b282
+#: 9014d2389a854abbb76e745751f9db4d 904249f5746d4187a25b74e7e4560c19
+#: 9083f818f9894974bc5a5d55385ba24e 9befd3d8ad934b15b59b12bbb89f820c
+#: b839f821d22f4c34a629368a8c4d703e bd2137cfd2304d09acc211af8587c5fa
+#: c26c7360163347cfa4cfa1e856b1176a cc726f47667b4153bfa24cf00fcf7420
+#: d23883aed50143148e56894edcbd111d d487afd9b20f4c478cb1eaf7e50fe134
+#: da409a6767bf4507815fe5f42563978c dcc5b5fa42024abbb293d87f86572385
+#: e4fb147426cf415e8391159118696a5f e5194f01176b4e0cb7b4e9ab1fc88c02
+#: f1aa5ad4c98f4b45ac992e09e8011f23 f2504a53db574c97b2a7a2b30f21121b
+#: fb6912c6e12145e6b1eb18791b9e11b1
+msgid "Yes:"
+msgstr ""
+
+#: ../../style-guide.rst:77 ../../style-guide.rst:122 ../../style-guide.rst:171
+#: ../../style-guide.rst:214 ../../style-guide.rst:245
+#: ../../style-guide.rst:288 ../../style-guide.rst:362
+#: ../../style-guide.rst:407 ../../style-guide.rst:427
+#: ../../style-guide.rst:443 ../../style-guide.rst:465
+#: ../../style-guide.rst:503 ../../style-guide.rst:538
+#: ../../style-guide.rst:563 ../../style-guide.rst:595
+#: ../../style-guide.rst:629 ../../style-guide.rst:669
+#: ../../style-guide.rst:703 ../../style-guide.rst:760
+#: ../../style-guide.rst:813 ../../style-guide.rst:871
+#: ../../style-guide.rst:949 ../../style-guide.rst:970
+#: ../../style-guide.rst:989 ../../style-guide.rst:1008
+#: ../../style-guide.rst:1031 ../../style-guide.rst:1157
+#: 0514693062114e52aa4f43edcc06936d 10ffc2273ac843449c68e118ac5f0f3f
+#: 449bcc6862f84995a4b19698084f784e 5ea3ad404366412387ff2616f89a2d1a
+#: 6ae8ec60f9984d9f85f8f49a9e69535a 6bec2961f8064746879be971006a7249
+#: 6c23896a5094450c97677eecd9ab56de 6e7da2a6338e42a6ac7b5887d68c01d0
+#: 97ddd7e98e0845029c20ef127a9b511b 9cf6e4b379204eb69b09a7321c01ba08
+#: a128994aaaeb4df997723fe178059889 a22cf6ee5e904e378a3bb2c58ac0aa66
+#: a22e109336d84eb3b00426bb74f57030 ad5a4f8c51774fe8ac74413bc205c576
+#: b2aabacc006a49f49fb59a89fee3c2be b70804ecf81a4fc4bb1dd71063b8e131
+#: d28015e6b6e249cc8590d597edb9ffd2 d2e6237a6fb74baa91914c8500e32311
+#: d9886a452e2c447e9493d2935266b40a d9cf15fd3ae64e03840e128f88d8d328
+#: e2daa363776143faab0396de5915ec88 e60c55b0bbef4cc79ba7eba2fc38b9d3
+#: e82ea4f04d64487bbd456cd05dcaa50d f326671b907545418cf67ddeb5762c49
+#: f470052c008b40e08e82bc2dd4fbcb46 f9ef164820da4e95819fbbd66f4d0eef
+#: fd3d215ee6a4441ea401d0f9b56e77e0
+msgid "No:"
+msgstr ""
+
+#: ../../style-guide.rst:95 afc8750c8c0e4565b82857dc64a55eda
+msgid "Within a contract surround function declarations with a single blank line."
+msgstr ""
+
+#: ../../style-guide.rst:97 e5ecb2b225c649959396eafd73ef6508
+msgid ""
+"Blank lines may be omitted between groups of related one-liners (such as "
+"stub functions for an abstract contract)"
+msgstr ""
+
+#: ../../style-guide.rst:147 d5b94d9ade4b46a4961fb5072fbb0571
+msgid "Maximum Line Length"
+msgstr ""
+
+#: ../../style-guide.rst:149 89ef4da8d10b4d9bb1380f9678ae4fce
+msgid ""
+"Keeping lines under the `PEP 8 recommendation "
+"<https://www.python.org/dev/peps/pep-0008/#maximum-line-length>`_ to a "
+"maximum of 79 (or 99) characters helps readers easily parse the code."
+msgstr ""
+
+#: ../../style-guide.rst:152 bebfc46daa164c27b802dc0d32b661d2
+msgid "Wrapped lines should conform to the following guidelines."
+msgstr ""
+
+#: ../../style-guide.rst:154 3544d1ef486c4acc9ea956c14c1fe67f
+msgid "The first argument should not be attached to the opening parenthesis."
+msgstr ""
+
+#: ../../style-guide.rst:155 2bcdefb8c0fd42d2897c2649153c7b14
+msgid "One, and only one, indent should be used."
+msgstr ""
+
+#: ../../style-guide.rst:156 4cf11b28ba2d482e9b527f4991ccc80d
+msgid "Each argument should fall on its own line."
+msgstr ""
+
+#: ../../style-guide.rst:157 d7f6ab8bb3244c45bb43789d59f418af
+msgid ""
+"The terminating element, :code:`);`, should be placed on the final line "
+"by itself."
+msgstr ""
+
+#: ../../style-guide.rst:159 176b2903d4124abcba6b2bb0474b5cfa
+msgid "Function Calls"
+msgstr ""
+
+#: ../../style-guide.rst:201 022771e7b3ea43408e3fa08d08c0d8e5
+msgid "Assignment Statements"
+msgstr ""
+
+#: ../../style-guide.rst:223 7f3faa2c89ae452993f57537a1c25d60
+msgid "Event Definitions and Event Emitters"
+msgstr ""
+
+#: ../../style-guide.rst:262 717fe527ebb04cbaaaabf18c230d476c
+msgid "Source File Encoding"
+msgstr ""
+
+#: ../../style-guide.rst:264 cf810f5dc1c24d6c90dac39cfe9b492e
+msgid "UTF-8 or ASCII encoding is preferred."
+msgstr ""
+
+#: ../../style-guide.rst:267 e6af71515e284fcb97f13cbcb254bf3e
+msgid "Imports"
+msgstr ""
+
+#: ../../style-guide.rst:269 6e4555812618463d821ec8a3b9ac5cb1
+msgid "Import statements should always be placed at the top of the file."
+msgstr ""
+
+#: ../../style-guide.rst:308 31e9cae3a6b24cec8bf2054ea6e029f4
+msgid "Order of Functions"
+msgstr ""
+
+#: ../../style-guide.rst:310 8426b9882f7b4b579372f9e56e844895
+msgid ""
+"Ordering helps readers identify which functions they can call and to find"
+" the constructor and fallback definitions easier."
+msgstr ""
+
+#: ../../style-guide.rst:312 ddf33b58dc8b485b8bcc9f9c166f8a19
+msgid "Functions should be grouped according to their visibility and ordered:"
+msgstr ""
+
+#: ../../style-guide.rst:314 1e416cc8a6b84f108057749c86dd010e
+msgid "constructor"
+msgstr ""
+
+#: ../../style-guide.rst:315 32145d28ebbc4050b4fe6a970a2e58bb
+msgid "receive function (if exists)"
+msgstr ""
+
+#: ../../style-guide.rst:316 9e1258d1db1c4f15bb54ece96301fbba
+msgid "fallback function (if exists)"
+msgstr ""
+
+#: ../../style-guide.rst:317 1837ef264de245cc83b00d3d86a36a00
+msgid "external"
+msgstr ""
+
+#: ../../style-guide.rst:318 0d9aaf4515cb4f91bf9480d36ff5aec0
+msgid "public"
+msgstr ""
+
+#: ../../style-guide.rst:319 e8d170a1cc674c76b8e64effe4907891
+msgid "internal"
+msgstr ""
+
+#: ../../style-guide.rst:320 2ff2c36782424517a557d6aa1c1560ed
+msgid "private"
+msgstr ""
+
+#: ../../style-guide.rst:322 2e82de0b74f34a789facbd8e8986dd57
+msgid "Within a grouping, place the ``view`` and ``pure`` functions last."
+msgstr ""
+
+#: ../../style-guide.rst:395 e7577655968248ec9ad5374bc24ff646
+msgid "Whitespace in Expressions"
+msgstr ""
+
+#: ../../style-guide.rst:397 10f4eb96c8ce4c13b71188d45373d35e
+msgid "Avoid extraneous whitespace in the following  situations:"
+msgstr ""
+
+#: ../../style-guide.rst:399 2fe1431b19ef4adabbf0c3c8dc480d76
+msgid ""
+"Immediately inside parenthesis, brackets or braces, with the exception of"
+" single line function declarations."
+msgstr ""
+
+#: ../../style-guide.rst:413 e78f8c4ea11848c8b3333936d44beb53
+msgid "Exception:"
+msgstr ""
+
+#: ../../style-guide.rst:419 cc7245a1b6f14784969399ef84588bed
+msgid "Immediately before a comma, semicolon:"
+msgstr ""
+
+#: ../../style-guide.rst:433 7abee59d4838466289b0b5474da1e2cb
+msgid ""
+"More than one space around an assignment or other operator to align with "
+"another:"
+msgstr ""
+
+#: ../../style-guide.rst:451 a869fd66931f45ca902b296212bf60c1
+msgid "Don't include a whitespace in the receive and fallback functions:"
+msgstr ""
+
+#: ../../style-guide.rst:479 afdb0e5e784f40b1a64a20de056ca93c
+msgid "Control Structures"
+msgstr ""
+
+#: ../../style-guide.rst:481 1f61d626e6fd4965813ce8109184fcf4
+msgid ""
+"The braces denoting the body of a contract, library, functions and "
+"structs should:"
+msgstr ""
+
+#: ../../style-guide.rst:484 7752de300da3488da177546c2d00f45b
+msgid "open on the same line as the declaration"
+msgstr ""
+
+#: ../../style-guide.rst:485 6d8822da3d124965a6295df9f3ca486f
+msgid ""
+"close on their own line at the same indentation level as the beginning of"
+" the declaration."
+msgstr ""
+
+#: ../../style-guide.rst:487 ../../style-guide.rst:615
+#: 664b884ed0434b5cb697c67cb9d50807 c4383cdb787e4b328321122833b52a50
+msgid "The opening brace should be preceded by a single space."
+msgstr ""
+
+#: ../../style-guide.rst:518 441f315629d24a4c98030fdceb094dde
+msgid ""
+"The same recommendations apply to the control structures ``if``, "
+"``else``, ``while``, and ``for``."
+msgstr ""
+
+#: ../../style-guide.rst:521 a01f83f23d7c486189495ea1860be6f6
+msgid ""
+"Additionally there should be a single space between the control "
+"structures ``if``, ``while``, and ``for`` and the parenthetic block "
+"representing the conditional, as well as a single space between the "
+"conditional parenthetic block and the opening brace."
+msgstr ""
+
+#: ../../style-guide.rst:553 df1388a5fd0f4cb6ba9cbdd67c1d3ccd
+msgid ""
+"For control structures whose body contains a single statement, omitting "
+"the braces is ok *if* the statement is contained on a single line."
+msgstr ""
+
+#: ../../style-guide.rst:573 7b5e2488513d4517b43f51994111d761
+msgid ""
+"For ``if`` blocks which have an ``else`` or ``else if`` clause, the "
+"``else`` should be placed on the same line as the ``if``'s closing brace."
+" This is an exception compared to the rules of other block-like "
+"structures."
+msgstr ""
+
+#: ../../style-guide.rst:607 6685f8753421429591cd7f3410d4962b
+msgid "Function Declaration"
+msgstr ""
+
+#: ../../style-guide.rst:609 c263c2df3b3c408480dc7767c0f5e301
+msgid ""
+"For short function declarations, it is recommended for the opening brace "
+"of the function body to be kept on the same line as the function "
+"declaration."
+msgstr ""
+
+#: ../../style-guide.rst:612 ef96aed4712e4be0ad863e8a0efd21d3
+msgid ""
+"The closing brace should be at the same indentation level as the function"
+" declaration."
+msgstr ""
+
+#: ../../style-guide.rst:649 ce8cd79a49b8428e8cb7024b0bbbb9aa
+msgid "The modifier order for a function should be:"
+msgstr ""
+
+#: ../../style-guide.rst:651 ee153add59f343d9be6fd00dfddccbae
+msgid "Visibility"
+msgstr ""
+
+#: ../../style-guide.rst:652 27ce921da8484ef69cb4a0e085f545b0
+msgid "Mutability"
+msgstr ""
+
+#: ../../style-guide.rst:653 985093958f8246139b990364cf917e2e
+msgid "Virtual"
+msgstr ""
+
+#: ../../style-guide.rst:654 1dadebb879a044b88be578c5ffdd0433
+msgid "Override"
+msgstr ""
+
+#: ../../style-guide.rst:655 dc976db392d74ef3b9d257ce12867699
+msgid "Custom modifiers"
+msgstr ""
+
+#: ../../style-guide.rst:681 ab120a7b9abd407aa6ef9d97f4b3041b
+msgid ""
+"For long function declarations, it is recommended to drop each argument "
+"onto it's own line at the same indentation level as the function body.  "
+"The closing parenthesis and opening bracket should be placed on their own"
+" line as well at the same indentation level as the function declaration."
+msgstr ""
+
+#: ../../style-guide.rst:731 feb8aea526d74cc09400eacd1b9a707f
+msgid ""
+"If a long function declaration has modifiers, then each modifier should "
+"be dropped to its own line."
+msgstr ""
+
+#: ../../style-guide.rst:786 3df166552ba14b4aaf5186abe069f9eb
+msgid ""
+"Multiline output parameters and return statements should follow the same "
+"style recommended for wrapping long lines found in the :ref:`Maximum Line"
+" Length <maximum_line_length>` section."
+msgstr ""
+
+#: ../../style-guide.rst:834 85deb9684f3d4c75916b880daba16524
+msgid ""
+"For constructor functions on inherited contracts whose bases require "
+"arguments, it is recommended to drop the base constructors onto new lines"
+" in the same manner as modifiers if the function declaration is long or "
+"hard to read."
+msgstr ""
+
+#: ../../style-guide.rst:921 7081afdd834e4501ac08c6f1da3c3e91
+msgid ""
+"When declaring short functions with a single statement, it is permissible"
+" to do it on a single line."
+msgstr ""
+
+#: ../../style-guide.rst:923 a7cf3bf953b14e3aba2d271df5a4d41b
+msgid "Permissible:"
+msgstr ""
+
+#: ../../style-guide.rst:929 8158081e0683456894071be8730dd868
+msgid ""
+"These guidelines for function declarations are intended to improve "
+"readability. Authors should use their best judgement as this guide does "
+"not try to cover all possible permutations for function declarations."
+msgstr ""
+
+#: ../../style-guide.rst:934 8fdd54afccea4f2788a1454e19f895a8
+msgid "Mappings"
+msgstr ""
+
+#: ../../style-guide.rst:936 c7b5bae7fa85434984042c0523affd51
+msgid ""
+"In variable declarations, do not separate the keyword ``mapping`` from "
+"its type by a space. Do not separate any nested ``mapping`` keyword from "
+"its type by whitespace."
+msgstr ""
+
+#: ../../style-guide.rst:959 51af5e41322f48dfa30acc151b50f783
+msgid "Variable Declarations"
+msgstr ""
+
+#: ../../style-guide.rst:961 15aac95cfff043c2b9d3fb3407c1467e
+msgid ""
+"Declarations of array variables should not have a space between the type "
+"and the brackets."
+msgstr ""
+
+#: ../../style-guide.rst:978 4bad740ef46a41c78e21096390c02cb8
+msgid "Other Recommendations"
+msgstr ""
+
+#: ../../style-guide.rst:980 e933729c9c7948b3995cf61f6e224dd1
+msgid "Strings should be quoted with double-quotes instead of single-quotes."
+msgstr ""
+
+#: ../../style-guide.rst:996 af9b6224d4334e938642a2dd88f2a92f
+msgid "Surround operators with a single space on either side."
+msgstr ""
+
+#: ../../style-guide.rst:1018 7c1d934d1ddb47959312a888a9ace3de
+msgid ""
+"Operators with a higher priority than others can exclude surrounding "
+"whitespace in order to denote precedence.  This is meant to allow for "
+"improved readability for complex statement. You should always use the "
+"same amount of whitespace on either side of an operator:"
+msgstr ""
+
+#: ../../style-guide.rst:1041 fa1590df78e4402bbc9dc915a11c931f
+msgid "Order of Layout"
+msgstr ""
+
+#: ../../style-guide.rst:1043 3ef13de492db49b299a0990b47a86128
+msgid "Layout contract elements in the following order:"
+msgstr ""
+
+#: ../../style-guide.rst:1045 1e063ca74be24c3c8c5a901c1ba91065
+msgid "Pragma statements"
+msgstr ""
+
+#: ../../style-guide.rst:1046 771ae319c89749daa04173c5446afed7
+msgid "Import statements"
+msgstr ""
+
+#: ../../style-guide.rst:1047 d76c7359281641039270b545ae59b4de
+msgid "Interfaces"
+msgstr ""
+
+#: ../../style-guide.rst:1048 c1dc72e3cb444c2683e62a1bcf4b9a97
+msgid "Libraries"
+msgstr ""
+
+#: ../../style-guide.rst:1049 70edd37022184bb7ab92b7991307ed8c
+msgid "Contracts"
+msgstr ""
+
+#: ../../style-guide.rst:1051 5376c995609548ac8b59dfa396232c44
+msgid "Inside each contract, library or interface, use the following order:"
+msgstr ""
+
+#: ../../style-guide.rst:1053 6834930465d043ecb7ff65e8afed30db
+msgid "Type declarations"
+msgstr ""
+
+#: ../../style-guide.rst:1054 768054f44b234f41bd5bbe3184083087
+msgid "State variables"
+msgstr ""
+
+#: ../../style-guide.rst:1055 de6922a452b643a8bce1049ee4cd80f1
+msgid "Events"
+msgstr ""
+
+#: ../../style-guide.rst:1056 2719e08e4b8b4fb5abf1707d7861ad13
+msgid "Functions"
+msgstr ""
+
+#: ../../style-guide.rst:1060 c5a08f95054743e9be22559b6ac8abe7
+msgid ""
+"It might be clearer to declare types close to their use in events or "
+"state variables."
+msgstr ""
+
+#: ../../style-guide.rst:1065 4eb281356ff34f558d257ea815863877
+msgid "Naming Conventions"
+msgstr ""
+
+#: ../../style-guide.rst:1067 258ff4059d514fd0875753beead87e2c
+msgid ""
+"Naming conventions are powerful when adopted and used broadly.  The use "
+"of different conventions can convey significant *meta* information that "
+"would otherwise not be immediately available."
+msgstr ""
+
+#: ../../style-guide.rst:1071 092ecbf7f6e1438eab0760a3d572c80c
+msgid ""
+"The naming recommendations given here are intended to improve the "
+"readability, and thus they are not rules, but rather guidelines to try "
+"and help convey the most information through the names of things."
+msgstr ""
+
+#: ../../style-guide.rst:1075 6390228d73fd4c4485441482bb9303e4
+msgid ""
+"Lastly, consistency within a codebase should always supersede any "
+"conventions outlined in this document."
+msgstr ""
+
+#: ../../style-guide.rst:1080 74aad557940845cc953b51d97c79ac3d
+msgid "Naming Styles"
+msgstr ""
+
+#: ../../style-guide.rst:1082 6c5e419eebde411da4e1caa706db39e9
+msgid ""
+"To avoid confusion, the following names will be used to refer to "
+"different naming styles."
+msgstr ""
+
+#: ../../style-guide.rst:1085 b7742729114345f7a20882ef25957478
+msgid "``b`` (single lowercase letter)"
+msgstr ""
+
+#: ../../style-guide.rst:1086 21bd4ed015dc4251a9e0f625d9050070
+msgid "``B`` (single uppercase letter)"
+msgstr ""
+
+#: ../../style-guide.rst:1087 2083b69ac5ab461da20d54d8a4dfdff8
+msgid "``lowercase``"
+msgstr ""
+
+#: ../../style-guide.rst:1088 8218d428c58647738429d358abe1c476
+msgid "``lower_case_with_underscores``"
+msgstr ""
+
+#: ../../style-guide.rst:1089 4bb84ba3946445af8edf62821cbefc4f
+msgid "``UPPERCASE``"
+msgstr ""
+
+#: ../../style-guide.rst:1090 40462d185815498e90f1c55803c2afac
+msgid "``UPPER_CASE_WITH_UNDERSCORES``"
+msgstr ""
+
+#: ../../style-guide.rst:1091 bfab64f12e2e497fb480376806616fd1
+msgid "``CapitalizedWords`` (or CapWords)"
+msgstr ""
+
+#: ../../style-guide.rst:1092 7576dae33fdd4c1c8ce40e6f364a1d01
+msgid ""
+"``mixedCase`` (differs from CapitalizedWords by initial lowercase "
+"character!)"
+msgstr ""
+
+#: ../../style-guide.rst:1093 be2c40a451b74695a382978405a511d8
+msgid "``Capitalized_Words_With_Underscores``"
+msgstr ""
+
+#: ../../style-guide.rst:1095 6738a39ca22644a1b9b3d0de126f8bbe
+msgid ""
+"When using initialisms in CapWords, capitalize all the letters of the "
+"initialisms. Thus HTTPServerError is better than HttpServerError. When "
+"using initialisms in mixedCase, capitalize all the letters of the "
+"initialisms, except keep the first one lower case if it is the beginning "
+"of the name. Thus xmlHTTPRequest is better than XMLHTTPRequest."
+msgstr ""
+
+#: ../../style-guide.rst:1099 6c306c2483794d659940815a74ddf7a2
+msgid "Names to Avoid"
+msgstr ""
+
+#: ../../style-guide.rst:1101 d71c22d1608747b080002c5ebd2a3a55
+msgid "``l`` - Lowercase letter el"
+msgstr ""
+
+#: ../../style-guide.rst:1102 8d4fa956982848e1a70f3b68e8994721
+msgid "``O`` - Uppercase letter oh"
+msgstr ""
+
+#: ../../style-guide.rst:1103 e3f0d708de6a44ad938c7012276cfb78
+msgid "``I`` - Uppercase letter eye"
+msgstr ""
+
+#: ../../style-guide.rst:1105 a49f3a52266748879f837cf098734d2b
+msgid ""
+"Never use any of these for single letter variable names.  They are often "
+"indistinguishable from the numerals one and zero."
+msgstr ""
+
+#: ../../style-guide.rst:1110 e746cc7402df4efa91ac78a660435426
+msgid "Contract and Library Names"
+msgstr ""
+
+#: ../../style-guide.rst:1112 ab80c8b9b0984e30b6aaf7d4465984f3
+msgid ""
+"Contracts and libraries should be named using the CapWords style. "
+"Examples: ``SimpleToken``, ``SmartBank``, ``CertificateHashRepository``, "
+"``Player``, ``Congress``, ``Owned``."
+msgstr ""
+
+#: ../../style-guide.rst:1113 6621279ea8764611890261112ad25edc
+msgid "Contract and library names should also match their filenames."
+msgstr ""
+
+#: ../../style-guide.rst:1114 96220a7520ee4f80b27f674d8512d188
+msgid ""
+"If a contract file includes multiple contracts and/or libraries, then the"
+" filename should match the *core contract*. This is not recommended "
+"however if it can be avoided."
+msgstr ""
+
+#: ../../style-guide.rst:1116 925464fbc9424811b683a22878a60e8d
+msgid ""
+"As shown in the example below, if the contract name is ``Congress`` and "
+"the library name is ``Owned``, then their associated filenames should be "
+"``Congress.sol`` and ``Owned.sol``."
+msgstr ""
+
+#: ../../style-guide.rst:1143 ../../style-guide.rst:1182
+#: 79898c00c34d49d49025bf24fac2788f 8088e48ca0244895b802786a266b0e2e
+msgid "and in ``Congress.sol``:"
+msgstr ""
+
+#: ../../style-guide.rst:1198 7b04a897e58646b2abf6f1c6034b1a26
+msgid "Struct Names"
+msgstr ""
+
+#: ../../style-guide.rst:1200 58c401b37ba64923b099ae3c8ee40a04
+msgid ""
+"Structs should be named using the CapWords style. Examples: ``MyCoin``, "
+"``Position``, ``PositionXY``."
+msgstr ""
+
+#: ../../style-guide.rst:1204 8300173e84c34438ad3d04d544ddb86f
+msgid "Event Names"
+msgstr ""
+
+#: ../../style-guide.rst:1206 6657a5a56a4b46faabca86521e4d9ce4
+msgid ""
+"Events should be named using the CapWords style. Examples: ``Deposit``, "
+"``Transfer``, ``Approval``, ``BeforeTransfer``, ``AfterTransfer``."
+msgstr ""
+
+#: ../../style-guide.rst:1210 805aeb334bc44b1498c4316ab63d4fc6
+msgid "Function Names"
+msgstr ""
+
+#: ../../style-guide.rst:1212 29f59a231d6f4f53b1550491197112c6
+msgid ""
+"Functions should use mixedCase. Examples: ``getBalance``, ``transfer``, "
+"``verifyOwner``, ``addMember``, ``changeOwner``."
+msgstr ""
+
+#: ../../style-guide.rst:1216 c2a7ef2fec62408886d017ac28fd3c78
+msgid "Function Argument Names"
+msgstr ""
+
+#: ../../style-guide.rst:1218 060d8f09d9024abe9b5c4e33272b2653
+msgid ""
+"Function arguments should use mixedCase. Examples: ``initialSupply``, "
+"``account``, ``recipientAddress``, ``senderAddress``, ``newOwner``."
+msgstr ""
+
+#: ../../style-guide.rst:1220 ed3bb40328bd4f43812dfec44bba6270
+msgid ""
+"When writing library functions that operate on a custom struct, the "
+"struct should be the first argument and should always be named ``self``."
+msgstr ""
+
+#: ../../style-guide.rst:1225 af8e4b5811794b5788b45e607b3141bb
+msgid "Local and State Variable Names"
+msgstr ""
+
+#: ../../style-guide.rst:1227 4fbe2ba3e2c948bcb83f43e77d73b0d0
+msgid ""
+"Use mixedCase. Examples: ``totalSupply``, ``remainingSupply``, "
+"``balancesOf``, ``creatorAddress``, ``isPreSale``, ``tokenExchangeRate``."
+msgstr ""
+
+#: ../../style-guide.rst:1231 27e68099a09e4a9dae402636ee0f1008
+msgid "Constants"
+msgstr ""
+
+#: ../../style-guide.rst:1233 8fb95dcb1c3f4306a1c87a08357d97e8
+msgid ""
+"Constants should be named with all capital letters with underscores "
+"separating words. Examples: ``MAX_BLOCKS``, ``TOKEN_NAME``, "
+"``TOKEN_TICKER``, ``CONTRACT_VERSION``."
+msgstr ""
+
+#: ../../style-guide.rst:1238 fb7e25dd6acf406a885e3823cd8c2dda
+msgid "Modifier Names"
+msgstr ""
+
+#: ../../style-guide.rst:1240 77b5f378666341a48064d896a63f2a11
+msgid ""
+"Use mixedCase. Examples: ``onlyBy``, ``onlyAfter``, "
+"``onlyDuringThePreSale``."
+msgstr ""
+
+#: ../../style-guide.rst:1244 db22573d8a5d471ab1c80ee629a39c5e
+msgid "Enums"
+msgstr ""
+
+#: ../../style-guide.rst:1246 f09f990a2e7c4a4d9c2fbaa996349b8a
+msgid ""
+"Enums, in the style of simple type declarations, should be named using "
+"the CapWords style. Examples: ``TokenGroup``, ``Frame``, ``HashStyle``, "
+"``CharacterLocation``."
+msgstr ""
+
+#: ../../style-guide.rst:1250 e14169c4167c46ea88f385d49ba6ee4f
+msgid "Avoiding Naming Collisions"
+msgstr ""
+
+#: ../../style-guide.rst:1252 9364ee6b15904aceacf48c0e5aaf5ca5
+msgid "``single_trailing_underscore_``"
+msgstr ""
+
+#: ../../style-guide.rst:1254 6947c0255c494aec8439d54862f8d908
+msgid ""
+"This convention is suggested when the desired name collides with that of "
+"a built-in or otherwise reserved name."
+msgstr ""
+
+#: ../../style-guide.rst:1261 b8885bc1d5c6497d83f7969773567cd4
+msgid "NatSpec"
+msgstr ""
+
+#: ../../style-guide.rst:1263 ca6c058b523e4102b4b2e7cb6d0c9755
+msgid ""
+"Solidity contracts can also contain NatSpec comments. They are written "
+"with a triple slash (``///``) or a double asterisk block (``/** ... */``)"
+" and they should be used directly above function declarations or "
+"statements."
+msgstr ""
+
+#: ../../style-guide.rst:1267 2795f55f86294fcf826e2c13e879740a
+msgid ""
+"For example, the contract from :ref:`a simple smart contract <simple-"
+"smart-contract>` with the comments added looks like the one below:"
+msgstr ""
+
+#: ../../style-guide.rst:1295 6dad3c76fb6547d28fa4c0fce6f747e6
+msgid ""
+"It is recommended that Solidity contracts are fully annotated using "
+":ref:`NatSpec <natspec>` for all public interfaces (everything in the "
+"ABI)."
+msgstr ""
+
+#: ../../style-guide.rst:1297 3495aa4826fc48919bcee623903fe761
+msgid ""
+"Please see the section about :ref:`NatSpec <natspec>` for a detailed "
+"explanation."
+msgstr ""
+

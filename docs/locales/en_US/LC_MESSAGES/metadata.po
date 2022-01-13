@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../metadata.rst:5 f5fb348e60ed40a7ad18fee8d43ee228
+msgid "Contract Metadata"
+msgstr ""
+
+#: ../../metadata.rst:9 706d1738683f4edbabe5d090b73393fb
+msgid ""
+"The Solidity compiler automatically generates a JSON file, the contract "
+"metadata, that contains information about the compiled contract. You can "
+"use this file to query the compiler version, the sources used, the ABI "
+"and NatSpec documentation to more safely interact with the contract and "
+"verify its source code."
+msgstr ""
+
+#: ../../metadata.rst:15 399140d20ed74f3ca0808c55c27991ef
+msgid ""
+"The compiler appends by default the IPFS hash of the metadata file to the"
+" end of the bytecode (for details, see below) of each contract, so that "
+"you can retrieve the file in an authenticated way without having to "
+"resort to a centralized data provider. The other available options are "
+"the Swarm hash and not appending the metadata hash to the bytecode.  "
+"These can be configured via the :ref:`Standard JSON Interface<compiler-"
+"api>`."
+msgstr ""
+
+#: ../../metadata.rst:22 7bfa5347d7634681be2d0b942ef1e1ea
+msgid ""
+"You have to publish the metadata file to IPFS, Swarm, or another service "
+"so that others can access it. You create the file by using the ``solc "
+"--metadata`` command that generates a file called "
+"``ContractName_meta.json``. It contains IPFS and Swarm references to the "
+"source code, so you have to upload all source files and the metadata "
+"file."
+msgstr ""
+
+#: ../../metadata.rst:28 2185003afd5f47daa92d7cdeb1ffc5b3
+msgid ""
+"The metadata file has the following format. The example below is "
+"presented in a human-readable way. Properly formatted metadata should use"
+" quotes correctly, reduce whitespace to a minimum and sort the keys of "
+"all objects to arrive at a unique formatting. Comments are not permitted "
+"and used here only for explanatory purposes."
+msgstr ""
+
+#: ../../metadata.rst:128 10e30b6dec06402ebe44e388a7a1ed11
+msgid ""
+"Since the bytecode of the resulting contract contains the metadata hash "
+"by default, any change to the metadata might result in a change of the "
+"bytecode. This includes changes to a filename or path, and since the "
+"metadata includes a hash of all the sources used, a single whitespace "
+"change results in different metadata, and different bytecode."
+msgstr ""
+
+#: ../../metadata.rst:135 621ee6d8e10e4feaa39c63d8bda4afc5
+msgid ""
+"The ABI definition above has no fixed order. It can change with compiler "
+"versions. Starting from Solidity version 0.5.12, though, the array "
+"maintains a certain order."
+msgstr ""
+
+#: ../../metadata.rst:142 108e1d7102ca44b28d5ecddee5dc5d3b
+msgid "Encoding of the Metadata Hash in the Bytecode"
+msgstr ""
+
+#: ../../metadata.rst:144 02694d56803d473a80f1e7c8313551b3
+msgid ""
+"Because we might support other ways to retrieve the metadata file in the "
+"future, the mapping ``{\"ipfs\": <IPFS hash>, \"solc\": <compiler "
+"version>}`` is stored `CBOR "
+"<https://tools.ietf.org/html/rfc7049>`_-encoded. Since the mapping might "
+"contain more keys (see below) and the beginning of that encoding is not "
+"easy to find, its length is added in a two-byte big-endian encoding. The "
+"current version of the Solidity compiler usually adds the following to "
+"the end of the deployed bytecode"
+msgstr ""
+
+#: ../../metadata.rst:159 c759c03831ef47c98d1dede56461dfcf
+msgid ""
+"So in order to retrieve the data, the end of the deployed bytecode can be"
+" checked to match that pattern and use the IPFS hash to retrieve the "
+"file."
+msgstr ""
+
+#: ../../metadata.rst:162 3bb6939c12f042e683a61490011637c6
+msgid ""
+"Whereas release builds of solc use a 3 byte encoding of the version as "
+"shown above (one byte each for major, minor and patch version number), "
+"prerelease builds will instead use a complete version string including "
+"commit hash and build date."
+msgstr ""
+
+#: ../../metadata.rst:167 e0c4401a60294ed38a6b8e21d7ee037c
+msgid ""
+"The CBOR mapping can also contain other keys, so it is better to fully "
+"decode the data instead of relying on it starting with ``0xa264``. For "
+"example, if any experimental features that affect code generation are "
+"used, the mapping will also contain ``\"experimental\": true``."
+msgstr ""
+
+#: ../../metadata.rst:173 82bfb6e953154b4997495ecddcf30133
+msgid ""
+"The compiler currently uses the IPFS hash of the metadata by default, but"
+" it may also use the bzzr1 hash or some other hash in the future, so do "
+"not rely on this sequence to start with ``0xa2 0x64 'i' 'p' 'f' 's'``.  "
+"We might also add additional data to this CBOR structure, so the best "
+"option is to use a proper CBOR parser."
+msgstr ""
+
+#: ../../metadata.rst:181 5eed818ae89f4d5294847b302045c945
+msgid "Usage for Automatic Interface Generation and NatSpec"
+msgstr ""
+
+#: ../../metadata.rst:183 f616cc74c2a34be589f9350b250590cd
+msgid ""
+"The metadata is used in the following way: A component that wants to "
+"interact with a contract (e.g. Mist or any wallet) retrieves the code of "
+"the contract, from that the IPFS/Swarm hash of a file which is then "
+"retrieved.  That file is JSON-decoded into a structure like above."
+msgstr ""
+
+#: ../../metadata.rst:188 2fba74d75a5645158596d23933691337
+msgid ""
+"The component can then use the ABI to automatically generate a "
+"rudimentary user interface for the contract."
+msgstr ""
+
+#: ../../metadata.rst:191 6faa73edb9da4d22946745c72f2e6bb5
+msgid ""
+"Furthermore, the wallet can use the NatSpec user documentation to display"
+" a confirmation message to the user whenever they interact with the "
+"contract, together with requesting authorization for the transaction "
+"signature."
+msgstr ""
+
+#: ../../metadata.rst:195 e05109b1a0f94a11a1e4323ccbd063a0
+msgid ""
+"For additional information, read :doc:`Ethereum Natural Language "
+"Specification (NatSpec) format <natspec-format>`."
+msgstr ""
+
+#: ../../metadata.rst:198 ebe659541e7545b8960365b866182fda
+msgid "Usage for Source Code Verification"
+msgstr ""
+
+#: ../../metadata.rst:200 528bdf8ab03f4503973be03dfcb651a8
+msgid ""
+"In order to verify the compilation, sources can be retrieved from "
+"IPFS/Swarm via the link in the metadata file. The compiler of the correct"
+" version (which is checked to be part of the \"official\" compilers) is "
+"invoked on that input with the specified settings. The resulting bytecode"
+" is compared to the data of the creation transaction or ``CREATE`` opcode"
+" data. This automatically verifies the metadata since its hash is part of"
+" the bytecode. Excess data corresponds to the constructor input data, "
+"which should be decoded according to the interface and presented to the "
+"user."
+msgstr ""
+
+#: ../../metadata.rst:209 1a39bf14c9f84700b721b7a89bbc6658
+msgid ""
+"In the repository `sourcify <https://github.com/ethereum/sourcify>`_ "
+"(`npm package <https://www.npmjs.com/package/source-verify>`_) you can "
+"see example code that shows how to use this feature."
+msgstr ""
+

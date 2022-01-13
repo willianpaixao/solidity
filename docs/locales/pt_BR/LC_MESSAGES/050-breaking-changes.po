@@ -1,0 +1,559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../050-breaking-changes.rst:3 827e0042779b4a3dad47f4d062c6a773
+msgid "Solidity v0.5.0 Breaking Changes"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:5 d3227475702046a4a1b2a334da031c77
+msgid ""
+"This section highlights the main breaking changes introduced in Solidity "
+"version 0.5.0, along with the reasoning behind the changes and how to "
+"update affected code. For the full list check `the release changelog "
+"<https://github.com/ethereum/solidity/releases/tag/v0.5.0>`_."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:12 d5e651ce27564e21959991d25deddb32
+msgid ""
+"Contracts compiled with Solidity v0.5.0 can still interface with "
+"contracts and even libraries compiled with older versions without "
+"recompiling or redeploying them.  Changing the interfaces to include data"
+" locations and visibility and mutability specifiers suffices. See the "
+":ref:`Interoperability With Older Contracts <interoperability>` section "
+"below."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:19 ebc734e76086473cbd345416f305ddb1
+msgid "Semantic Only Changes"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:21 dab417f18f864a6d8930cbcab6926049
+msgid ""
+"This section lists the changes that are semantic-only, thus potentially "
+"hiding new and different behavior in existing code."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:24 b0dd1c6fd54e4200b5dea871b7cba18d
+msgid ""
+"Signed right shift now uses proper arithmetic shift, i.e. rounding "
+"towards negative infinity, instead of rounding towards zero.  Signed and "
+"unsigned shift will have dedicated opcodes in Constantinople, and are "
+"emulated by Solidity for the moment."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:29 ae73cfaaf0ca4d0ca1f81ce0b64fb090
+msgid ""
+"The ``continue`` statement in a ``do...while`` loop now jumps to the "
+"condition, which is the common behavior in such cases. It used to jump to"
+" the loop body. Thus, if the condition is false, the loop terminates."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:33 20942ce2ae27473e8839a3b658e4a0f1
+msgid ""
+"The functions ``.call()``, ``.delegatecall()`` and ``.staticcall()`` do "
+"not pad anymore when given a single ``bytes`` parameter."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:36 d3828a94d06b40028cfe74c10ae87f99
+msgid ""
+"Pure and view functions are now called using the opcode ``STATICCALL`` "
+"instead of ``CALL`` if the EVM version is Byzantium or later. This "
+"disallows state changes on the EVM level."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:40 c502045d12ab4ec3b7db30bf43456d26
+msgid ""
+"The ABI encoder now properly pads byte arrays and strings from calldata "
+"(``msg.data`` and external function parameters) when used in external "
+"function calls and in ``abi.encode``. For unpadded encoding, use "
+"``abi.encodePacked``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:45 835eed445bab4d3ba0e16b94f543d97f
+msgid ""
+"The ABI decoder reverts in the beginning of functions and in "
+"``abi.decode()`` if passed calldata is too short or points out of bounds."
+" Note that dirty higher order bits are still simply ignored."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:49 622689ca003f4cd5a9267c5eee615018
+msgid ""
+"Forward all available gas with external function calls starting from "
+"Tangerine Whistle."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:53 2422750d306b4c12babed0f843f58270
+msgid "Semantic and Syntactic Changes"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:55 5e0c768ddc88409c9ccaaddc68ba5175
+msgid "This section highlights changes that affect syntax and semantics."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:57 daa4b9fe1f8d49e3a0fbee41475af5af
+msgid ""
+"The functions ``.call()``, ``.delegatecall()``, ``staticcall()``, "
+"``keccak256()``, ``sha256()`` and ``ripemd160()`` now accept only a "
+"single ``bytes`` argument. Moreover, the argument is not padded. This was"
+" changed to make more explicit and clear how the arguments are "
+"concatenated. Change every ``.call()`` (and family) to a ``.call(\"\")`` "
+"and every ``.call(signature, a, b, c)`` to use "
+"``.call(abi.encodeWithSignature(signature, a, b, c))`` (the last one only"
+" works for value types).  Change every ``keccak256(a, b, c)`` to "
+"``keccak256(abi.encodePacked(a, b, c))``. Even though it is not a "
+"breaking change, it is suggested that developers change "
+"``x.call(bytes4(keccak256(\"f(uint256)\")), a, b)`` to "
+"``x.call(abi.encodeWithSignature(\"f(uint256)\", a, b))``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:69 dfa8e07790264c98bbbb376dc19ecf0d
+msgid ""
+"Functions ``.call()``, ``.delegatecall()`` and ``.staticcall()`` now "
+"return ``(bool, bytes memory)`` to provide access to the return data.  "
+"Change ``bool success = otherContract.call(\"f\")`` to ``(bool success, "
+"bytes memory data) = otherContract.call(\"f\")``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:74 a5073f2506ee42a0a35a4cc4eb407d56
+msgid ""
+"Solidity now implements C99-style scoping rules for function local "
+"variables, that is, variables can only be used after they have been "
+"declared and only in the same or nested scopes. Variables declared in the"
+" initialization block of a ``for`` loop are valid at any point inside the"
+" loop."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:81 c45299414936448ab7b45d98cfbd58bf
+msgid "Explicitness Requirements"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:83 7e0eb266e05047ea813f655ff9a2fc89
+msgid ""
+"This section lists changes where the code now needs to be more explicit. "
+"For most of the topics the compiler will provide suggestions."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:86 96b93db031fb490d8f6a1413516be2ba
+msgid ""
+"Explicit function visibility is now mandatory.  Add ``public`` to every "
+"function and constructor, and ``external`` to every fallback or interface"
+" function that does not specify its visibility already."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:90 1879425480394f51a31941043d9f46c8
+msgid ""
+"Explicit data location for all variables of struct, array or mapping "
+"types is now mandatory. This is also applied to function parameters and "
+"return variables.  For example, change ``uint[] x = m_x`` to ``uint[] "
+"storage x = m_x``, and ``function f(uint[][] x)`` to ``function "
+"f(uint[][] memory x)`` where ``memory`` is the data location and might be"
+" replaced by ``storage`` or ``calldata`` accordingly.  Note that "
+"``external`` functions require parameters with a data location of "
+"``calldata``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:98 562fa6735c51473cb2355c7f4b96f527
+msgid ""
+"Contract types do not include ``address`` members anymore in order to "
+"separate the namespaces.  Therefore, it is now necessary to explicitly "
+"convert values of contract type to addresses before using an ``address`` "
+"member.  Example: if ``c`` is a contract, change ``c.transfer(...)`` to "
+"``address(c).transfer(...)``, and ``c.balance`` to "
+"``address(c).balance``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:105 bb804fc9c17e4b67b3ce8c0f63e818e0
+msgid ""
+"Explicit conversions between unrelated contract types are now disallowed."
+" You can only convert from a contract type to one of its base or ancestor"
+" types. If you are sure that a contract is compatible with the contract "
+"type you want to convert to, although it does not inherit from it, you "
+"can work around this by converting to ``address`` first. Example: if "
+"``A`` and ``B`` are contract types, ``B`` does not inherit from ``A`` and"
+" ``b`` is a contract of type ``B``, you can still convert ``b`` to type "
+"``A`` using ``A(address(b))``. Note that you still need to watch out for "
+"matching payable fallback functions, as explained below."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:113 ba91b43f075a4740a0ae851d26fa261f
+msgid ""
+"The ``address`` type  was split into ``address`` and ``address payable``,"
+" where only ``address payable`` provides the ``transfer`` function.  An "
+"``address payable`` can be directly converted to an ``address``, but the "
+"other way around is not allowed. Converting ``address`` to ``address "
+"payable`` is possible via conversion through ``uint160``. If ``c`` is a "
+"contract, ``address(c)`` results in ``address payable`` only if ``c`` has"
+" a payable fallback function. If you use the :ref:`withdraw "
+"pattern<withdrawal_pattern>`, you most likely do not have to change your "
+"code because ``transfer`` is only used on ``msg.sender`` instead of "
+"stored addresses and ``msg.sender`` is an ``address payable``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:124 5f835151192d4ccbb5448db69cd3c656
+msgid ""
+"Conversions between ``bytesX`` and ``uintY`` of different size are now "
+"disallowed due to ``bytesX`` padding on the right and ``uintY`` padding "
+"on the left which may cause unexpected conversion results.  The size must"
+" now be adjusted within the type before the conversion.  For example, you"
+" can convert a ``bytes4`` (4 bytes) to a ``uint64`` (8 bytes) by first "
+"converting the ``bytes4`` variable to ``bytes8`` and then to ``uint64``. "
+"You get the opposite padding when converting through ``uint32``. Before "
+"v0.5.0 any conversion between ``bytesX`` and ``uintY`` would go through "
+"``uint8X``. For example ``uint8(bytes3(0x291807))`` would be converted to"
+" ``uint8(uint24(bytes3(0x291807)))`` (the result is ``0x07``)."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:135 639bd912548f4f55b7063ac8c97a3a7a
+msgid ""
+"Using ``msg.value`` in non-payable functions (or introducing it via a "
+"modifier) is disallowed as a security feature. Turn the function into "
+"``payable`` or create a new internal function for the program logic that "
+"uses ``msg.value``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:140 049a918e420b4e7b8d05eb7e2d1269a2
+msgid ""
+"For clarity reasons, the command line interface now requires ``-`` if the"
+" standard input is used as source."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:144 4fe62b423fda4ac3ab6b1d53d6a5ae27
+msgid "Deprecated Elements"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:146 85d56bc62b2e4b86a3dddfba9a319a73
+msgid ""
+"This section lists changes that deprecate prior features or syntax.  Note"
+" that many of these changes were already enabled in the experimental mode"
+" ``v0.5.0``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:151 7c2086066bff40a0b5b6f3dd095d6418
+msgid "Command Line and JSON Interfaces"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:153 5454d499aa9d4f199c14723583f0cf82
+msgid ""
+"The command line option ``--formal`` (used to generate Why3 output for "
+"further formal verification) was deprecated and is now removed.  A new "
+"formal verification module, the SMTChecker, is enabled via ``pragma "
+"experimental SMTChecker;``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:158 fcd92f78d77b4231bf5e20832df35f22
+msgid ""
+"The command line option ``--julia`` was renamed to ``--yul`` due to the "
+"renaming of the intermediate language ``Julia`` to ``Yul``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:161 d6fe77f0ee3047d98959eb41fc5038ee
+msgid ""
+"The ``--clone-bin`` and ``--combined-json clone-bin`` command line "
+"options were removed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:164 7e38836db2eb4780b77f8636898dcf95
+msgid "Remappings with empty prefix are disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:166 43531c36b7224ee68f0bc427aa59e606
+msgid ""
+"The JSON AST fields ``constant`` and ``payable`` were removed. The "
+"information is now present in the ``stateMutability`` field."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:169 5aac12541ff74793aeb65cd3f667b404
+msgid ""
+"The JSON AST field ``isConstructor`` of the ``FunctionDefinition`` node "
+"was replaced by a field called ``kind`` which can have the value "
+"``\"constructor\"``, ``\"fallback\"`` or ``\"function\"``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:173 c33c2c544b5049e783037a77fed87b52
+msgid ""
+"In unlinked binary hex files, library address placeholders are now the "
+"first 36 hex characters of the keccak256 hash of the fully qualified "
+"library name, surrounded by ``$...$``. Previously, just the fully "
+"qualified library name was used. This reduces the chances of collisions, "
+"especially when long paths are used. Binary files now also contain a list"
+" of mappings from these placeholders to the fully qualified names."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:182 f868f847e7244c48ad75c4623333e465
+msgid "Constructors"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:184 04c6e7ecb39d4cba8dd7a845418c39c6
+msgid "Constructors must now be defined using the ``constructor`` keyword."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:186 dc767b3c8ba04936bd00e0c58e0d1068
+msgid "Calling base constructors without parentheses is now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:188 55a5116dc84d491086b3a7e1b740fd4d
+msgid ""
+"Specifying base constructor arguments multiple times in the same "
+"inheritance hierarchy is now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:191 bab5bb9c2aac454690ce1a8afdad45d6
+msgid ""
+"Calling a constructor with arguments but with wrong argument count is now"
+" disallowed.  If you only want to specify an inheritance relation without"
+" giving arguments, do not provide parentheses at all."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:196 5e02348fa0a241d590a8078fbab4fa8a
+msgid "Functions"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:198 b6f193a8fa6b4129ad13cc2bf9785980
+msgid ""
+"Function ``callcode`` is now disallowed (in favor of ``delegatecall``). "
+"It is still possible to use it via inline assembly."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:201 5274337d507046d78b8cea8ef5789e90
+msgid "``suicide`` is now disallowed (in favor of ``selfdestruct``)."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:203 710baea7d0dc4305b678bef97ffebbeb
+msgid "``sha3`` is now disallowed (in favor of ``keccak256``)."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:205 54383557d9f54c9ebac2d3103bba911c
+msgid ""
+"``throw`` is now disallowed (in favor of ``revert``, ``require`` and "
+"``assert``)."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:209 354b66b444e34903b8dc0d3106f3dfdb
+msgid "Conversions"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:211 7e62904df31b4c98af0cf53f8d3e6f87
+msgid ""
+"Explicit and implicit conversions from decimal literals to ``bytesXX`` "
+"types is now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:214 dd9ea53bf0c04fd2a2f68f97d1146d08
+msgid ""
+"Explicit and implicit conversions from hex literals to ``bytesXX`` types "
+"of different size is now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:218 8e6c9ccf1aca445594f775bf426c5310
+msgid "Literals and Suffixes"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:220 77c9279c020c4c7fb8044174883fd1aa
+msgid ""
+"The unit denomination ``years`` is now disallowed due to complications "
+"and confusions about leap years."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:223 74ba3baf6d074f15997548d8758c4791
+msgid "Trailing dots that are not followed by a number are now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:225 8f0cc77a8d884b5481bb974d8f9ba979
+msgid ""
+"Combining hex numbers with unit denominations (e.g. ``0x1e wei``) is now "
+"disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:228 727868920e13453e93aa5cc41c90d76b
+msgid "The prefix ``0X`` for hex numbers is disallowed, only ``0x`` is possible."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:231 9ca62a847e414de4b6dd7a1e46324002
+msgid "Variables"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:233 a9ba5373c89d400aa2117c55f175e2cb
+msgid "Declaring empty structs is now disallowed for clarity."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:235 ba100604567f4c049c7272afeae65635
+msgid "The ``var`` keyword is now disallowed to favor explicitness."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:237 f1574282e9244997a879622fc65f0b4e
+msgid ""
+"Assignments between tuples with different number of components is now "
+"disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:240 4a386b55a2a24f918332e9d47643f88b
+msgid "Values for constants that are not compile-time constants are disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:242 bc623f4a5b614f259be1e4de19ef4fc3
+msgid ""
+"Multi-variable declarations with mismatching number of values are now "
+"disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:245 0f009165dd7c4752b9bedbf1abf153f0
+msgid "Uninitialized storage variables are now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:247 8ae0d9b7f97044e7b9077f4b7a236925
+msgid "Empty tuple components are now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:249 f4e9210e2ca949edaa2407512a517487
+msgid ""
+"Detecting cyclic dependencies in variables and structs is limited in "
+"recursion to 256."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:252 4cc2be8870c44baaa4d7b3b107f86f30
+msgid "Fixed-size arrays with a length of zero are now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:255 ae3cbc19a81f4ba3b9109e9b9a80aa0e
+msgid "Syntax"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:257 666ad7dbaba34627b2cd31453f836ec9
+msgid ""
+"Using ``constant`` as function state mutability modifier is now "
+"disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:259 73b737320df24ceb925e6f00cec29eff
+msgid "Boolean expressions cannot use arithmetic operations."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:261 27c68eebc71a48e983295bb720212c3c
+msgid "The unary ``+`` operator is now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:263 a6b037dc0ca147eba018d66ad41e71e6
+msgid ""
+"Literals cannot anymore be used with ``abi.encodePacked`` without prior "
+"conversion to an explicit type."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:266 63e9efb93ec64c91a2a8f0e62bbcc88c
+msgid ""
+"Empty return statements for functions with one or more return values are "
+"now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:269 e2cad47c59af4b0c972fabf7f090f99c
+msgid ""
+"The \"loose assembly\" syntax is now disallowed entirely, that is, jump "
+"labels, jumps and non-functional instructions cannot be used anymore. Use"
+" the new ``while``, ``switch`` and ``if`` constructs instead."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:273 d8337502359140e681e3a5cee712ff5c
+msgid "Functions without implementation cannot use modifiers anymore."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:275 06ae837735684eaab477b4f4f1e27d44
+msgid "Function types with named return values are now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:277 f1f2d66e4eee45c59df6fe520749037f
+msgid ""
+"Single statement variable declarations inside if/while/for bodies that "
+"are not blocks are now disallowed."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:280 2f92fcf990ae47739e95c4602d02886a
+msgid "New keywords: ``calldata`` and ``constructor``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:282 4cbfa78b7fb046af99262f7744ecd17c
+msgid ""
+"New reserved keywords: ``alias``, ``apply``, ``auto``, ``copyof``, "
+"``define``, ``immutable``, ``implements``, ``macro``, ``mutable``, "
+"``override``, ``partial``, ``promise``, ``reference``, ``sealed``, "
+"``sizeof``, ``supports``, ``typedef`` and ``unchecked``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:290 f5777c74ee5f407fb2b6412f0e18475b
+msgid "Interoperability With Older Contracts"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:292 83587017ab9b4ef487bb27cd4d2a4688
+msgid ""
+"It is still possible to interface with contracts written for Solidity "
+"versions prior to v0.5.0 (or the other way around) by defining interfaces"
+" for them. Consider you have the following pre-0.5.0 contract already "
+"deployed:"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:312 16e211c077b0428e8252262b986d3657
+msgid ""
+"This will no longer compile with Solidity v0.5.0. However, you can define"
+" a compatible interface for it:"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:323 6fb1c53265e0458f81c0f80d07299211
+msgid ""
+"Note that we did not declare ``anotherOldFunction`` to be ``view``, "
+"despite it being declared ``constant`` in the original contract. This is "
+"due to the fact that starting with Solidity v0.5.0 ``staticcall`` is used"
+" to call ``view`` functions. Prior to v0.5.0 the ``constant`` keyword was"
+" not enforced, so calling a function declared ``constant`` with "
+"``staticcall`` may still revert, since the ``constant`` function may "
+"still attempt to modify storage. Consequently, when defining an interface"
+" for older contracts, you should only use ``view`` in place of "
+"``constant`` in case you are absolutely sure that the function will work "
+"with ``staticcall``."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:330 c513da2c8a8543c7b833b9695b3fbe72
+msgid ""
+"Given the interface defined above, you can now easily use the already "
+"deployed pre-0.5.0 contract:"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:349 30c5130ce1a4481d87c1f7abccb58e9a
+msgid ""
+"Similarly, pre-0.5.0 libraries can be used by defining the functions of "
+"the library without implementation and supplying the address of the "
+"pre-0.5.0 library during linking (see :ref:`commandline-compiler` for how"
+" to use the commandline compiler for linking):"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:371 3c4e4c711f1f48f0afefd398acc09fbe
+msgid "Example"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:373 018eb6ee80aa44729fcd1e781a8c1ae6
+msgid ""
+"The following example shows a contract and its updated version for "
+"Solidity v0.5.0 with some of the changes listed in this section."
+msgstr ""
+
+#: ../../050-breaking-changes.rst:376 251a896ec90d424dbbc84264d5588b62
+msgid "Old version:"
+msgstr ""
+
+#: ../../050-breaking-changes.rst:439 8dc59cfa6b674548ae23671e19c5131d
+msgid "New version:"
+msgstr ""
+

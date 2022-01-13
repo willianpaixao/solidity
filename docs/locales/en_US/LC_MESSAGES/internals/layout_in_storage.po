@@ -1,0 +1,360 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016-2021, Ethereum
+# This file is distributed under the same license as the Solidity package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Solidity 0.8.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-13 16:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../internals/layout_in_storage.rst:5 84653761efb84720b1b004f0002ec8b7
+msgid "Layout of State Variables in Storage"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:9 322b586f98ee4d879679159827f28b79
+msgid ""
+"State variables of contracts are stored in storage in a compact way such "
+"that multiple values sometimes use the same storage slot. Except for "
+"dynamically-sized arrays and mappings (see below), data is stored "
+"contiguously item after item starting with the first state variable, "
+"which is stored in slot ``0``. For each variable, a size in bytes is "
+"determined according to its type. Multiple, contiguous items that need "
+"less than 32 bytes are packed into a single storage slot if possible, "
+"according to the following rules:"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:18 cc5d46fa080248f5b9f592c46c5e71b0
+msgid "The first item in a storage slot is stored lower-order aligned."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:19 92397dd1d09947bd85b197dd72bdea5e
+msgid "Value types use only as many bytes as are necessary to store them."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:20 d024d0688b764b99ae9af7d2f1356030
+msgid ""
+"If a value type does not fit the remaining part of a storage slot, it is "
+"stored in the next storage slot."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:21 bba3abc28e8e412395a7ac4c22a26eec
+msgid ""
+"Structs and array data always start a new slot and their items are packed"
+" tightly according to these rules."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:22 84825e8894b543c2b650ca6c4a6ead0a
+msgid "Items following struct or array data always start a new storage slot."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:24 0f3c8e2c856b4c8c99929bc1ee5a896f
+msgid ""
+"For contracts that use inheritance, the ordering of state variables is "
+"determined by the C3-linearized order of contracts starting with the most"
+" base-ward contract. If allowed by the above rules, state variables from "
+"different contracts do share the same storage slot."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:28 e4d56ccaec024b0fbe963aa30294c6fe
+msgid ""
+"The elements of structs and arrays are stored after each other, just as "
+"if they were given as individual values."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:32 d65df1d5314c482d9754355621fc70a5
+msgid ""
+"When using elements that are smaller than 32 bytes, your contract's gas "
+"usage may be higher. This is because the EVM operates on 32 bytes at a "
+"time. Therefore, if the element is smaller than that, the EVM must use "
+"more operations in order to reduce the size of the element from 32 bytes "
+"to the desired size."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:37 c9543fc15f3a4971ba6c497a96bcdcac
+msgid ""
+"It might be beneficial to use reduced-size types if you are dealing with "
+"storage values because the compiler will pack multiple elements into one "
+"storage slot, and thus, combine multiple reads or writes into a single "
+"operation. If you are not reading or writing all the values in a slot at "
+"the same time, this can have the opposite effect, though: When one value "
+"is written to a multi-value storage slot, the storage slot has to be read"
+" first and then combined with the new value such that other data in the "
+"same slot is not destroyed."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:45 c9b7eb45be7e42839d384b8db2b58cbb
+msgid ""
+"When dealing with function arguments or memory values, there is no "
+"inherent benefit because the compiler does not pack these values."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:48 5092476708c746f3a192566aa4483e4d
+msgid ""
+"Finally, in order to allow the EVM to optimize for this, ensure that you "
+"try to order your storage variables and ``struct`` members such that they"
+" can be packed tightly. For example, declaring your storage variables in "
+"the order of ``uint128, uint128, uint256`` instead of ``uint128, uint256,"
+" uint128``, as the former will only take up two slots of storage whereas "
+"the latter will take up three."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:55 bc7a25ee1b0f4a73b57518b0e5cb3377
+msgid ""
+"The layout of state variables in storage is considered to be part of the "
+"external interface of Solidity due to the fact that storage pointers can "
+"be passed to libraries. This means that any change to the rules outlined "
+"in this section is considered a breaking change of the language and due "
+"to its critical nature should be considered very carefully before being "
+"executed."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:63 2c4d2db42b3e4484a2d6e5e82caf55ca
+msgid "Mappings and Dynamic Arrays"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:67 73f923f5fa53479c94ee75ae78023120
+msgid ""
+"Due to their unpredictable size, mappings and dynamically-sized array "
+"types cannot be stored \"in between\" the state variables preceding and "
+"following them. Instead, they are considered to occupy only 32 bytes with"
+" regards to the :ref:`rules above <storage-inplace-encoding>` and the "
+"elements they contain are stored starting at a different storage slot "
+"that is computed using a Keccak-256 hash."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:73 eba4990cd5b640b0ac77968c84e76fda
+msgid ""
+"Assume the storage location of the mapping or array ends up being a slot "
+"``p`` after applying :ref:`the storage layout rules <storage-inplace-"
+"encoding>`. For dynamic arrays, this slot stores the number of elements "
+"in the array (byte arrays and strings are an exception, see :ref:`below "
+"<bytes-and-string>`). For mappings, the slot stays empty, but it is still"
+" needed to ensure that even if there are two mappings next to each other,"
+" their content ends up at different storage locations."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:81 9f472445056641578bcecdd2f92db0ae
+#, python-format
+msgid ""
+"Array data is located starting at ``keccak256(p)`` and it is laid out in "
+"the same way as statically-sized array data would: One element after the "
+"other, potentially sharing storage slots if the elements are not longer "
+"than 16 bytes. Dynamic arrays of dynamic arrays apply this rule "
+"recursively. The location of element ``x[i][j]``, where the type of ``x``"
+" is ``uint24[][]``, is computed as follows (again, assuming ``x`` itself "
+"is stored at slot ``p``): The slot is ``keccak256(keccak256(p) + i) + "
+"floor(j / floor(256 / 24))`` and the element can be obtained from the "
+"slot data ``v`` using ``(v >> ((j % floor(256 / 24)) * 24)) & "
+"type(uint24).max``."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:89 1ee8ee8dfd534d97a1c23c8516504bcf
+msgid ""
+"The value corresponding to a mapping key ``k`` is located at "
+"``keccak256(h(k) . p)`` where ``.`` is concatenation and ``h`` is a "
+"function that is applied to the key depending on its type:"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:92 3af3f3651a5a48b098aa3142871e4bf7
+msgid ""
+"for value types, ``h`` pads the value to 32 bytes in the same way as when"
+" storing the value in memory."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:93 1a6f78ca922b45b4bf97665029816b2d
+msgid ""
+"for strings and byte arrays, ``h`` computes the ``keccak256`` hash of the"
+" unpadded data."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:95 67b09e23eb7c40eea9a12b9531aa1462
+msgid ""
+"If the mapping value is a non-value type, the computed slot marks the "
+"start of the data. If the value is of struct type, for example, you have "
+"to add an offset corresponding to the struct member to reach the member."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:99 2becca71db8b436da426cd265285020b
+msgid "As an example, consider the following contract:"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:113 b51aee4356014494a5e1a1c4fa651052
+msgid ""
+"Let us compute the storage location of ``data[4][9].c``. The position of "
+"the mapping itself is ``1`` (the variable ``x`` with 32 bytes precedes "
+"it). This means ``data[4]`` is stored at ``keccak256(uint256(4) . "
+"uint256(1))``. The type of ``data[4]`` is again a mapping and the data "
+"for ``data[4][9]`` starts at slot ``keccak256(uint256(9) . "
+"keccak256(uint256(4) . uint256(1)))``. The slot offset of the member "
+"``c`` inside the struct ``S`` is ``1`` because ``a`` and ``b`` are packed"
+" in a single slot. This means the slot for ``data[4][9].c`` is "
+"``keccak256(uint256(9) . keccak256(uint256(4) . uint256(1))) + 1``. The "
+"type of the value is ``uint256``, so it uses a single slot."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:127 2d2d85c435e9442a8bd004718bb405a1
+msgid "``bytes`` and ``string``"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:129 e12f2c5cd9f44d3fb6e3251f3f0a48f8
+msgid ""
+"``bytes`` and ``string`` are encoded identically. In general, the "
+"encoding is similar to ``bytes1[]``, in the sense that there is a slot "
+"for the array itself and a data area that is computed using a "
+"``keccak256`` hash of that slot's position. However, for short values "
+"(shorter than 32 bytes) the array elements are stored together with the "
+"length in the same slot."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:134 dbeeb4a1c89846cc850de33c0cf05640
+msgid ""
+"In particular: if the data is at most ``31`` bytes long, the elements are"
+" stored in the higher-order bytes (left aligned) and the lowest-order "
+"byte stores the value ``length * 2``. For byte arrays that store data "
+"which is ``32`` or more bytes long, the main slot ``p`` stores ``length *"
+" 2 + 1`` and the data is stored as usual in ``keccak256(p)``. This means "
+"that you can distinguish a short array from a long array by checking if "
+"the lowest bit is set: short (not set) and long (set)."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:141 824d1fcb5b1e4e32b005651e66d8c3d0
+msgid ""
+"Handling invalidly encoded slots is currently not supported but may be "
+"added in the future. If you are compiling via the experimental IR-based "
+"compiler pipeline, reading an invalidly encoded slot results in a "
+"``Panic(0x22)`` error."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:146 e6114888126a43dd8e85da8f983ee2e4
+msgid "JSON Output"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:150 4755203eee5844e689a771f4c2b1d083
+msgid ""
+"The storage layout of a contract can be requested via the :ref:`standard "
+"JSON interface <compiler-api>`.  The output is a JSON object containing "
+"two keys, ``storage`` and ``types``.  The ``storage`` object is an array "
+"where each element has the following form:"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:168 b1c1b0d791f9459797b40422666074b4
+msgid ""
+"The example above is the storage layout of ``contract A { uint x; }`` "
+"from source unit ``fileA`` and"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:171 4598d455dc34497abfcf826c5effaf6f
+msgid "``astId`` is the id of the AST node of the state variable's declaration"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:172 5160b1500f424b2ea04c97427133721e
+msgid "``contract`` is the name of the contract including its path as prefix"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:173 72ff9bcd825244448a6151177407a00f
+msgid "``label`` is the name of the state variable"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:174 89d8b6d5f1b0443a9d3159acc6cd3c03
+msgid ""
+"``offset`` is the offset in bytes within the storage slot according to "
+"the encoding"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:175 50c6ce0dc0c6434e9750e700b6289eea
+msgid ""
+"``slot`` is the storage slot where the state variable resides or starts. "
+"This number may be very large and therefore its JSON value is represented"
+" as a string."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:178 760dd5f7a2394ac394b7c725a78fdfd6
+msgid ""
+"``type`` is an identifier used as key to the variable's type information "
+"(described in the following)"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:180 c7c7dbbb915548d5868d27d395d46ea1
+msgid ""
+"The given ``type``, in this case ``t_uint256`` represents an element in "
+"``types``, which has the form:"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:192 bfab423542b04251957d82bf7f2e5175
+msgid "where"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:194 a4f2231552344ab58be2433796962080
+msgid ""
+"``encoding`` how the data is encoded in storage, where the possible "
+"values are:"
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:196 aa6303cae9644d8dacf9392b186fdc3b
+msgid ""
+"``inplace``: data is laid out contiguously in storage (see :ref:`above "
+"<storage-inplace-encoding>`)."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:197 88145829dfbd4e5191e9be59e9224112
+msgid ""
+"``mapping``: Keccak-256 hash-based method (see :ref:`above <storage-"
+"hashed-encoding>`)."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:198 32a54017818c47d284c5bdab75f59f40
+msgid ""
+"``dynamic_array``: Keccak-256 hash-based method (see :ref:`above "
+"<storage-hashed-encoding>`)."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:199 c82860e32b464df5896dd28498cdf946
+msgid ""
+"``bytes``: single slot or Keccak-256 hash-based depending on the data "
+"size (see :ref:`above <bytes-and-string>`)."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:201 dd4efc5df5f44ca7bebb1780960f15e7
+msgid "``label`` is the canonical type name."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:202 c931ada772ba4cd3aff2e8a92dda4531
+msgid ""
+"``numberOfBytes`` is the number of used bytes (as a decimal string). Note"
+" that if ``numberOfBytes > 32`` this means that more than one slot is "
+"used."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:205 238baef36aad41e6a412fe155d36eec0
+msgid ""
+"Some types have extra information besides the four above. Mappings "
+"contain its ``key`` and ``value`` types (again referencing an entry in "
+"this mapping of types), arrays have its ``base`` type, and structs list "
+"their ``members`` in the same format as the top-level ``storage`` (see "
+":ref:`above <storage-layout-top-level>`)."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:212 5335b1c2f0a549c8b9eb3c5b93a244dc
+msgid ""
+"The JSON output format of a contract's storage layout is still considered"
+" experimental and is subject to change in non-breaking releases of "
+"Solidity."
+msgstr ""
+
+#: ../../internals/layout_in_storage.rst:215 0566c2227e0641cc9942977cd81a459a
+msgid ""
+"The following example shows a contract and its storage layout, containing"
+" value and reference types, types that are encoded packed, and nested "
+"types."
+msgstr ""
+

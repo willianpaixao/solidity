@@ -29,5 +29,9 @@
 set -e
 cd docs
 pip3 install -r requirements.txt --upgrade --upgrade-strategy eager
-sphinx-build -nW -b html -d _build/doctrees . _build/html
+sphinx-build -b gettext . _build/gettext
+sphinx-intl update -p _build/gettext -l es_EM -l pt_BR
+sphinx-build -nW -b html -d _build/doctrees -D language=en_US . _build/html/en_US
+sphinx-build -nW -b html -d _build/doctrees -D language=es_EM . _build/html/es_EM
+sphinx-build -nW -b html -d _build/doctrees -D language=pt_BR . _build/html/pt_BR
 cd ..
