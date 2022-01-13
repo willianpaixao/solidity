@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: solidity-test\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-13 16:47+0100\n"
-"PO-Revision-Date: 2022-01-13 16:14\n"
+"PO-Revision-Date: 2022-01-13 16:24\n"
 "Last-Translator: \n"
 "Language-Team: Portuguese, Brazilian\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgstr ""
 
 #: ../../index.rst:117 8b650229a61d49f78282b5977067c81f
 msgid "Basics"
-msgstr ""
+msgstr "Básico"
 
 #: ../../index.rst:125 a76a4d41352648abbb567b527c7ea1ca
 msgid "Language Description"
-msgstr ""
+msgstr "Descrição da linguagem"
 
 #: ../../index.rst:139 9e4f5b351de64b7785b2e8a4eaaabcb4
 msgid "Compiler"
-msgstr ""
+msgstr "Compilador"
 
 #: ../../index.rst:147 beb1d5bb87474981851bced7412ff4f2
 msgid "Internals"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../index.rst:160 0133e735588b4c2daca18f33a7fc1106
 msgid "Additional Material"
-msgstr ""
+msgstr "Material Adicional"
 
 #: ../../index.rst:2 6eadbda13f364f41894acfcf28635f75
 msgid "Solidity"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../index.rst:4 801fdb50b72946ac9f83a85ce17ab718
 msgid "Solidity is an object-oriented, high-level language for implementing smart contracts. Smart contracts are programs which govern the behaviour of accounts within the Ethereum state."
-msgstr ""
+msgstr "Solidity é uma linguagem de alto nível e orientada a objetos para a implementação de contratos inteligentes. Contratos inteligentes são programas que regem ao comportamento das contas no Ethereum."
 
 #: ../../index.rst:8 b8faab91f759449e8c4822b825b764a4
 msgid "Solidity is a `curly-bracket language <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_. It is influenced by C++, Python and JavaScript, and is designed to target the Ethereum Virtual Machine (EVM). You can find more details about which languages Solidity has been inspired by in the :doc:`language influences <language-influences>` section."
@@ -76,11 +76,11 @@ msgstr ""
 
 #: ../../index.rst:41 8d7ccaab46374bb3859fd9ffa94cdc37
 msgid "Getting Started"
-msgstr ""
+msgstr "Primeiros passos"
 
 #: ../../index.rst:43 2b20d210dc724b9ca5731ea3d6124e01
 msgid "**1. Understand the Smart Contract Basics**"
-msgstr ""
+msgstr "**1. Entenda o básico de Contratos Inteligentes**"
 
 #: ../../index.rst:45 f4fe5427da6349c68b60660fee15407d
 msgid "If you are new to the concept of smart contracts we recommend you to get started by digging into the \"Introduction to Smart Contracts\" section, which covers:"
